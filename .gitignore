@@ -1,5 +1,8 @@
 production/**/build/
+production/model-preview/
 ready-to-upload/
 assets/characters/source/
+assets/characters/poses/*-key.png
 assets/characters/character-preview.jpg
+tools/__pycache__/
 *.tmp
