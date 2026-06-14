@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Bible de production et feuille de route de 100 épisodes pour la série coréenne 달토끼 루니.">
+  <meta name="theme-color" content="#7569b7">
+  <title>달토끼 루니 | Luni Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="달토끼 루니 홈">
+      <span class="brand-mark">☾</span>
+      <span>달토끼 루니</span>
+    </a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" aria-label="Navigation principale">
+      <a href="#world">Univers</a>
+      <a href="#characters">Personnages</a>
+      <a href="#episodes">Épisodes</a>
+      <a href="#production">Production</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="stars" aria-hidden="true"></div>
+      <div class="hero-copy">
+        <p class="eyebrow">KOREAN KIDS ANIMATION · STUDIO BIBLE</p>
+        <h1>Une petite aventure<br><span>sous la lumière de la lune</span></h1>
+        <p class="hero-lead">Une série animée coréenne de 5 minutes où Luni, le lapin de la Lune, découvre les émotions, l’amitié, la nature et le courage.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#episodes">Découvrir les 100 épisodes</a>
+          <a class="button secondary" href="assets/images/luni-character-bible.png">Planche visuelle originale</a>
+        </div>
+        <dl class="hero-stats">
+          <div><dt>100</dt><dd>épisodes</dd></div>
+          <div><dt>4</dt><dd>saisons</dd></div>
+          <div><dt>5 min</dt><dd>par épisode</dd></div>
+        </dl>
+      </div>
+      <figure class="hero-art">
+        <img src="assets/images/luni-character-bible.png" alt="Planche de création de Luni et de ses amis">
+        <figcaption>Official visual development board · 2026</figcaption>
+      </figure>
+    </section>
+
+    <section class="section intro" id="world">
+      <div class="section-heading">
+        <p class="eyebrow">THE WORLD OF LUNI</p>
+        <h2>Chaque nuit, le monde lunaire<br>ouvre une nouvelle histoire</h2>
+      </div>
+      <div class="world-copy">
+        <p>Le village lunaire abrite le Lac des Étoiles, la Forêt des Nuages et la Colline Arc-en-ciel. En suivant les petites missions de Grand-mère Lune, Luni découvre des réponses, mais surtout la valeur de l’entraide.</p>
+        <div class="place-list" aria-label="Lieux principaux">
+          <span>Maison de Luni</span><span>Village de la Lune</span><span>Forêt des Nuages</span><span>Lac des Étoiles</span><span>Colline Arc-en-ciel</span><span>Gare des Étoiles</span><span>Jardin des Rêves</span><span>Bibliothèque Magique</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section characters" id="characters">
+      <div class="section-heading compact">
+        <p class="eyebrow">MEET THE FRIENDS</p>
+        <h2>Luni et ses sept amis</h2>
+        <p>Huit personnalités différentes forment une équipe tendre et complémentaire.</p>
+      </div>
+      <div class="character-grid" id="character-grid"></div>
+    </section>
+
+    <section class="section episodes-section" id="episodes">
+      <div class="section-heading compact">
+        <p class="eyebrow">100 EPISODE ROADMAP</p>
+        <h2>Quatre saisons pour grandir</h2>
+        <p>Les titres et les contenus de diffusion restent en coréen. Les outils de production sont présentés en français.</p>
+      </div>
+      <div class="season-tabs" role="tablist" aria-label="Choix de la saison">
+        <button class="season-tab active" role="tab" aria-selected="true" data-season="all">Les 100 épisodes</button>
+        <button class="season-tab" role="tab" aria-selected="false" data-season="1">Saison 1</button>
+        <button class="season-tab" role="tab" aria-selected="false" data-season="2">Saison 2</button>
+        <button class="season-tab" role="tab" aria-selected="false" data-season="3">Saison 3</button>
+        <button class="season-tab" role="tab" aria-selected="false" data-season="4">Saison 4</button>
+      </div>
+      <div class="episode-tools">
+        <label class="search">
+          <span class="sr-only">Rechercher un épisode</span>
+          <input id="episode-search" type="search" placeholder="Rechercher par titre, thème ou résumé">
+        </label>
+        <p id="episode-count" aria-live="polite"></p>
+      </div>
+      <div class="episode-grid" id="episode-grid"></div>
+      <button class="show-more" id="show-more" type="button">Afficher plus</button>
+    </section>
+
+    <section class="section production" id="production">
+      <div class="production-card">
+        <p class="eyebrow">5-MINUTE FORMAT</p>
+        <h2>Le rythme d’un épisode</h2>
+        <ol class="timeline">
+          <li><b>00:00–00:30</b><span>Salutation de Luni et question du jour</span></li>
+          <li><b>00:30–01:30</b><span>Apparition d’un petit problème</span></li>
+          <li><b>01:30–03:30</b><span>Exploration et essais avec les amis</span></li>
+          <li><b>03:30–04:30</b><span>Solution et leçon exprimée simplement</span></li>
+          <li><b>04:30–05:00</b><span>Chanson finale à reprendre ensemble</span></li>
+        </ol>
+      </div>
+      <div class="production-card night">
+        <p class="eyebrow">PRODUCTION KIT</p>
+        <h2>Contenu du dépôt GitHub</h2>
+        <ul class="kit-list">
+          <li>Site de présentation adaptatif</li>
+          <li>Fiches des 8 personnages et planche visuelle</li>
+          <li>100 synopsis uniques répartis en 4 saisons</li>
+          <li>Modèle de production pour un épisode de 5 minutes</li>
+          <li>Prompts IA pour la cohérence des scènes</li>
+          <li>Instructions de publication sur GitHub Pages</li>
+        </ul>
+        <a class="text-link" href="docs/PRODUCTION_BIBLE.md">Lire la bible de production →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <span class="brand-mark">☾</span>
+      <strong>달토끼 루니</strong>
+    </div>
+    <p>Une chaîne coréenne, pilotée avec des outils en français.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,207 @@
+const characters = [
+  { icon: "🐰", name: "루니 · Luni", latin: "HÉROS", trait: "Curieux · gentil · courageux", copy: "Un petit lapin blanc né sur la Lune. Il écoute ses amis et cherche les réponses avec eux." },
+  { icon: "⭐", name: "별이 · Byeori", latin: "ESPRIT LOGIQUE", trait: "Intelligente · observatrice · organisée", copy: "Une petite étoile qui éclaire le chemin, rassemble les indices et résout les énigmes." },
+  { icon: "☁️", name: "몽이 · Mongi", latin: "COMIQUE", trait: "Drôle · sincère · optimiste", copy: "Un nuage tout doux qui transforme ses maladresses en rires et aide le groupe à recommencer." },
+  { icon: "🐿️", name: "콩콩 · Kongkong", latin: "EXPLORATEUR", trait: "Énergique · aventureux · spontané", copy: "Le premier à partir à l’aventure. Il va parfois trop vite, mais n’abandonne jamais un ami." },
+  { icon: "🦊", name: "토리 · Tori", latin: "INVENTEUR", trait: "Créatif · concentré · persévérant", copy: "Un renard inventeur qui donne une nouvelle utilité aux objets cassés." },
+  { icon: "🦔", name: "밤밤 · Bambam", latin: "LE CŒUR DU GROUPE", trait: "Attentionné · sensible · courageux", copy: "Un hérisson discret qui comprend bien les émotions et apprend à exprimer ses idées." },
+  { icon: "🦉", name: "루미 · Lumi", latin: "GUIDE", trait: "Sage · équilibrée · curieuse", copy: "La chouette de la Bibliothèque Magique. Elle ouvre les chemins grâce aux bonnes questions." },
+  { icon: "🌕", name: "달할머니 · Grand-mère Lune", latin: "MENTOR", trait: "Protectrice · sage · chaleureuse", copy: "Elle veille sur le monde lunaire et confie aux enfants de petites missions utiles." }
+];
+
+const seasonInfo = {
+  1: "Découverte du monde · 세상 발견",
+  2: "Les aventures · 신나는 모험",
+  3: "Le monde magique · 마법의 세계",
+  4: "Grandir ensemble · 함께 성장"
+};
+
+const episodeRows = [
+  [1,"잃어버린 별","도움","길을 잃은 아기 별이 자기 별자리를 찾도록 빛의 단서를 따라가요."],
+  [1,"무지개의 일곱 빛깔","색깔","사라진 무지개 색을 빨강부터 보라까지 하나씩 되찾아요."],
+  [1,"몽이의 비구름","책임","몽이가 만든 갑작스러운 비를 멈추고 젖은 마을을 함께 정리해요."],
+  [1,"밤밤의 첫 인사","친구","수줍은 밤밤이 놀이에 참여할 수 있도록 작은 인사부터 연습해요."],
+  [1,"하늘까지 자란 당근","협동","거대한 마법 당근을 뽑기 위해 모두의 서로 다른 힘을 모아요."],
+  [1,"별빛 호수의 반짝임","호기심","호수 아래 반짝이는 빛의 정체를 안전하게 관찰해요."],
+  [1,"사라진 웃음소리","기쁨","달나라의 웃음이 사라진 이유를 찾아 각자의 기쁨을 나눠요."],
+  [1,"커다란 그림자","용기","어둠 속 그림자를 자세히 보며 두려움의 정체를 알아내요."],
+  [1,"구름 숲의 세 갈래 길","길 찾기","표지판과 자연의 소리를 살펴 친구들과 집으로 돌아와요."],
+  [1,"달빛 축제의 첫 등불","우정","꺼진 축제 등불을 친구들의 좋은 기억으로 다시 밝혀요."],
+  [1,"동그라미를 찾아라","모양","마을 곳곳에서 원, 세모, 네모를 찾아 별빛 기차를 고쳐요."],
+  [1,"숲속의 아침 소리","소리","눈을 감고 새, 바람, 물소리를 구별하며 몽이를 찾아요."],
+  [1,"작은 씨앗의 시간","기다림","매일 씨앗을 돌보며 자라는 일에는 시간이 필요함을 배워요."],
+  [1,"파란 풍선이 날아간 날","슬픔","좋아하던 풍선을 잃은 마음을 말하고 친구의 위로를 받아요."],
+  [1,"달빛 생일 케이크","축하","루니의 생일을 준비하며 친구가 좋아하는 것을 세심히 살펴요."],
+  [1,"별 세는 밤","숫자","하나부터 열까지 별을 세어 길 잃은 별똥별의 집을 찾아요."],
+  [1,"따뜻한 것과 차가운 것","감각","따뜻한 차와 차가운 눈꽃을 안전하게 비교하며 감각을 표현해요."],
+  [1,"콩콩의 빠른 하루","속도","빠르게 할 일과 천천히 해야 할 일을 구별해 실수를 줄여요."],
+  [1,"달나라의 네 계절","계절","마법 정원에서 봄, 여름, 가을, 겨울의 변화를 만나요."],
+  [1,"누구의 발자국일까","동물","서로 다른 발자국 모양을 비교해 길 잃은 아기 동물을 찾아요."],
+  [1,"향기 나는 바람","후각","꽃과 과일의 향기를 따라 꿈의 정원에 숨은 열쇠를 발견해요."],
+  [1,"반대말 다리","언어","크고 작음, 높고 낮음 같은 반대말로 움직이는 다리를 건너요."],
+  [1,"루니의 건강한 하루","생활 습관","씻기, 먹기, 움직이기, 쉬기의 균형을 놀이처럼 익혀요."],
+  [1,"졸린 구름의 밤","수면","몽이와 함께 차분한 잠자리 순서를 만들고 편안히 잠들어요."],
+  [1,"우리 마을 보물 지도","관찰","25일 동안 만난 장소와 배움을 한 장의 지도로 완성해요."],
+
+  [2,"별빛 기차의 첫 여행","여행","친구들이 표를 챙기고 순서를 지키며 처음으로 먼 여행을 떠나요."],
+  [2,"멈춰 버린 구름 시계","문제 해결","하늘 시간을 되돌리기 위해 시계 부품의 규칙을 찾아요."],
+  [2,"속삭이는 바람 계곡","경청","작은 바람의 목소리를 잘 들어야만 보이지 않는 길을 찾을 수 있어요."],
+  [2,"콩콩과 흔들다리","안전","서두르던 콩콩이 안전 약속을 지키며 흔들다리를 건너요."],
+  [2,"토리의 날개 우산","도전","첫 발명품이 실패해도 원인을 살피고 더 나은 우산을 만들어요."],
+  [2,"눈꽃 우체국의 편지","소통","주소가 지워진 편지를 단서와 질문으로 주인에게 전해요."],
+  [2,"사라진 기차표","정리","물건을 둔 순서를 되짚으며 잃어버린 표를 찾아요."],
+  [2,"달치즈 섬의 손님","예절","낯선 섬의 인사법과 식사 예절을 존중하며 새 친구를 만나요."],
+  [2,"무지개 폭포의 약속","약속","놀이에 빠진 친구들이 해 지기 전 돌아오겠다는 약속을 지켜요."],
+  [2,"작아진 루니","관점","마법 가루로 작아진 루니가 작은 존재의 시선으로 마을을 바라봐요."],
+  [2,"큰 발자국의 주인","편견","무서워 보이는 발자국만으로 상대를 판단하지 않는 법을 배워요."],
+  [2,"바람개비 평원의 경주","공정","이기는 것보다 규칙을 지키고 서로를 응원하는 경주를 만들어요."],
+  [2,"별사탕 동굴의 메아리","말하기","말이 되돌아오는 동굴에서 다정한 말의 힘을 경험해요."],
+  [2,"안개 속 등대","신뢰","서로의 목소리와 약속을 믿으며 짙은 안개를 빠져나와요."],
+  [2,"춤추는 모래언덕","유연함","계속 바뀌는 길에서 계획을 고치고 새로운 방법을 시도해요."],
+  [2,"잠든 용암산","침착","작은 소동 앞에서 멈추고 생각한 뒤 차분하게 모두를 도와요."],
+  [2,"고래별을 따라서","자연","밤하늘을 헤엄치는 고래별의 이동을 방해하지 않고 관찰해요."],
+  [2,"뒤바뀐 짐 가방","정직","친구의 물건을 발견한 루니가 주인을 찾아 솔직하게 돌려줘요."],
+  [2,"얼음 궁전의 따뜻한 문","배려","추위에 약한 친구를 위해 속도를 맞추고 함께 쉴 곳을 만들어요."],
+  [2,"조개마을 음악대","협력","서로 다른 소리를 맞춰 하나의 신나는 합주를 완성해요."],
+  [2,"구름 해적의 보물","나눔","보물이 물건이 아니라 함께 나눈 시간이라는 사실을 발견해요."],
+  [2,"별똥별 캠핑","자립","가방을 직접 챙기고 작은 역할을 맡아 첫 캠핑을 마쳐요."],
+  [2,"돌아오지 않는 나침반","판단","도구가 고장 났을 때 주변 단서와 친구들의 생각을 함께 사용해요."],
+  [2,"달의 반대편","다양성","낮이 긴 마을의 다른 생활 방식을 존중하고 새 놀이를 배워요."],
+  [2,"우리들의 여행 앨범","기억","모험에서 얻은 사진과 기억을 나누며 두 번째 시즌을 돌아봐요."],
+
+  [3,"꿈의 정원 문이 열리다","상상","각자 상상한 꽃을 피워 비밀 정원의 문을 열어요."],
+  [3,"말하는 별가루","언어","마음과 다른 말을 하는 별가루 때문에 진짜 뜻을 또렷이 표현해요."],
+  [3,"거꾸로 흐르는 강","논리","결과부터 보이는 마법의 강에서 사건의 원인을 거슬러 찾아요."],
+  [3,"그림 속으로 간 몽이","예술","미완성 그림 세계에서 색과 선을 더해 몽이가 나올 길을 만들어요."],
+  [3,"달토끼가 둘이 된 날","정체성","똑같이 생긴 마법 복제와 만나 나만의 선택과 기억을 소중히 여겨요."],
+  [3,"별이의 빛이 꺼졌어요","자존감","빛이 약해진 별이가 밝기와 상관없이 소중한 친구임을 느껴요."],
+  [3,"시간을 멈춘 모래시계","시간","즐거운 순간을 붙잡기보다 흐르는 시간을 잘 쓰는 법을 배워요."],
+  [3,"소원을 먹는 구름","욕구","갖고 싶은 것과 정말 필요한 것을 구별해 소원을 되찾아요."],
+  [3,"마법 도서관의 빈 책","이야기","루니와 친구들이 선택한 행동에 따라 빈 책의 이야기가 완성돼요."],
+  [3,"잠들지 않는 꿈","감정","걱정 때문에 잠들지 못한 밤밤이 마음을 말하며 꿈을 편안히 놓아요."],
+  [3,"달빛 거울의 비밀","자기 이해","거울에 비친 완벽한 모습보다 지금의 자신을 좋아하는 법을 배워요."],
+  [3,"투명해진 콩콩","관심","눈에 보이지 않아도 목소리를 듣고 존재를 알아주는 마음을 느껴요."],
+  [3,"노래하는 별꽃","음악","각기 다른 음을 가진 꽃들과 조화로운 노래를 만들어요."],
+  [3,"색을 바꾸는 감정 숲","감정 조절","마음에 따라 바뀌는 숲의 색을 보며 감정의 이름을 찾아요."],
+  [3,"작은 마법사의 큰 실수","실수","루니가 잘못 건 주문을 숨기지 않고 도움을 청해 바로잡아요."],
+  [3,"달 그림자를 훔친 밤","오해","사라진 그림자의 진실을 확인하며 성급한 의심을 풀어요."],
+  [3,"꿈 기차의 마지막 좌석","양보","한 자리밖에 남지 않은 기차에서 모두가 즐길 새로운 방법을 찾아요."],
+  [3,"별자리 동물원","생명 존중","별자리 동물을 구경하며 만지기 전에 허락을 구하는 법을 익혀요."],
+  [3,"토리와 무한 연필","절제","끝없이 그려지는 연필을 멈추고 필요한 만큼 사용하는 법을 배워요."],
+  [3,"마음이 들리는 모자","경계","친구의 생각을 몰래 듣는 대신 직접 물어보고 대답을 기다려요."],
+  [3,"달할머니의 어린 시절","세대","달할머니의 오래된 추억 속으로 가서 세대가 달라도 통하는 마음을 봐요."],
+  [3,"별빛을 잃은 성","희망","작은 친절을 하나씩 모아 어두워진 달의 성을 다시 밝혀요."],
+  [3,"사라지는 꿈의 섬","환경","섬을 지키기 위해 쓰레기를 줄이고 망가진 곳을 함께 돌봐요."],
+  [3,"마법보다 좋은 것","노력","쉬운 주문 대신 연습과 협동으로 공연을 완성해요."],
+  [3,"천 개의 별이 뜨는 밤","감사","마법 세계에서 받은 도움을 기억하며 감사의 별을 띄워요."],
+
+  [4,"밤밤의 큰 목소리","자신감","밤밤이 친구들 앞에서 자신의 생각을 또박또박 말해요."],
+  [4,"루니가 진 날","스포츠맨십","게임에서 진 속상함을 받아들이고 상대를 축하해요."],
+  [4,"별이의 완벽하지 않은 계획","유연성","계획이 어긋나도 친구의 아이디어를 받아들여 축제를 완성해요."],
+  [4,"몽이의 진심 어린 사과","사과","장난으로 상처 준 몽이가 변명하지 않고 마음을 전해요."],
+  [4,"콩콩은 기다릴 수 있어","인내","차례를 기다리며 다른 친구의 시간도 소중함을 배워요."],
+  [4,"토리의 고장 난 발명품","회복력","실패 기록을 살펴 다시 만들며 포기하지 않는 힘을 길러요."],
+  [4,"루미도 모르는 것","겸손","똑똑한 루미가 모른다고 말하고 함께 배우는 즐거움을 발견해요."],
+  [4,"달할머니의 쉬는 날","돌봄","늘 돌봐 주던 달할머니를 위해 친구들이 역할을 나눠 맡아요."],
+  [4,"우리끼리 정한 규칙","민주성","모두의 의견을 듣고 안전하고 공정한 놀이 규칙을 만들어요."],
+  [4,"새 친구 해별이","포용","다른 말투를 쓰는 전학생이 편히 참여하도록 놀이를 설명해요."],
+  [4,"싫다고 말해도 괜찮아","경계","불편한 장난에 분명히 싫다고 말하고 상대의 거절을 존중해요."],
+  [4,"비밀을 지켜야 할까","안전","위험한 비밀은 믿을 수 있는 어른에게 알려야 함을 배워요."],
+  [4,"반으로 나눈 달빵","공평","똑같이 나누는 것과 필요한 만큼 나누는 것의 차이를 생각해요."],
+  [4,"칭찬 나무","긍정","결과뿐 아니라 친구의 노력과 친절을 구체적으로 칭찬해요."],
+  [4,"화가 난 루니","분노 조절","멈추기, 숨 쉬기, 말하기로 큰 화를 안전하게 다뤄요."],
+  [4,"오늘은 내가 도울게","주도성","도움을 기다리지 않고 주변에서 할 수 있는 일을 스스로 찾아요."],
+  [4,"친구와 생각이 다를 때","갈등 해결","서로의 말을 반복해 확인하고 함께 만족할 해결책을 찾아요."],
+  [4,"우리 가족의 밤하늘","가족 다양성","모양이 다른 여러 가족이 모두 사랑으로 이어져 있음을 배워요."],
+  [4,"작은 약속 저금통","신뢰","매일 지킬 수 있는 작은 약속을 쌓아 친구의 믿음을 되찾아요."],
+  [4,"도와달라는 용기","도움 요청","혼자 하기 어려운 일을 인정하고 알맞은 사람에게 도움을 청해요."],
+  [4,"추억 상자를 열면","이별","멀리 떠나는 친구와 슬픔을 나누고 이어질 방법을 만들어요."],
+  [4,"달나라 작은 시장","경제","필요와 욕심을 구별하고 정해진 별동전을 계획해 사용해요."],
+  [4,"우리의 첫 공연","협업","무대 앞과 뒤의 모든 역할을 존중하며 함께 공연해요."],
+  [4,"백 번째 별을 찾아서","성찰","지나온 모험 속에서 각자 가장 빛났던 배움을 찾아요."],
+  [4,"언제나 다시 만나요","성장","달빛 축제에서 100개의 이야기를 돌아보고 다음 모험을 약속해요."]
+];
+
+const episodes = episodeRows.map((row, index) => ({
+  number: index + 1,
+  season: row[0],
+  title: row[1],
+  lesson: row[2],
+  premise: row[3]
+}));
+
+const characterGrid = document.querySelector("#character-grid");
+characterGrid.innerHTML = characters.map(character => `
+  <article class="character-card">
+    <span class="character-icon" aria-hidden="true">${character.icon}</span>
+    <span class="latin">${character.latin}</span>
+    <h3>${character.name}</h3>
+    <b>${character.trait}</b>
+    <p>${character.copy}</p>
+  </article>
+`).join("");
+
+const episodeGrid = document.querySelector("#episode-grid");
+const count = document.querySelector("#episode-count");
+const search = document.querySelector("#episode-search");
+const showMore = document.querySelector("#show-more");
+const tabs = [...document.querySelectorAll(".season-tab")];
+let selectedSeason = "all";
+let visibleLimit = 12;
+
+function renderEpisodes() {
+  const query = search.value.trim().toLowerCase();
+  const filtered = episodes.filter(episode => {
+    const inSeason = selectedSeason === "all" || episode.season === Number(selectedSeason);
+    const haystack = `${episode.title} ${episode.lesson} ${episode.premise}`.toLowerCase();
+    return inSeason && haystack.includes(query);
+  });
+  const visible = filtered.slice(0, visibleLimit);
+  episodeGrid.innerHTML = visible.map(episode => `
+    <article class="episode-card">
+      <div class="episode-meta">
+        <span class="episode-number">EP. ${String(episode.number).padStart(3, "0")}</span>
+        <span class="lesson">${episode.lesson}</span>
+      </div>
+      <h3>${episode.title}</h3>
+      <p>${episode.premise}</p>
+      <span class="season-label">SEASON ${episode.season} · ${seasonInfo[episode.season]}</span>
+    </article>
+  `).join("");
+  count.textContent = `${visible.length} épisode${visible.length > 1 ? "s" : ""} affiché${visible.length > 1 ? "s" : ""} sur ${filtered.length}`;
+  showMore.hidden = visible.length >= filtered.length;
+}
+
+tabs.forEach(tab => tab.addEventListener("click", () => {
+  selectedSeason = tab.dataset.season;
+  visibleLimit = 12;
+  tabs.forEach(item => {
+    const active = item === tab;
+    item.classList.toggle("active", active);
+    item.setAttribute("aria-selected", String(active));
+  });
+  renderEpisodes();
+}));
+
+search.addEventListener("input", () => {
+  visibleLimit = 12;
+  renderEpisodes();
+});
+
+showMore.addEventListener("click", () => {
+  visibleLimit += 12;
+  renderEpisodes();
+});
+
+const menuButton = document.querySelector(".menu-button");
+const nav = document.querySelector("#site-nav");
+menuButton.addEventListener("click", () => {
+  const open = nav.classList.toggle("open");
+  menuButton.setAttribute("aria-expanded", String(open));
+});
+nav.addEventListener("click", () => {
+  nav.classList.remove("open");
+  menuButton.setAttribute("aria-expanded", "false");
+});
+
+renderEpisodes();
