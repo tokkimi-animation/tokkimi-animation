@@ -2,7 +2,6 @@ import asyncio
 import math
 from pathlib import Path
 
-import edge_tts
 from PIL import Image, ImageDraw, ImageFont
 from moviepy import (
     AudioFileClip,
@@ -23,7 +22,7 @@ POSES = CHARACTERS / "poses"
 WORK = ROOT / "production" / "model-preview"
 OUTPUT = ROOT / "ready-to-upload" / "MODEL-PREVIEW"
 PREVIEW_SIZE = (1280, 720)
-FPS = 18
+FPS = 24
 
 FONT = ImageFont.truetype(r"C:\Windows\Fonts\malgunbd.ttf", 39)
 FONT_SMALL = ImageFont.truetype(r"C:\Windows\Fonts\malgun.ttf", 25)
@@ -34,8 +33,8 @@ DIALOGUE = [
         "text": "안녕, 친구들! 나는 달토끼 루니야. 오늘도 신나는 모험을 시작해 볼까?",
         "subtitle": "안녕, 친구들! 오늘도 신나는 모험을 시작해 볼까?",
         "voice": "ko-KR-SunHiNeural",
-        "rate": "+10%",
-        "pitch": "+2Hz",
+        "rate": "+9%",
+        "pitch": "+1Hz",
         "pose": "luni",
         "action": "welcome",
     },
@@ -54,8 +53,8 @@ DIALOGUE = [
         "text": "정말? 조용히 들어 보자. 아, 누군가 우리를 부르고 있어!",
         "subtitle": "조용히 들어 보자. 누군가 우리를 부르고 있어!",
         "voice": "ko-KR-SunHiNeural",
-        "rate": "+12%",
-        "pitch": "+2Hz",
+        "rate": "+10%",
+        "pitch": "+1Hz",
         "pose": "luni-listening",
         "action": "listen",
     },
@@ -64,8 +63,8 @@ DIALOGUE = [
         "text": "걱정하지 마! 우리가 지금 바로 도와주러 갈게!",
         "subtitle": "걱정하지 마! 우리가 지금 바로 도와주러 갈게!",
         "voice": "ko-KR-SunHiNeural",
-        "rate": "+14%",
-        "pitch": "+4Hz",
+        "rate": "+12%",
+        "pitch": "+2Hz",
         "pose": "luni-running",
         "action": "run",
     },
@@ -107,17 +106,21 @@ def make_subtitle(text, speaker, index):
 
 
 async def create_voice(item, path):
+    import edge_tts
+
     speech = edge_tts.Communicate(
         item["text"],
         item["voice"],
         rate=item["rate"],
         pitch=item["pitch"],
-        volume="+0%",
+        volume="-5%" if item["speaker"] == "루니" else "-2%",
     )
     await speech.save(str(path))
 
 
 async def create_voice_auditions():
+    import edge_tts
+
     line = "안녕, 친구들! 나는 달토끼 루니야. 오늘도 신나는 모험을 시작해 볼까?"
     choices = [
         ("A-sunhi", "ko-KR-SunHiNeural", "+10%", "+2Hz"),
@@ -138,44 +141,73 @@ async def create_voice_auditions():
 def character_layer(item, duration):
     image = pose_path(item["pose"])
     action = item["action"]
+
+    def smoothstep(value):
+        value = max(0.0, min(1.0, value))
+        return value * value * (3.0 - 2.0 * value)
+
+    def entrance(t, length=0.42):
+        return smoothstep(t / min(length, duration))
+
+    def breathe(t, amount=0.012):
+        return 1.0 + amount * math.sin(t * 2.8)
+
     if action == "run":
-        clip = ImageClip(str(image), duration=duration).resized(height=520)
+        clip = ImageClip(str(image), duration=duration).resized(
+            lambda t: breathe(t, 0.018) * (0.96 + 0.04 * entrance(t, 0.25))
+        ).resized(height=520)
+
+        def run_position(t):
+            progress = smoothstep(t / max(duration - 0.28, 0.1))
+            x = -360 + (PREVIEW_SIZE[0] + 310) * progress
+            stride = abs(math.sin(t * 10.5))
+            landing = math.sin(t * 21.0) * 3
+            return int(x), int(105 + 16 * stride + landing)
+
         return clip.with_position(
-            lambda t: (
-                int(-340 + (PREVIEW_SIZE[0] + 260) * min(t / max(duration - 0.35, 0.1), 1)),
-                int(115 + 12 * abs(math.sin(t * 8))),
-            )
+            run_position
         )
 
     height = 490 if action != "warning" else 390
-    clip = ImageClip(str(image), duration=duration).resized(height=height)
+    clip = ImageClip(str(image), duration=duration).resized(
+        lambda t: breathe(t) * (0.92 + 0.08 * entrance(t))
+    ).resized(height=height)
     if action == "welcome":
         return clip.with_position(
-            lambda t: (120 + int(10 * math.sin(t * 2.3)), 95 + int(8 * math.sin(t * 4.6)))
+            lambda t: (
+                int(120 - 34 * (1.0 - entrance(t)) + 5 * math.sin(t * 1.9)),
+                int(94 + 5 * math.sin(t * 3.8)),
+            )
         )
     if action == "warning":
         return clip.with_position(
             lambda t: (
-                760 + int(14 * math.sin(t * 4.5)),
-                155 + int(10 * math.sin(t * 6.0)),
+                int(760 + 42 * (1.0 - entrance(t, 0.32)) + 9 * math.sin(t * 4.2)),
+                int(152 + 8 * math.sin(t * 5.4)),
             )
         )
     return clip.with_position(
         lambda t: (
-            190 + int(7 * math.sin(t * 2.5)),
-            95 + int(4 * math.sin(t * 5.0)),
+            int(190 + 5 * math.sin(t * 2.0)),
+            int(94 + 4 * math.sin(t * 4.0)),
         )
     )
 
 
 def reaction_layer(item, duration):
     if item["action"] == "warning":
-        other = ImageClip(str(POSES / "luni-listening.png"), duration=duration).resized(height=420)
-        return other.with_position((90, 160)).with_effects([vfx.FadeIn(0.25)])
-    if item["action"] == "listen":
-        other = ImageClip(str(POSES / "byeori-worried.png"), duration=duration).resized(height=310)
+        other = ImageClip(str(POSES / "luni-listening.png"), duration=duration).resized(
+            lambda t: 0.96 + 0.018 * math.sin(t * 2.6)
+        ).resized(height=420)
         return other.with_position(
-            lambda t: (840, 210 + int(7 * math.sin(t * 4.2)))
+            lambda t: (90, int(158 + 4 * math.sin(t * 3.6)))
+        ).with_effects([vfx.FadeIn(0.25)])
+    if item["action"] == "listen":
+        other = ImageClip(str(POSES / "byeori-worried.png"), duration=duration).resized(
+            lambda t: 0.97 + 0.025 * math.sin(t * 3.3)
+        ).resized(height=310)
+        return other.with_position(
+            lambda t: (840 + int(5 * math.sin(t * 2.2)), 210 + int(8 * math.sin(t * 4.2)))
         )
     return None
 
@@ -188,18 +220,22 @@ def main():
     async def audio_setup():
         tasks = []
         for index, item in enumerate(DIALOGUE, start=1):
-            tasks.append(create_voice(item, WORK / f"voice-{index:02d}.mp3"))
-        await asyncio.gather(*tasks)
-        await create_voice_auditions()
+            voice_path = WORK / f"voice-{index:02d}.mp3"
+            if not voice_path.exists():
+                tasks.append(create_voice(item, voice_path))
+        if tasks:
+            await asyncio.gather(*tasks)
 
     asyncio.run(audio_setup())
 
     scenes = []
     opened_audio = []
     for index, item in enumerate(DIALOGUE, start=1):
-        audio = AudioFileClip(str(WORK / f"voice-{index:02d}.mp3")).with_volume_scaled(1.08)
+        audio = AudioFileClip(str(WORK / f"voice-{index:02d}.mp3")).with_volume_scaled(
+            0.92 if item["speaker"] == "루니" else 0.98
+        )
         opened_audio.append(audio)
-        duration = audio.duration + 0.65
+        duration = audio.duration + 0.48
         background = ImageClip(str(background_path), duration=duration).resized(
             lambda t: 1.0 + 0.018 * min(t / max(duration, 0.1), 1)
         ).with_position("center")
@@ -216,12 +252,12 @@ def main():
         )
         layers.append(subtitle)
         scene = CompositeVideoClip(layers, size=PREVIEW_SIZE).with_duration(duration).with_audio(audio)
-        scene = scene.with_effects([vfx.FadeIn(0.16), vfx.FadeOut(0.12)])
+        scene = scene.with_effects([vfx.FadeIn(0.12), vfx.FadeOut(0.1)])
         scenes.append(scene)
 
     video = concatenate_videoclips(scenes, method="compose")
     video.write_videofile(
-        str(OUTPUT / "luni-model-preview.mp4"),
+        str(OUTPUT / "luni-model-preview-v2.mp4"),
         fps=FPS,
         codec="libx264",
         audio_codec="aac",

@@ -2,7 +2,6 @@ import asyncio
 import math
 from pathlib import Path
 
-import edge_tts
 import numpy as np
 from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont
 from moviepy import (
@@ -295,6 +294,8 @@ def make_frame(scene, index, include_characters=True):
 
 
 async def create_voice(scene, path):
+    import edge_tts
+
     communicate = edge_tts.Communicate(
         scene["text"],
         scene["voice"],
