@@ -1,4 +1,4 @@
-# Modèle de scénario · épisode de 5 minutes
+# Modèle de scénario · épisode de 3 minutes
 
 ## Informations
 
@@ -11,7 +11,7 @@
 - Synopsis en français :
 - Phrase coréenne à faire répéter :
 
-## 1. Introduction · 00:00–00:30
+## 1. Introduction · 00:00–00:20
 
 Présenter immédiatement le lieu et le moment de la journée.
 
@@ -20,13 +20,13 @@ Présenter immédiatement le lieu et le moment de la journée.
 Luni : Bonjour les amis ! Que va-t-il se passer aujourd’hui au pays de la Lune ?
 ```
 
-## 2. Problème · 00:30–01:30
+## 2. Problème · 00:20–00:55
 
 - Montrer un problème compréhensible sans explication longue.
 - Nommer clairement l’émotion du personnage.
 - Poser une question simple au spectateur.
 
-## 3. Aventure · 01:30–03:30
+## 3. Aventure · 00:55–02:10
 
 ### Premier essai
 
@@ -45,7 +45,7 @@ Luni : Bonjour les amis ! Que va-t-il se passer aujourd’hui au pays de la Lune
 - Rôle de chaque personnage :
 - Découverte qui mène à la solution :
 
-## 4. Solution · 03:30–04:30
+## 4. Solution · 02:10–02:40
 
 - Résoudre l’événement.
 - Dire comment l’émotion a changé.
@@ -56,7 +56,7 @@ Luni : Bonjour les amis ! Que va-t-il se passer aujourd’hui au pays de la Lune
 Luni : En avançant doucement tous ensemble, nous avons réussi !
 ```
 
-## 5. Chanson · 04:30–05:00
+## 5. Chanson · 02:40–03:00
 
 Quatre mesures maximum, avec deux répétitions de la phrase essentielle.
 
@@ -74,7 +74,7 @@ Quatre mesures maximum, avec deux répétitions de la phrase essentielle.
 
 ## Contrôle final
 
-- Lecture comprise entre 4 min 30 et 5 min
+- Durée finale comprise entre 2 min 50 et 3 min 10
 - Coréen naturel et adapté aux enfants
 - Traduction française présente dans le document de travail
 - Personnages visuellement cohérents

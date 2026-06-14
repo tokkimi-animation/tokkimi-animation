@@ -16,7 +16,7 @@ Les documents de pilotage sont rédigés en **français** pour faciliter la prod
 - 8 personnages officiels et leur univers
 - 100 idées d’épisodes uniques réparties en 4 saisons
 - site adaptatif prêt pour GitHub Pages
-- structure d’un épisode de 5 minutes
+- structure d’un épisode de 3 minutes
 - modèle de scénario et prompts de génération visuelle
 
 ## Aperçu local

@@ -5,7 +5,15 @@ from pathlib import Path
 import edge_tts
 import numpy as np
 from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont
-from moviepy import AudioArrayClip, AudioFileClip, CompositeAudioClip, ImageClip, concatenate_videoclips
+from moviepy import (
+    AudioArrayClip,
+    AudioFileClip,
+    CompositeAudioClip,
+    CompositeVideoClip,
+    ImageClip,
+    concatenate_videoclips,
+    vfx,
+)
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -14,7 +22,7 @@ CHARACTERS = ROOT / "assets" / "characters"
 WORK = EPISODE / "build"
 OUTPUT = ROOT / "ready-to-upload" / "EP001"
 SIZE = (1920, 1080)
-FPS = 24
+FPS = 12
 
 FONT_BOLD = ImageFont.truetype(r"C:\Windows\Fonts\malgunbd.ttf", 64)
 FONT_BODY = ImageFont.truetype(r"C:\Windows\Fonts\malgun.ttf", 48)
@@ -250,14 +258,15 @@ def paste_character(canvas, name, x_ratio, y_ratio, height_ratio):
     canvas.alpha_composite(character, (x, y))
 
 
-def make_frame(scene, index):
+def make_frame(scene, index, include_characters=True):
     frame = make_background(scene["place"])
     draw = ImageDraw.Draw(frame, "RGBA")
 
-    for name, x, y, height in scene.get("characters", []):
-        paste_character(frame, name, x, y, height)
+    if include_characters:
+        for name, x, y, height in scene.get("characters", []):
+            paste_character(frame, name, x, y, height)
 
-    if scene.get("small_star"):
+    if include_characters and scene.get("small_star"):
         paste_character(frame, "byeori", 0.48, 0.52, 0.15)
 
     if scene.get("stone"):
@@ -307,14 +316,64 @@ async def build_audio():
 
 
 def music_track(duration, sample_rate=44100):
-    t = np.linspace(0, duration, int(sample_rate * duration), endpoint=False)
-    notes = [261.63, 329.63, 392.00, 523.25]
-    signal = np.zeros_like(t)
-    for i, frequency in enumerate(notes):
-        signal += 0.025 * np.sin(2 * math.pi * frequency * t + i)
-    envelope = 0.65 + 0.35 * np.sin(2 * math.pi * 0.08 * t)
-    stereo = np.column_stack([signal * envelope, signal * envelope]).astype(np.float32)
+    total_samples = int(sample_rate * duration)
+    signal = np.zeros(total_samples, dtype=np.float64)
+    chords = [
+        (196.00, 246.94, 293.66),
+        (174.61, 220.00, 261.63),
+        (146.83, 196.00, 246.94),
+        (164.81, 207.65, 246.94),
+    ]
+    melody = [392.00, 440.00, 493.88, 587.33, 493.88, 440.00, 392.00, 329.63]
+    measure = 4.0
+
+    def add_tone(start, length, frequency, amplitude, harmonic=0.08):
+        first = max(0, int(start * sample_rate))
+        last = min(total_samples, int((start + length) * sample_rate))
+        if last <= first:
+            return
+        local_t = np.arange(last - first) / sample_rate
+        attack = np.minimum(local_t / 0.35, 1.0)
+        release = np.minimum((length - local_t) / 0.8, 1.0)
+        envelope = np.clip(attack * release, 0, 1)
+        wave = np.sin(2 * math.pi * frequency * local_t)
+        wave += harmonic * np.sin(2 * math.pi * frequency * 2 * local_t)
+        signal[first:last] += amplitude * envelope * wave
+
+    measure_count = math.ceil(duration / measure)
+    for measure_index in range(measure_count):
+        start = measure_index * measure
+        chord = chords[measure_index % len(chords)]
+        for frequency in chord:
+            add_tone(start, 3.7, frequency, 0.012, harmonic=0.02)
+        for beat in range(4):
+            note = melody[(measure_index * 4 + beat) % len(melody)]
+            add_tone(start + beat, 0.72, note, 0.020, harmonic=0.12)
+
+    fade = min(int(sample_rate * 2), total_samples // 2)
+    if fade:
+        signal[:fade] *= np.linspace(0, 1, fade)
+        signal[-fade:] *= np.linspace(1, 0, fade)
+    signal = np.tanh(signal * 1.4) * 0.55
+    stereo = np.column_stack([signal, signal]).astype(np.float32)
     return stereo, sample_rate
+
+
+def character_clip(name, x_ratio, y_ratio, height_ratio, duration, seed):
+    base_x = int(SIZE[0] * x_ratio)
+    base_y = int(SIZE[1] * y_ratio)
+    target_height = int(SIZE[1] * height_ratio)
+    phase = seed * 0.83
+    amplitude = 7 + (seed % 4) * 2
+    clip = ImageClip(str(CHARACTERS / f"{name}.png"), duration=duration)
+    clip = clip.resized(height=target_height)
+    clip = clip.with_position(
+        lambda t: (
+            base_x + int(5 * math.sin(t * 0.9 + phase)),
+            base_y + int(amplitude * math.sin(t * 1.45 + phase)),
+        )
+    )
+    return clip.with_effects([vfx.FadeIn(0.7), vfx.FadeOut(0.5)])
 
 
 def main():
@@ -325,12 +384,19 @@ def main():
     clips = []
     audios = []
     for index, scene in enumerate(SCENES, start=1):
-        frame_path = WORK / f"frame-{index:02d}.jpg"
+        frame_path = WORK / f"animated-bg-{index:02d}.jpg"
         if not frame_path.exists():
-            make_frame(scene, index).save(frame_path, quality=94)
-        audio = AudioFileClip(str(WORK / f"voice-{index:02d}.mp3"))
+            make_frame(scene, index, include_characters=False).save(frame_path, quality=94)
+        audio = AudioFileClip(str(WORK / f"voice-{index:02d}.mp3")).with_volume_scaled(1.12)
         duration = max(audio.duration + 8.0, 18.0)
-        clip = ImageClip(str(frame_path), duration=duration).with_audio(audio)
+        background = ImageClip(str(frame_path), duration=duration)
+        layers = [background]
+        for character_index, (name, x, y, height) in enumerate(scene.get("characters", [])):
+            layers.append(character_clip(name, x, y, height, duration, index * 5 + character_index))
+        if scene.get("small_star"):
+            layers.append(character_clip("byeori", 0.48, 0.52, 0.15, duration, index * 7))
+        clip = CompositeVideoClip(layers, size=SIZE).with_duration(duration).with_audio(audio)
+        clip = clip.with_effects([vfx.FadeIn(0.5), vfx.FadeOut(0.5)])
         clips.append(clip)
         audios.append(audio)
 
@@ -347,8 +413,8 @@ def main():
         fps=FPS,
         codec="libx264",
         audio_codec="aac",
-        preset="medium",
-        bitrate="5000k",
+        preset="ultrafast",
+        bitrate="3500k",
         threads=4,
     )
 

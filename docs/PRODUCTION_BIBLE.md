@@ -9,7 +9,7 @@ La série est produite et diffusée **en coréen**. Ce document de travail est e
 ## Public et ton
 
 - Public principal : enfants de 3 à 7 ans
-- Durée : 5 minutes
+- Durée : environ 3 minutes à partir de l’épisode 2
 - Langue de diffusion : coréen naturel, court et facile à répéter
 - Ambiance : chaleureuse, rassurante, drôle et légèrement magique
 - Résolution : dialogue, observation et coopération plutôt que punition
@@ -35,15 +35,15 @@ La série est produite et diffusée **en coréen**. Ce document de travail est e
 3. **Le monde magique, épisodes 51 à 75** : rêves, imagination, temps, récits et connaissance de soi.
 4. **Grandir ensemble, épisodes 76 à 100** : confiance, limites, conflits, responsabilité et communauté.
 
-## Format de 5 minutes
+## Format de 3 minutes
 
 | Temps | Fonction |
 |---|---|
-| 00:00–00:30 | salutation de Luni et question du jour |
-| 00:30–01:30 | apparition d’un problème simple et visuel |
-| 01:30–03:30 | deux ou trois essais avec les amis |
-| 03:30–04:30 | solution, émotion et apprentissage |
-| 04:30–05:00 | chanson finale facile à reprendre |
+| 00:00–00:20 | salutation de Luni et question du jour |
+| 00:20–00:55 | apparition d’un problème simple et visuel |
+| 00:55–02:10 | deux essais dynamiques avec les amis |
+| 02:10–02:40 | solution, émotion et apprentissage |
+| 02:40–03:00 | chanson finale facile à reprendre |
 
 ## Décors réutilisables
 
