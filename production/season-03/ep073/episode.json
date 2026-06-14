@@ -7,7 +7,7 @@
   "repeat_phrase": "환경, 우리 함께 천천히 해 보자!",
   "characters": [
     "루니",
-    "밤밤"
+    "별이"
   ],
   "scenes": [
     {
@@ -21,7 +21,7 @@
     },
     {
       "duration": 9,
-      "speaker": "밤밤",
+      "speaker": "별이",
       "voice": "ko-KR-SunHiNeural",
       "text": "루니야, 여기 도움이 필요한 일이 생겼어. 섬을 지키기 위해 쓰레기를 줄이고 망가진 곳을 함께 돌봐요.",
       "fr": "Un problème est arrivé : 섬을 지키기 위해 쓰레기를 줄이고 망가진 곳을 함께 돌봐요.",
@@ -39,10 +39,10 @@
     },
     {
       "duration": 10,
-      "speaker": "밤밤",
+      "speaker": "별이",
       "voice": "ko-KR-SunHiNeural",
-      "text": "마음을 천천히 말해도 괜찮아.",
-      "fr": "On peut prendre son temps pour parler de ses émotions.",
+      "text": "생각을 차근차근 정리해 보자.",
+      "fr": "Réfléchissons étape par étape.",
       "pose": "thinking",
       "action": "point-clues"
     },
@@ -75,7 +75,7 @@
     },
     {
       "duration": 8,
-      "speaker": "밤밤",
+      "speaker": "별이",
       "voice": "ko-KR-SunHiNeural",
       "text": "환경, 우리 함께 천천히 해 보자!",
       "fr": "환경 : avançons doucement ensemble.",
@@ -102,7 +102,7 @@
     },
     {
       "duration": 11,
-      "speaker": "밤밤",
+      "speaker": "별이",
       "voice": "ko-KR-SunHiNeural",
       "text": "이번에는 서로의 생각을 잘 듣고 힘을 모아 보자.",
       "fr": "Cette fois, écoutons les idées de chacun et unissons nos forces.",
@@ -138,7 +138,7 @@
     },
     {
       "duration": 10,
-      "speaker": "밤밤",
+      "speaker": "별이",
       "voice": "ko-KR-SunHiNeural",
       "text": "해냈어! 아까 걱정하던 마음이 이제 편안하고 기뻐졌어.",
       "fr": "Nous avons réussi ! L’inquiétude a laissé place à la joie.",

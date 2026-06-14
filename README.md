@@ -43,6 +43,9 @@ Ouvrir ensuite `http://localhost:8000`.
 
 ## État du projet
 
-Ce dépôt constitue un pack de préproduction. Les 100 épisodes possèdent un titre coréen, un thème éducatif et un synopsis. Avant la diffusion, chaque épisode devra recevoir un scénario coréen final, un storyboard, des voix, une musique et une validation adaptée aux contenus pour enfants.
+- Les 100 épisodes possèdent leur scénario coréen, leur contrôle français et leur texte YouTube.
+- Le moteur de production fabrique automatiquement vidéo, voix, musique, sous-titres, miniature et archive de publication.
+- Les rendus terminés sont rangés localement dans `ready-to-upload/`, dossier exclu de GitHub en raison de la taille des vidéos.
+- Le site public présente la série en coréen et utilise le logo officiel Tokkimi.
 
 © 2026 Luni Studio.

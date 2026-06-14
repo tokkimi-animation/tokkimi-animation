@@ -17,7 +17,7 @@
 
 ### Plan 02 · 9 s
 
-**별이**  
+**콩콩**  
 루니야, 여기 도움이 필요한 일이 생겼어. 낯선 섬의 인사법과 식사 예절을 존중하며 새 친구를 만나요.
 
 *Contrôle français : Un problème est arrivé : 낯선 섬의 인사법과 식사 예절을 존중하며 새 친구를 만나요.*
@@ -31,10 +31,10 @@
 
 ### Plan 04 · 10 s
 
-**별이**  
-생각을 차근차근 정리해 보자.
+**콩콩**  
+내가 먼저 살펴보고 올게!
 
-*Contrôle français : Réfléchissons étape par étape.*
+*Contrôle français : Je vais regarder le chemin en premier.*
 
 ### Plan 05 · 10 s
 
@@ -59,7 +59,7 @@
 
 ### Plan 08 · 8 s
 
-**별이**  
+**콩콩**  
 예절, 우리 함께 천천히 해 보자!
 
 *Contrôle français : 예절 : avançons doucement ensemble.*
@@ -80,7 +80,7 @@
 
 ### Plan 11 · 11 s
 
-**별이**  
+**콩콩**  
 이번에는 서로의 생각을 잘 듣고 힘을 모아 보자.
 
 *Contrôle français : Cette fois, écoutons les idées de chacun et unissons nos forces.*
@@ -108,7 +108,7 @@
 
 ### Plan 15 · 10 s
 
-**별이**  
+**콩콩**  
 해냈어! 아까 걱정하던 마음이 이제 편안하고 기뻐졌어.
 
 *Contrôle français : Nous avons réussi ! L’inquiétude a laissé place à la joie.*

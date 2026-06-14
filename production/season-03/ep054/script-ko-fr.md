@@ -17,7 +17,7 @@
 
 ### Plan 02 · 9 s
 
-**토리**  
+**콩콩**  
 루니야, 여기 도움이 필요한 일이 생겼어. 미완성 그림 세계에서 색과 선을 더해 몽이가 나올 길을 만들어요.
 
 *Contrôle français : Un problème est arrivé : 미완성 그림 세계에서 색과 선을 더해 몽이가 나올 길을 만들어요.*
@@ -31,10 +31,10 @@
 
 ### Plan 04 · 10 s
 
-**토리**  
-새로운 방법을 만들어 보자!
+**콩콩**  
+내가 먼저 살펴보고 올게!
 
-*Contrôle français : Inventons une nouvelle méthode.*
+*Contrôle français : Je vais regarder le chemin en premier.*
 
 ### Plan 05 · 10 s
 
@@ -59,7 +59,7 @@
 
 ### Plan 08 · 8 s
 
-**토리**  
+**콩콩**  
 예술, 우리 함께 천천히 해 보자!
 
 *Contrôle français : 예술 : avançons doucement ensemble.*
@@ -80,7 +80,7 @@
 
 ### Plan 11 · 11 s
 
-**토리**  
+**콩콩**  
 이번에는 서로의 생각을 잘 듣고 힘을 모아 보자.
 
 *Contrôle français : Cette fois, écoutons les idées de chacun et unissons nos forces.*
@@ -108,7 +108,7 @@
 
 ### Plan 15 · 10 s
 
-**토리**  
+**콩콩**  
 해냈어! 아까 걱정하던 마음이 이제 편안하고 기뻐졌어.
 
 *Contrôle français : Nous avons réussi ! L’inquiétude a laissé place à la joie.*

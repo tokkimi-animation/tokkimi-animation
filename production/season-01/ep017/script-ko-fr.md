@@ -17,7 +17,7 @@
 
 ### Plan 02 · 9 s
 
-**콩콩**  
+**별이**  
 루니야, 여기 도움이 필요한 일이 생겼어. 따뜻한 차와 차가운 눈꽃을 안전하게 비교하며 감각을 표현해요.
 
 *Contrôle français : Un problème est arrivé : 따뜻한 차와 차가운 눈꽃을 안전하게 비교하며 감각을 표현해요.*
@@ -31,10 +31,10 @@
 
 ### Plan 04 · 10 s
 
-**콩콩**  
-내가 먼저 살펴보고 올게!
+**별이**  
+생각을 차근차근 정리해 보자.
 
-*Contrôle français : Je vais regarder le chemin en premier.*
+*Contrôle français : Réfléchissons étape par étape.*
 
 ### Plan 05 · 10 s
 
@@ -59,7 +59,7 @@
 
 ### Plan 08 · 8 s
 
-**콩콩**  
+**별이**  
 감각, 우리 함께 천천히 해 보자!
 
 *Contrôle français : 감각 : avançons doucement ensemble.*
@@ -80,7 +80,7 @@
 
 ### Plan 11 · 11 s
 
-**콩콩**  
+**별이**  
 이번에는 서로의 생각을 잘 듣고 힘을 모아 보자.
 
 *Contrôle français : Cette fois, écoutons les idées de chacun et unissons nos forces.*
@@ -108,7 +108,7 @@
 
 ### Plan 15 · 10 s
 
-**콩콩**  
+**별이**  
 해냈어! 아까 걱정하던 마음이 이제 편안하고 기뻐졌어.
 
 *Contrôle français : Nous avons réussi ! L’inquiétude a laissé place à la joie.*

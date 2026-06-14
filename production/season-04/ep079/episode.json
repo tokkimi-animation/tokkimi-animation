@@ -7,7 +7,7 @@
   "repeat_phrase": "사과, 우리 함께 천천히 해 보자!",
   "characters": [
     "루니",
-    "밤밤"
+    "달할머니"
   ],
   "scenes": [
     {
@@ -21,7 +21,7 @@
     },
     {
       "duration": 9,
-      "speaker": "밤밤",
+      "speaker": "달할머니",
       "voice": "ko-KR-SunHiNeural",
       "text": "루니야, 여기 도움이 필요한 일이 생겼어. 장난으로 상처 준 몽이가 변명하지 않고 마음을 전해요.",
       "fr": "Un problème est arrivé : 장난으로 상처 준 몽이가 변명하지 않고 마음을 전해요.",
@@ -39,10 +39,10 @@
     },
     {
       "duration": 10,
-      "speaker": "밤밤",
+      "speaker": "달할머니",
       "voice": "ko-KR-SunHiNeural",
-      "text": "마음을 천천히 말해도 괜찮아.",
-      "fr": "On peut prendre son temps pour parler de ses émotions.",
+      "text": "서두르지 말고 마음속 달빛을 따라가 보렴.",
+      "fr": "Ne vous pressez pas, suivez doucement la lumière dans votre cœur.",
       "pose": "thinking",
       "action": "point-clues"
     },
@@ -75,7 +75,7 @@
     },
     {
       "duration": 8,
-      "speaker": "밤밤",
+      "speaker": "달할머니",
       "voice": "ko-KR-SunHiNeural",
       "text": "사과, 우리 함께 천천히 해 보자!",
       "fr": "사과 : avançons doucement ensemble.",
@@ -102,7 +102,7 @@
     },
     {
       "duration": 11,
-      "speaker": "밤밤",
+      "speaker": "달할머니",
       "voice": "ko-KR-SunHiNeural",
       "text": "이번에는 서로의 생각을 잘 듣고 힘을 모아 보자.",
       "fr": "Cette fois, écoutons les idées de chacun et unissons nos forces.",
@@ -138,7 +138,7 @@
     },
     {
       "duration": 10,
-      "speaker": "밤밤",
+      "speaker": "달할머니",
       "voice": "ko-KR-SunHiNeural",
       "text": "해냈어! 아까 걱정하던 마음이 이제 편안하고 기뻐졌어.",
       "fr": "Nous avons réussi ! L’inquiétude a laissé place à la joie.",

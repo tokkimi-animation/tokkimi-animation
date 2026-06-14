@@ -7,7 +7,7 @@
   "repeat_phrase": "기다림, 우리 함께 천천히 해 보자!",
   "characters": [
     "루니",
-    "밤밤"
+    "토리"
   ],
   "scenes": [
     {
@@ -21,7 +21,7 @@
     },
     {
       "duration": 9,
-      "speaker": "밤밤",
+      "speaker": "토리",
       "voice": "ko-KR-SunHiNeural",
       "text": "루니야, 여기 도움이 필요한 일이 생겼어. 매일 씨앗을 돌보며 자라는 일에는 시간이 필요함을 배워요.",
       "fr": "Un problème est arrivé : 매일 씨앗을 돌보며 자라는 일에는 시간이 필요함을 배워요.",
@@ -39,10 +39,10 @@
     },
     {
       "duration": 10,
-      "speaker": "밤밤",
+      "speaker": "토리",
       "voice": "ko-KR-SunHiNeural",
-      "text": "마음을 천천히 말해도 괜찮아.",
-      "fr": "On peut prendre son temps pour parler de ses émotions.",
+      "text": "새로운 방법을 만들어 보자!",
+      "fr": "Inventons une nouvelle méthode.",
       "pose": "thinking",
       "action": "point-clues"
     },
@@ -75,7 +75,7 @@
     },
     {
       "duration": 8,
-      "speaker": "밤밤",
+      "speaker": "토리",
       "voice": "ko-KR-SunHiNeural",
       "text": "기다림, 우리 함께 천천히 해 보자!",
       "fr": "기다림 : avançons doucement ensemble.",
@@ -102,7 +102,7 @@
     },
     {
       "duration": 11,
-      "speaker": "밤밤",
+      "speaker": "토리",
       "voice": "ko-KR-SunHiNeural",
       "text": "이번에는 서로의 생각을 잘 듣고 힘을 모아 보자.",
       "fr": "Cette fois, écoutons les idées de chacun et unissons nos forces.",
@@ -138,7 +138,7 @@
     },
     {
       "duration": 10,
-      "speaker": "밤밤",
+      "speaker": "토리",
       "voice": "ko-KR-SunHiNeural",
       "text": "해냈어! 아까 걱정하던 마음이 이제 편안하고 기뻐졌어.",
       "fr": "Nous avons réussi ! L’inquiétude a laissé place à la joie.",

@@ -1,3 +1,4 @@
+import argparse
 import json
 from pathlib import Path
 
@@ -13,6 +14,7 @@ FRIENDS = [
     ("토리", "새로운 방법을 만들어 보자!", "Inventons une nouvelle méthode."),
     ("밤밤", "마음을 천천히 말해도 괜찮아.", "On peut prendre son temps pour parler de ses émotions."),
     ("루미", "좋은 질문을 하면 길이 보일 거야.", "Une bonne question nous montrera le chemin."),
+    ("달할머니", "서두르지 말고 마음속 달빛을 따라가 보렴.", "Ne vous pressez pas, suivez doucement la lumière dans votre cœur."),
 ]
 
 LOCATIONS = [
@@ -136,6 +138,9 @@ def script_markdown(episode, data):
 
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--force-from", type=int)
+    args = parser.parse_args()
     catalog = json.loads(CATALOG.read_text(encoding="utf-8"))
     generated = 0
     for episode in catalog["episodes"]:
@@ -149,7 +154,9 @@ def main():
             / f"ep{number:03d}"
         )
         spec_path = directory / "episode.json"
-        if spec_path.exists():
+        if spec_path.exists() and not (
+            args.force_from is not None and number >= args.force_from
+        ):
             continue
 
         friend = FRIENDS[(number - 3) % len(FRIENDS)][0]

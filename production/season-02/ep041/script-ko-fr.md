@@ -17,7 +17,7 @@
 
 ### Plan 02 · 9 s
 
-**콩콩**  
+**토리**  
 루니야, 여기 도움이 필요한 일이 생겼어. 작은 소동 앞에서 멈추고 생각한 뒤 차분하게 모두를 도와요.
 
 *Contrôle français : Un problème est arrivé : 작은 소동 앞에서 멈추고 생각한 뒤 차분하게 모두를 도와요.*
@@ -31,10 +31,10 @@
 
 ### Plan 04 · 10 s
 
-**콩콩**  
-내가 먼저 살펴보고 올게!
+**토리**  
+새로운 방법을 만들어 보자!
 
-*Contrôle français : Je vais regarder le chemin en premier.*
+*Contrôle français : Inventons une nouvelle méthode.*
 
 ### Plan 05 · 10 s
 
@@ -59,7 +59,7 @@
 
 ### Plan 08 · 8 s
 
-**콩콩**  
+**토리**  
 침착, 우리 함께 천천히 해 보자!
 
 *Contrôle français : 침착 : avançons doucement ensemble.*
@@ -80,7 +80,7 @@
 
 ### Plan 11 · 11 s
 
-**콩콩**  
+**토리**  
 이번에는 서로의 생각을 잘 듣고 힘을 모아 보자.
 
 *Contrôle français : Cette fois, écoutons les idées de chacun et unissons nos forces.*
@@ -108,7 +108,7 @@
 
 ### Plan 15 · 10 s
 
-**콩콩**  
+**토리**  
 해냈어! 아까 걱정하던 마음이 이제 편안하고 기뻐졌어.
 
 *Contrôle français : Nous avons réussi ! L’inquiétude a laissé place à la joie.*

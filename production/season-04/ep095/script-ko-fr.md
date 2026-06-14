@@ -17,7 +17,7 @@
 
 ### Plan 02 · 9 s
 
-**콩콩**  
+**몽이**  
 루니야, 여기 도움이 필요한 일이 생겼어. 혼자 하기 어려운 일을 인정하고 알맞은 사람에게 도움을 청해요.
 
 *Contrôle français : Un problème est arrivé : 혼자 하기 어려운 일을 인정하고 알맞은 사람에게 도움을 청해요.*
@@ -31,10 +31,10 @@
 
 ### Plan 04 · 10 s
 
-**콩콩**  
-내가 먼저 살펴보고 올게!
+**몽이**  
+실수해도 웃으며 다시 해 보면 돼!
 
-*Contrôle français : Je vais regarder le chemin en premier.*
+*Contrôle français : On peut sourire et recommencer après une erreur.*
 
 ### Plan 05 · 10 s
 
@@ -59,7 +59,7 @@
 
 ### Plan 08 · 8 s
 
-**콩콩**  
+**몽이**  
 도움 요청, 우리 함께 천천히 해 보자!
 
 *Contrôle français : 도움 요청 : avançons doucement ensemble.*
@@ -80,7 +80,7 @@
 
 ### Plan 11 · 11 s
 
-**콩콩**  
+**몽이**  
 이번에는 서로의 생각을 잘 듣고 힘을 모아 보자.
 
 *Contrôle français : Cette fois, écoutons les idées de chacun et unissons nos forces.*
@@ -108,7 +108,7 @@
 
 ### Plan 15 · 10 s
 
-**콩콩**  
+**몽이**  
 해냈어! 아까 걱정하던 마음이 이제 편안하고 기뻐졌어.
 
 *Contrôle français : Nous avons réussi ! L’inquiétude a laissé place à la joie.*

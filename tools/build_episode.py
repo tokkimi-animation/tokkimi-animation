@@ -285,6 +285,8 @@ async def create_voice(scene, path):
         rate, pitch, volume = "+8%", "+3Hz", "-6%"
     elif speaker == "몽이":
         rate, pitch, volume = "+9%", "-1Hz", "-5%"
+    elif speaker == "달할머니":
+        rate, pitch, volume = "+3%", "-2Hz", "-7%"
     elif speaker in {"모두", "노래"}:
         rate, pitch, volume = "+6%", "+2Hz", "-6%"
 
@@ -376,9 +378,14 @@ def make_thumbnail(data, output):
     luni = Image.open(CHARACTERS / "luni.png").convert("RGBA")
     luni.thumbnail((400, 500), Image.Resampling.LANCZOS)
     canvas.alpha_composite(luni, (60, 170))
-    mongi = Image.open(CHARACTERS / "mongi.png").convert("RGBA")
-    mongi.thumbnail((290, 320), Image.Resampling.LANCZOS)
-    canvas.alpha_composite(mongi, (920, 300))
+    friend_name = next(
+        (name for name in data.get("characters", []) if name != "루니"),
+        "몽이",
+    )
+    friend_asset = FRIEND_ASSET.get(friend_name, "mongi")
+    friend = Image.open(CHARACTERS / f"{friend_asset}.png").convert("RGBA")
+    friend.thumbnail((310, 360), Image.Resampling.LANCZOS)
+    canvas.alpha_composite(friend, (920, 660 - friend.height))
 
     draw = ImageDraw.Draw(canvas, "RGBA")
     draw.rounded_rectangle((355, 105, 1050, 275), radius=44, fill=(255, 249, 231, 235))

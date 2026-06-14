@@ -17,7 +17,7 @@
 
 ### Plan 02 · 9 s
 
-**몽이**  
+**루미**  
 루니야, 여기 도움이 필요한 일이 생겼어. 마음에 따라 바뀌는 숲의 색을 보며 감정의 이름을 찾아요.
 
 *Contrôle français : Un problème est arrivé : 마음에 따라 바뀌는 숲의 색을 보며 감정의 이름을 찾아요.*
@@ -31,10 +31,10 @@
 
 ### Plan 04 · 10 s
 
-**몽이**  
-실수해도 웃으며 다시 해 보면 돼!
+**루미**  
+좋은 질문을 하면 길이 보일 거야.
 
-*Contrôle français : On peut sourire et recommencer après une erreur.*
+*Contrôle français : Une bonne question nous montrera le chemin.*
 
 ### Plan 05 · 10 s
 
@@ -59,7 +59,7 @@
 
 ### Plan 08 · 8 s
 
-**몽이**  
+**루미**  
 감정 조절, 우리 함께 천천히 해 보자!
 
 *Contrôle français : 감정 조절 : avançons doucement ensemble.*
@@ -80,7 +80,7 @@
 
 ### Plan 11 · 11 s
 
-**몽이**  
+**루미**  
 이번에는 서로의 생각을 잘 듣고 힘을 모아 보자.
 
 *Contrôle français : Cette fois, écoutons les idées de chacun et unissons nos forces.*
@@ -108,7 +108,7 @@
 
 ### Plan 15 · 10 s
 
-**몽이**  
+**루미**  
 해냈어! 아까 걱정하던 마음이 이제 편안하고 기뻐졌어.
 
 *Contrôle français : Nous avons réussi ! L’inquiétude a laissé place à la joie.*

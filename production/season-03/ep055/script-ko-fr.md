@@ -17,7 +17,7 @@
 
 ### Plan 02 · 9 s
 
-**밤밤**  
+**토리**  
 루니야, 여기 도움이 필요한 일이 생겼어. 똑같이 생긴 마법 복제와 만나 나만의 선택과 기억을 소중히 여겨요.
 
 *Contrôle français : Un problème est arrivé : 똑같이 생긴 마법 복제와 만나 나만의 선택과 기억을 소중히 여겨요.*
@@ -31,10 +31,10 @@
 
 ### Plan 04 · 10 s
 
-**밤밤**  
-마음을 천천히 말해도 괜찮아.
+**토리**  
+새로운 방법을 만들어 보자!
 
-*Contrôle français : On peut prendre son temps pour parler de ses émotions.*
+*Contrôle français : Inventons une nouvelle méthode.*
 
 ### Plan 05 · 10 s
 
@@ -59,7 +59,7 @@
 
 ### Plan 08 · 8 s
 
-**밤밤**  
+**토리**  
 정체성, 우리 함께 천천히 해 보자!
 
 *Contrôle français : 정체성 : avançons doucement ensemble.*
@@ -80,7 +80,7 @@
 
 ### Plan 11 · 11 s
 
-**밤밤**  
+**토리**  
 이번에는 서로의 생각을 잘 듣고 힘을 모아 보자.
 
 *Contrôle français : Cette fois, écoutons les idées de chacun et unissons nos forces.*
@@ -108,7 +108,7 @@
 
 ### Plan 15 · 10 s
 
-**밤밤**  
+**토리**  
 해냈어! 아까 걱정하던 마음이 이제 편안하고 기뻐졌어.
 
 *Contrôle français : Nous avons réussi ! L’inquiétude a laissé place à la joie.*

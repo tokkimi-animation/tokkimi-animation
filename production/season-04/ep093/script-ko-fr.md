@@ -17,7 +17,7 @@
 
 ### Plan 02 · 9 s
 
-**별이**  
+**달할머니**  
 루니야, 여기 도움이 필요한 일이 생겼어. 모양이 다른 여러 가족이 모두 사랑으로 이어져 있음을 배워요.
 
 *Contrôle français : Un problème est arrivé : 모양이 다른 여러 가족이 모두 사랑으로 이어져 있음을 배워요.*
@@ -31,10 +31,10 @@
 
 ### Plan 04 · 10 s
 
-**별이**  
-생각을 차근차근 정리해 보자.
+**달할머니**  
+서두르지 말고 마음속 달빛을 따라가 보렴.
 
-*Contrôle français : Réfléchissons étape par étape.*
+*Contrôle français : Ne vous pressez pas, suivez doucement la lumière dans votre cœur.*
 
 ### Plan 05 · 10 s
 
@@ -59,7 +59,7 @@
 
 ### Plan 08 · 8 s
 
-**별이**  
+**달할머니**  
 가족 다양성, 우리 함께 천천히 해 보자!
 
 *Contrôle français : 가족 다양성 : avançons doucement ensemble.*
@@ -80,7 +80,7 @@
 
 ### Plan 11 · 11 s
 
-**별이**  
+**달할머니**  
 이번에는 서로의 생각을 잘 듣고 힘을 모아 보자.
 
 *Contrôle français : Cette fois, écoutons les idées de chacun et unissons nos forces.*
@@ -108,7 +108,7 @@
 
 ### Plan 15 · 10 s
 
-**별이**  
+**달할머니**  
 해냈어! 아까 걱정하던 마음이 이제 편안하고 기뻐졌어.
 
 *Contrôle français : Nous avons réussi ! L’inquiétude a laissé place à la joie.*

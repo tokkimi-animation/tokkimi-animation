@@ -17,7 +17,7 @@
 
 ### Plan 02 · 9 s
 
-**별이**  
+**밤밤**  
 루니야, 여기 도움이 필요한 일이 생겼어. 각기 다른 음을 가진 꽃들과 조화로운 노래를 만들어요.
 
 *Contrôle français : Un problème est arrivé : 각기 다른 음을 가진 꽃들과 조화로운 노래를 만들어요.*
@@ -31,10 +31,10 @@
 
 ### Plan 04 · 10 s
 
-**별이**  
-생각을 차근차근 정리해 보자.
+**밤밤**  
+마음을 천천히 말해도 괜찮아.
 
-*Contrôle français : Réfléchissons étape par étape.*
+*Contrôle français : On peut prendre son temps pour parler de ses émotions.*
 
 ### Plan 05 · 10 s
 
@@ -59,7 +59,7 @@
 
 ### Plan 08 · 8 s
 
-**별이**  
+**밤밤**  
 음악, 우리 함께 천천히 해 보자!
 
 *Contrôle français : 음악 : avançons doucement ensemble.*
@@ -80,7 +80,7 @@
 
 ### Plan 11 · 11 s
 
-**별이**  
+**밤밤**  
 이번에는 서로의 생각을 잘 듣고 힘을 모아 보자.
 
 *Contrôle français : Cette fois, écoutons les idées de chacun et unissons nos forces.*
@@ -108,7 +108,7 @@
 
 ### Plan 15 · 10 s
 
-**별이**  
+**밤밤**  
 해냈어! 아까 걱정하던 마음이 이제 편안하고 기뻐졌어.
 
 *Contrôle français : Nous avons réussi ! L’inquiétude a laissé place à la joie.*

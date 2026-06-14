@@ -7,7 +7,7 @@
   "repeat_phrase": "관점, 우리 함께 천천히 해 보자!",
   "characters": [
     "루니",
-    "콩콩"
+    "밤밤"
   ],
   "scenes": [
     {
@@ -21,7 +21,7 @@
     },
     {
       "duration": 9,
-      "speaker": "콩콩",
+      "speaker": "밤밤",
       "voice": "ko-KR-SunHiNeural",
       "text": "루니야, 여기 도움이 필요한 일이 생겼어. 마법 가루로 작아진 루니가 작은 존재의 시선으로 마을을 바라봐요.",
       "fr": "Un problème est arrivé : 마법 가루로 작아진 루니가 작은 존재의 시선으로 마을을 바라봐요.",
@@ -39,10 +39,10 @@
     },
     {
       "duration": 10,
-      "speaker": "콩콩",
+      "speaker": "밤밤",
       "voice": "ko-KR-SunHiNeural",
-      "text": "내가 먼저 살펴보고 올게!",
-      "fr": "Je vais regarder le chemin en premier.",
+      "text": "마음을 천천히 말해도 괜찮아.",
+      "fr": "On peut prendre son temps pour parler de ses émotions.",
       "pose": "thinking",
       "action": "point-clues"
     },
@@ -75,7 +75,7 @@
     },
     {
       "duration": 8,
-      "speaker": "콩콩",
+      "speaker": "밤밤",
       "voice": "ko-KR-SunHiNeural",
       "text": "관점, 우리 함께 천천히 해 보자!",
       "fr": "관점 : avançons doucement ensemble.",
@@ -102,7 +102,7 @@
     },
     {
       "duration": 11,
-      "speaker": "콩콩",
+      "speaker": "밤밤",
       "voice": "ko-KR-SunHiNeural",
       "text": "이번에는 서로의 생각을 잘 듣고 힘을 모아 보자.",
       "fr": "Cette fois, écoutons les idées de chacun et unissons nos forces.",
@@ -138,7 +138,7 @@
     },
     {
       "duration": 10,
-      "speaker": "콩콩",
+      "speaker": "밤밤",
       "voice": "ko-KR-SunHiNeural",
       "text": "해냈어! 아까 걱정하던 마음이 이제 편안하고 기뻐졌어.",
       "fr": "Nous avons réussi ! L’inquiétude a laissé place à la joie.",
