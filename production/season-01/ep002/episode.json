@@ -1,0 +1,164 @@
+{
+  "number": 2,
+  "title": "무지개의 일곱 빛깔",
+  "lesson": "색깔",
+  "duration_target": 180,
+  "location": "무지개 언덕",
+  "repeat_phrase": "색깔을 하나씩 찾아보자!",
+  "characters": ["루니", "별이", "몽이"],
+  "scenes": [
+    {
+      "duration": 10,
+      "speaker": "루니",
+      "voice": "ko-KR-SunHiNeural",
+      "text": "안녕, 친구들! 오늘은 무지개 언덕에 놀러 왔어. 그런데 무지개가 어디 있지?",
+      "fr": "Bonjour les amis ! Nous sommes sur la colline Arc-en-ciel. Mais où est passé l’arc-en-ciel ?",
+      "pose": "welcome",
+      "action": "arrive-and-look"
+    },
+    {
+      "duration": 9,
+      "speaker": "몽이",
+      "voice": "ko-KR-SunHiNeural",
+      "text": "큰일이야! 아침에 재채기를 했더니 무지개 색이 모두 날아가 버렸어.",
+      "fr": "Catastrophe ! J’ai éternué ce matin et toutes les couleurs se sont envolées.",
+      "pose": "worried",
+      "action": "sneeze-reaction"
+    },
+    {
+      "duration": 8,
+      "speaker": "루니",
+      "voice": "ko-KR-SunHiNeural",
+      "text": "괜찮아, 몽이야. 우리 함께 일곱 색깔을 하나씩 찾아보자!",
+      "fr": "Ce n’est pas grave, Mongi. Retrouvons ensemble les sept couleurs.",
+      "pose": "encourage",
+      "action": "hand-to-heart"
+    },
+    {
+      "duration": 10,
+      "speaker": "별이",
+      "voice": "ko-KR-SunHiNeural",
+      "text": "첫 번째 단서는 빨간 사과와 주황색 나비야. 친구들, 어디에 있는지 찾아볼까?",
+      "fr": "Premier indice : une pomme rouge et un papillon orange. Vous les voyez ?",
+      "pose": "thinking",
+      "action": "point-clues"
+    },
+    {
+      "duration": 10,
+      "speaker": "루니",
+      "voice": "ko-KR-SunHiNeural",
+      "text": "찾았다! 빨간 사과, 주황색 나비! 빨강, 주황!",
+      "fr": "Trouvés ! La pomme rouge, le papillon orange ! Rouge, orange !",
+      "pose": "happy",
+      "action": "collect-colors"
+    },
+    {
+      "duration": 9,
+      "speaker": "몽이",
+      "voice": "ko-KR-SunHiNeural",
+      "text": "에취! 이번에는 노란 별빛이 꽃밭으로 날아갔어!",
+      "fr": "Atchoum ! Cette fois, la lumière jaune est partie vers les fleurs.",
+      "pose": "surprised",
+      "action": "small-sneeze"
+    },
+    {
+      "duration": 10,
+      "speaker": "루니",
+      "voice": "ko-KR-SunHiNeural",
+      "text": "노란 해바라기를 찾았어. 그리고 그 옆에는 초록 잎사귀가 있네!",
+      "fr": "Voici le tournesol jaune. Et juste à côté, une feuille verte !",
+      "pose": "point",
+      "action": "kneel-and-point"
+    },
+    {
+      "duration": 8,
+      "speaker": "모두",
+      "voice": "ko-KR-SunHiNeural",
+      "text": "빨강, 주황, 노랑, 초록! 네 가지 색깔!",
+      "fr": "Rouge, orange, jaune, vert ! Quatre couleurs !",
+      "pose": "group-happy",
+      "action": "count-four"
+    },
+    {
+      "duration": 10,
+      "speaker": "별이",
+      "voice": "ko-KR-SunHiNeural",
+      "text": "아직 세 가지가 남았어. 파랑, 남색, 보라를 찾아야 해.",
+      "fr": "Il en reste trois : bleu, indigo et violet.",
+      "pose": "thinking",
+      "action": "show-three"
+    },
+    {
+      "duration": 10,
+      "speaker": "루니",
+      "voice": "ko-KR-SunHiNeural",
+      "text": "파란 시냇물이 보여! 물길을 따라 천천히 가 보자.",
+      "fr": "Je vois un ruisseau bleu ! Suivons-le doucement.",
+      "pose": "running",
+      "action": "follow-stream"
+    },
+    {
+      "duration": 11,
+      "speaker": "몽이",
+      "voice": "ko-KR-SunHiNeural",
+      "text": "깊은 밤하늘처럼 남색인 돌이야. 그런데 마지막 보라색은 안 보여.",
+      "fr": "Cette pierre est indigo comme le ciel de nuit. Mais je ne vois pas le violet.",
+      "pose": "worried",
+      "action": "inspect-stone"
+    },
+    {
+      "duration": 10,
+      "speaker": "루니",
+      "voice": "ko-KR-SunHiNeural",
+      "text": "친구들, 보라색 물건을 찾아 줄래? 맞아, 저기 작은 보라 꽃이 있어!",
+      "fr": "Les amis, trouvez quelque chose de violet. Oui, cette petite fleur !",
+      "pose": "listening",
+      "action": "audience-search"
+    },
+    {
+      "duration": 10,
+      "speaker": "별이",
+      "voice": "ko-KR-SunHiNeural",
+      "text": "일곱 색깔을 모두 찾았어. 순서대로 하늘에 올려 보자!",
+      "fr": "Nous avons les sept couleurs. Plaçons-les dans le ciel dans l’ordre.",
+      "pose": "happy",
+      "action": "raise-colors"
+    },
+    {
+      "duration": 13,
+      "speaker": "모두",
+      "voice": "ko-KR-SunHiNeural",
+      "text": "빨강, 주황, 노랑, 초록, 파랑, 남색, 보라!",
+      "fr": "Rouge, orange, jaune, vert, bleu, indigo, violet !",
+      "pose": "group-cheer",
+      "action": "rainbow-appears"
+    },
+    {
+      "duration": 10,
+      "speaker": "몽이",
+      "voice": "ko-KR-SunHiNeural",
+      "text": "무지개가 돌아왔어! 실수했지만 친구들과 함께 고칠 수 있었어.",
+      "fr": "L’arc-en-ciel est revenu ! J’ai fait une erreur, mais nous l’avons réparée ensemble.",
+      "pose": "relieved",
+      "action": "happy-tears"
+    },
+    {
+      "duration": 10,
+      "speaker": "루니",
+      "voice": "ko-KR-SunHiNeural",
+      "text": "색깔을 하나씩 살펴보면 아름다운 무지개를 만들 수 있어!",
+      "fr": "En observant chaque couleur, nous pouvons former un bel arc-en-ciel.",
+      "pose": "welcome",
+      "action": "rainbow-pose"
+    },
+    {
+      "duration": 22,
+      "speaker": "노래",
+      "voice": "ko-KR-SunHiNeural",
+      "text": "빨주노초 파남보, 일곱 빛깔 찾아요. 루니 루니 달토끼, 친구들과 웃어요.",
+      "fr": "Rouge, orange, jaune, vert, bleu, indigo, violet. Luni rit avec ses amis.",
+      "pose": "dance",
+      "action": "ending-dance"
+    }
+  ]
+}

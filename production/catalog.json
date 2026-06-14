@@ -1,0 +1,2410 @@
+{
+  "series": "달토끼 루니",
+  "language": "ko",
+  "control_language": "fr",
+  "episode_count": 100,
+  "regular_duration": "3 min",
+  "model": "luni-model-preview-v3",
+  "episodes": [
+    {
+      "number": 1,
+      "id": "EP001",
+      "slug": "ep001",
+      "season": 1,
+      "season_name": "세상 발견",
+      "title": "잃어버린 별",
+      "lesson": "도움",
+      "premise": "길을 잃은 아기 별이 자기 별자리를 찾도록 빛의 단서를 따라가요.",
+      "target_duration": "5 min pilot",
+      "status": "pilot-complete",
+      "deliverables": {
+        "script": true,
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
+      },
+      "youtube": {
+        "title": "잃어버린 별 | 달토끼 루니 EP.001 | 도움을 배워요",
+        "description": "길을 잃은 아기 별이 자기 별자리를 찾도록 빛의 단서를 따라가요.\n\n오늘의 배움은 '도움'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 2,
+      "id": "EP002",
+      "slug": "ep002",
+      "season": 1,
+      "season_name": "세상 발견",
+      "title": "무지개의 일곱 빛깔",
+      "lesson": "색깔",
+      "premise": "사라진 무지개 색을 빨강부터 보라까지 하나씩 되찾아요.",
+      "target_duration": "3 min",
+      "status": "scripted",
+      "deliverables": {
+        "script": true,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "무지개의 일곱 빛깔 | 달토끼 루니 EP.002 | 색깔을 배워요",
+        "description": "사라진 무지개 색을 빨강부터 보라까지 하나씩 되찾아요.\n\n오늘의 배움은 '색깔'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 3,
+      "id": "EP003",
+      "slug": "ep003",
+      "season": 1,
+      "season_name": "세상 발견",
+      "title": "몽이의 비구름",
+      "lesson": "책임",
+      "premise": "몽이가 만든 갑작스러운 비를 멈추고 젖은 마을을 함께 정리해요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "몽이의 비구름 | 달토끼 루니 EP.003 | 책임을 배워요",
+        "description": "몽이가 만든 갑작스러운 비를 멈추고 젖은 마을을 함께 정리해요.\n\n오늘의 배움은 '책임'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 4,
+      "id": "EP004",
+      "slug": "ep004",
+      "season": 1,
+      "season_name": "세상 발견",
+      "title": "밤밤의 첫 인사",
+      "lesson": "친구",
+      "premise": "수줍은 밤밤이 놀이에 참여할 수 있도록 작은 인사부터 연습해요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "밤밤의 첫 인사 | 달토끼 루니 EP.004 | 친구을 배워요",
+        "description": "수줍은 밤밤이 놀이에 참여할 수 있도록 작은 인사부터 연습해요.\n\n오늘의 배움은 '친구'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 5,
+      "id": "EP005",
+      "slug": "ep005",
+      "season": 1,
+      "season_name": "세상 발견",
+      "title": "하늘까지 자란 당근",
+      "lesson": "협동",
+      "premise": "거대한 마법 당근을 뽑기 위해 모두의 서로 다른 힘을 모아요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "하늘까지 자란 당근 | 달토끼 루니 EP.005 | 협동을 배워요",
+        "description": "거대한 마법 당근을 뽑기 위해 모두의 서로 다른 힘을 모아요.\n\n오늘의 배움은 '협동'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 6,
+      "id": "EP006",
+      "slug": "ep006",
+      "season": 1,
+      "season_name": "세상 발견",
+      "title": "별빛 호수의 반짝임",
+      "lesson": "호기심",
+      "premise": "호수 아래 반짝이는 빛의 정체를 안전하게 관찰해요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "별빛 호수의 반짝임 | 달토끼 루니 EP.006 | 호기심을 배워요",
+        "description": "호수 아래 반짝이는 빛의 정체를 안전하게 관찰해요.\n\n오늘의 배움은 '호기심'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 7,
+      "id": "EP007",
+      "slug": "ep007",
+      "season": 1,
+      "season_name": "세상 발견",
+      "title": "사라진 웃음소리",
+      "lesson": "기쁨",
+      "premise": "달나라의 웃음이 사라진 이유를 찾아 각자의 기쁨을 나눠요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "사라진 웃음소리 | 달토끼 루니 EP.007 | 기쁨을 배워요",
+        "description": "달나라의 웃음이 사라진 이유를 찾아 각자의 기쁨을 나눠요.\n\n오늘의 배움은 '기쁨'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 8,
+      "id": "EP008",
+      "slug": "ep008",
+      "season": 1,
+      "season_name": "세상 발견",
+      "title": "커다란 그림자",
+      "lesson": "용기",
+      "premise": "어둠 속 그림자를 자세히 보며 두려움의 정체를 알아내요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "커다란 그림자 | 달토끼 루니 EP.008 | 용기을 배워요",
+        "description": "어둠 속 그림자를 자세히 보며 두려움의 정체를 알아내요.\n\n오늘의 배움은 '용기'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 9,
+      "id": "EP009",
+      "slug": "ep009",
+      "season": 1,
+      "season_name": "세상 발견",
+      "title": "구름 숲의 세 갈래 길",
+      "lesson": "길 찾기",
+      "premise": "표지판과 자연의 소리를 살펴 친구들과 집으로 돌아와요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "구름 숲의 세 갈래 길 | 달토끼 루니 EP.009 | 길 찾기을 배워요",
+        "description": "표지판과 자연의 소리를 살펴 친구들과 집으로 돌아와요.\n\n오늘의 배움은 '길 찾기'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 10,
+      "id": "EP010",
+      "slug": "ep010",
+      "season": 1,
+      "season_name": "세상 발견",
+      "title": "달빛 축제의 첫 등불",
+      "lesson": "우정",
+      "premise": "꺼진 축제 등불을 친구들의 좋은 기억으로 다시 밝혀요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "달빛 축제의 첫 등불 | 달토끼 루니 EP.010 | 우정을 배워요",
+        "description": "꺼진 축제 등불을 친구들의 좋은 기억으로 다시 밝혀요.\n\n오늘의 배움은 '우정'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 11,
+      "id": "EP011",
+      "slug": "ep011",
+      "season": 1,
+      "season_name": "세상 발견",
+      "title": "동그라미를 찾아라",
+      "lesson": "모양",
+      "premise": "마을 곳곳에서 원, 세모, 네모를 찾아 별빛 기차를 고쳐요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "동그라미를 찾아라 | 달토끼 루니 EP.011 | 모양을 배워요",
+        "description": "마을 곳곳에서 원, 세모, 네모를 찾아 별빛 기차를 고쳐요.\n\n오늘의 배움은 '모양'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 12,
+      "id": "EP012",
+      "slug": "ep012",
+      "season": 1,
+      "season_name": "세상 발견",
+      "title": "숲속의 아침 소리",
+      "lesson": "소리",
+      "premise": "눈을 감고 새, 바람, 물소리를 구별하며 몽이를 찾아요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "숲속의 아침 소리 | 달토끼 루니 EP.012 | 소리을 배워요",
+        "description": "눈을 감고 새, 바람, 물소리를 구별하며 몽이를 찾아요.\n\n오늘의 배움은 '소리'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 13,
+      "id": "EP013",
+      "slug": "ep013",
+      "season": 1,
+      "season_name": "세상 발견",
+      "title": "작은 씨앗의 시간",
+      "lesson": "기다림",
+      "premise": "매일 씨앗을 돌보며 자라는 일에는 시간이 필요함을 배워요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "작은 씨앗의 시간 | 달토끼 루니 EP.013 | 기다림을 배워요",
+        "description": "매일 씨앗을 돌보며 자라는 일에는 시간이 필요함을 배워요.\n\n오늘의 배움은 '기다림'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 14,
+      "id": "EP014",
+      "slug": "ep014",
+      "season": 1,
+      "season_name": "세상 발견",
+      "title": "파란 풍선이 날아간 날",
+      "lesson": "슬픔",
+      "premise": "좋아하던 풍선을 잃은 마음을 말하고 친구의 위로를 받아요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "파란 풍선이 날아간 날 | 달토끼 루니 EP.014 | 슬픔을 배워요",
+        "description": "좋아하던 풍선을 잃은 마음을 말하고 친구의 위로를 받아요.\n\n오늘의 배움은 '슬픔'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 15,
+      "id": "EP015",
+      "slug": "ep015",
+      "season": 1,
+      "season_name": "세상 발견",
+      "title": "달빛 생일 케이크",
+      "lesson": "축하",
+      "premise": "루니의 생일을 준비하며 친구가 좋아하는 것을 세심히 살펴요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "달빛 생일 케이크 | 달토끼 루니 EP.015 | 축하을 배워요",
+        "description": "루니의 생일을 준비하며 친구가 좋아하는 것을 세심히 살펴요.\n\n오늘의 배움은 '축하'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 16,
+      "id": "EP016",
+      "slug": "ep016",
+      "season": 1,
+      "season_name": "세상 발견",
+      "title": "별 세는 밤",
+      "lesson": "숫자",
+      "premise": "하나부터 열까지 별을 세어 길 잃은 별똥별의 집을 찾아요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "별 세는 밤 | 달토끼 루니 EP.016 | 숫자을 배워요",
+        "description": "하나부터 열까지 별을 세어 길 잃은 별똥별의 집을 찾아요.\n\n오늘의 배움은 '숫자'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 17,
+      "id": "EP017",
+      "slug": "ep017",
+      "season": 1,
+      "season_name": "세상 발견",
+      "title": "따뜻한 것과 차가운 것",
+      "lesson": "감각",
+      "premise": "따뜻한 차와 차가운 눈꽃을 안전하게 비교하며 감각을 표현해요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "따뜻한 것과 차가운 것 | 달토끼 루니 EP.017 | 감각을 배워요",
+        "description": "따뜻한 차와 차가운 눈꽃을 안전하게 비교하며 감각을 표현해요.\n\n오늘의 배움은 '감각'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 18,
+      "id": "EP018",
+      "slug": "ep018",
+      "season": 1,
+      "season_name": "세상 발견",
+      "title": "콩콩의 빠른 하루",
+      "lesson": "속도",
+      "premise": "빠르게 할 일과 천천히 해야 할 일을 구별해 실수를 줄여요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "콩콩의 빠른 하루 | 달토끼 루니 EP.018 | 속도을 배워요",
+        "description": "빠르게 할 일과 천천히 해야 할 일을 구별해 실수를 줄여요.\n\n오늘의 배움은 '속도'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 19,
+      "id": "EP019",
+      "slug": "ep019",
+      "season": 1,
+      "season_name": "세상 발견",
+      "title": "달나라의 네 계절",
+      "lesson": "계절",
+      "premise": "마법 정원에서 봄, 여름, 가을, 겨울의 변화를 만나요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "달나라의 네 계절 | 달토끼 루니 EP.019 | 계절을 배워요",
+        "description": "마법 정원에서 봄, 여름, 가을, 겨울의 변화를 만나요.\n\n오늘의 배움은 '계절'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 20,
+      "id": "EP020",
+      "slug": "ep020",
+      "season": 1,
+      "season_name": "세상 발견",
+      "title": "누구의 발자국일까",
+      "lesson": "동물",
+      "premise": "서로 다른 발자국 모양을 비교해 길 잃은 아기 동물을 찾아요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "누구의 발자국일까 | 달토끼 루니 EP.020 | 동물을 배워요",
+        "description": "서로 다른 발자국 모양을 비교해 길 잃은 아기 동물을 찾아요.\n\n오늘의 배움은 '동물'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 21,
+      "id": "EP021",
+      "slug": "ep021",
+      "season": 1,
+      "season_name": "세상 발견",
+      "title": "향기 나는 바람",
+      "lesson": "후각",
+      "premise": "꽃과 과일의 향기를 따라 꿈의 정원에 숨은 열쇠를 발견해요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "향기 나는 바람 | 달토끼 루니 EP.021 | 후각을 배워요",
+        "description": "꽃과 과일의 향기를 따라 꿈의 정원에 숨은 열쇠를 발견해요.\n\n오늘의 배움은 '후각'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 22,
+      "id": "EP022",
+      "slug": "ep022",
+      "season": 1,
+      "season_name": "세상 발견",
+      "title": "반대말 다리",
+      "lesson": "언어",
+      "premise": "크고 작음, 높고 낮음 같은 반대말로 움직이는 다리를 건너요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "반대말 다리 | 달토끼 루니 EP.022 | 언어을 배워요",
+        "description": "크고 작음, 높고 낮음 같은 반대말로 움직이는 다리를 건너요.\n\n오늘의 배움은 '언어'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 23,
+      "id": "EP023",
+      "slug": "ep023",
+      "season": 1,
+      "season_name": "세상 발견",
+      "title": "루니의 건강한 하루",
+      "lesson": "생활 습관",
+      "premise": "씻기, 먹기, 움직이기, 쉬기의 균형을 놀이처럼 익혀요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "루니의 건강한 하루 | 달토끼 루니 EP.023 | 생활 습관을 배워요",
+        "description": "씻기, 먹기, 움직이기, 쉬기의 균형을 놀이처럼 익혀요.\n\n오늘의 배움은 '생활 습관'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 24,
+      "id": "EP024",
+      "slug": "ep024",
+      "season": 1,
+      "season_name": "세상 발견",
+      "title": "졸린 구름의 밤",
+      "lesson": "수면",
+      "premise": "몽이와 함께 차분한 잠자리 순서를 만들고 편안히 잠들어요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "졸린 구름의 밤 | 달토끼 루니 EP.024 | 수면을 배워요",
+        "description": "몽이와 함께 차분한 잠자리 순서를 만들고 편안히 잠들어요.\n\n오늘의 배움은 '수면'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 25,
+      "id": "EP025",
+      "slug": "ep025",
+      "season": 1,
+      "season_name": "세상 발견",
+      "title": "우리 마을 보물 지도",
+      "lesson": "관찰",
+      "premise": "25일 동안 만난 장소와 배움을 한 장의 지도로 완성해요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "우리 마을 보물 지도 | 달토끼 루니 EP.025 | 관찰을 배워요",
+        "description": "25일 동안 만난 장소와 배움을 한 장의 지도로 완성해요.\n\n오늘의 배움은 '관찰'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 26,
+      "id": "EP026",
+      "slug": "ep026",
+      "season": 2,
+      "season_name": "신나는 모험",
+      "title": "별빛 기차의 첫 여행",
+      "lesson": "여행",
+      "premise": "친구들이 표를 챙기고 순서를 지키며 처음으로 먼 여행을 떠나요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "별빛 기차의 첫 여행 | 달토끼 루니 EP.026 | 여행을 배워요",
+        "description": "친구들이 표를 챙기고 순서를 지키며 처음으로 먼 여행을 떠나요.\n\n오늘의 배움은 '여행'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 27,
+      "id": "EP027",
+      "slug": "ep027",
+      "season": 2,
+      "season_name": "신나는 모험",
+      "title": "멈춰 버린 구름 시계",
+      "lesson": "문제 해결",
+      "premise": "하늘 시간을 되돌리기 위해 시계 부품의 규칙을 찾아요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "멈춰 버린 구름 시계 | 달토끼 루니 EP.027 | 문제 해결을 배워요",
+        "description": "하늘 시간을 되돌리기 위해 시계 부품의 규칙을 찾아요.\n\n오늘의 배움은 '문제 해결'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 28,
+      "id": "EP028",
+      "slug": "ep028",
+      "season": 2,
+      "season_name": "신나는 모험",
+      "title": "속삭이는 바람 계곡",
+      "lesson": "경청",
+      "premise": "작은 바람의 목소리를 잘 들어야만 보이지 않는 길을 찾을 수 있어요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "속삭이는 바람 계곡 | 달토끼 루니 EP.028 | 경청을 배워요",
+        "description": "작은 바람의 목소리를 잘 들어야만 보이지 않는 길을 찾을 수 있어요.\n\n오늘의 배움은 '경청'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 29,
+      "id": "EP029",
+      "slug": "ep029",
+      "season": 2,
+      "season_name": "신나는 모험",
+      "title": "콩콩과 흔들다리",
+      "lesson": "안전",
+      "premise": "서두르던 콩콩이 안전 약속을 지키며 흔들다리를 건너요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "콩콩과 흔들다리 | 달토끼 루니 EP.029 | 안전을 배워요",
+        "description": "서두르던 콩콩이 안전 약속을 지키며 흔들다리를 건너요.\n\n오늘의 배움은 '안전'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 30,
+      "id": "EP030",
+      "slug": "ep030",
+      "season": 2,
+      "season_name": "신나는 모험",
+      "title": "토리의 날개 우산",
+      "lesson": "도전",
+      "premise": "첫 발명품이 실패해도 원인을 살피고 더 나은 우산을 만들어요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "토리의 날개 우산 | 달토끼 루니 EP.030 | 도전을 배워요",
+        "description": "첫 발명품이 실패해도 원인을 살피고 더 나은 우산을 만들어요.\n\n오늘의 배움은 '도전'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 31,
+      "id": "EP031",
+      "slug": "ep031",
+      "season": 2,
+      "season_name": "신나는 모험",
+      "title": "눈꽃 우체국의 편지",
+      "lesson": "소통",
+      "premise": "주소가 지워진 편지를 단서와 질문으로 주인에게 전해요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "눈꽃 우체국의 편지 | 달토끼 루니 EP.031 | 소통을 배워요",
+        "description": "주소가 지워진 편지를 단서와 질문으로 주인에게 전해요.\n\n오늘의 배움은 '소통'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 32,
+      "id": "EP032",
+      "slug": "ep032",
+      "season": 2,
+      "season_name": "신나는 모험",
+      "title": "사라진 기차표",
+      "lesson": "정리",
+      "premise": "물건을 둔 순서를 되짚으며 잃어버린 표를 찾아요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "사라진 기차표 | 달토끼 루니 EP.032 | 정리을 배워요",
+        "description": "물건을 둔 순서를 되짚으며 잃어버린 표를 찾아요.\n\n오늘의 배움은 '정리'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 33,
+      "id": "EP033",
+      "slug": "ep033",
+      "season": 2,
+      "season_name": "신나는 모험",
+      "title": "달치즈 섬의 손님",
+      "lesson": "예절",
+      "premise": "낯선 섬의 인사법과 식사 예절을 존중하며 새 친구를 만나요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "달치즈 섬의 손님 | 달토끼 루니 EP.033 | 예절을 배워요",
+        "description": "낯선 섬의 인사법과 식사 예절을 존중하며 새 친구를 만나요.\n\n오늘의 배움은 '예절'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 34,
+      "id": "EP034",
+      "slug": "ep034",
+      "season": 2,
+      "season_name": "신나는 모험",
+      "title": "무지개 폭포의 약속",
+      "lesson": "약속",
+      "premise": "놀이에 빠진 친구들이 해 지기 전 돌아오겠다는 약속을 지켜요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "무지개 폭포의 약속 | 달토끼 루니 EP.034 | 약속을 배워요",
+        "description": "놀이에 빠진 친구들이 해 지기 전 돌아오겠다는 약속을 지켜요.\n\n오늘의 배움은 '약속'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 35,
+      "id": "EP035",
+      "slug": "ep035",
+      "season": 2,
+      "season_name": "신나는 모험",
+      "title": "작아진 루니",
+      "lesson": "관점",
+      "premise": "마법 가루로 작아진 루니가 작은 존재의 시선으로 마을을 바라봐요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "작아진 루니 | 달토끼 루니 EP.035 | 관점을 배워요",
+        "description": "마법 가루로 작아진 루니가 작은 존재의 시선으로 마을을 바라봐요.\n\n오늘의 배움은 '관점'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 36,
+      "id": "EP036",
+      "slug": "ep036",
+      "season": 2,
+      "season_name": "신나는 모험",
+      "title": "큰 발자국의 주인",
+      "lesson": "편견",
+      "premise": "무서워 보이는 발자국만으로 상대를 판단하지 않는 법을 배워요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "큰 발자국의 주인 | 달토끼 루니 EP.036 | 편견을 배워요",
+        "description": "무서워 보이는 발자국만으로 상대를 판단하지 않는 법을 배워요.\n\n오늘의 배움은 '편견'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 37,
+      "id": "EP037",
+      "slug": "ep037",
+      "season": 2,
+      "season_name": "신나는 모험",
+      "title": "바람개비 평원의 경주",
+      "lesson": "공정",
+      "premise": "이기는 것보다 규칙을 지키고 서로를 응원하는 경주를 만들어요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "바람개비 평원의 경주 | 달토끼 루니 EP.037 | 공정을 배워요",
+        "description": "이기는 것보다 규칙을 지키고 서로를 응원하는 경주를 만들어요.\n\n오늘의 배움은 '공정'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 38,
+      "id": "EP038",
+      "slug": "ep038",
+      "season": 2,
+      "season_name": "신나는 모험",
+      "title": "별사탕 동굴의 메아리",
+      "lesson": "말하기",
+      "premise": "말이 되돌아오는 동굴에서 다정한 말의 힘을 경험해요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "별사탕 동굴의 메아리 | 달토끼 루니 EP.038 | 말하기을 배워요",
+        "description": "말이 되돌아오는 동굴에서 다정한 말의 힘을 경험해요.\n\n오늘의 배움은 '말하기'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 39,
+      "id": "EP039",
+      "slug": "ep039",
+      "season": 2,
+      "season_name": "신나는 모험",
+      "title": "안개 속 등대",
+      "lesson": "신뢰",
+      "premise": "서로의 목소리와 약속을 믿으며 짙은 안개를 빠져나와요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "안개 속 등대 | 달토끼 루니 EP.039 | 신뢰을 배워요",
+        "description": "서로의 목소리와 약속을 믿으며 짙은 안개를 빠져나와요.\n\n오늘의 배움은 '신뢰'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 40,
+      "id": "EP040",
+      "slug": "ep040",
+      "season": 2,
+      "season_name": "신나는 모험",
+      "title": "춤추는 모래언덕",
+      "lesson": "유연함",
+      "premise": "계속 바뀌는 길에서 계획을 고치고 새로운 방법을 시도해요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "춤추는 모래언덕 | 달토끼 루니 EP.040 | 유연함을 배워요",
+        "description": "계속 바뀌는 길에서 계획을 고치고 새로운 방법을 시도해요.\n\n오늘의 배움은 '유연함'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 41,
+      "id": "EP041",
+      "slug": "ep041",
+      "season": 2,
+      "season_name": "신나는 모험",
+      "title": "잠든 용암산",
+      "lesson": "침착",
+      "premise": "작은 소동 앞에서 멈추고 생각한 뒤 차분하게 모두를 도와요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "잠든 용암산 | 달토끼 루니 EP.041 | 침착을 배워요",
+        "description": "작은 소동 앞에서 멈추고 생각한 뒤 차분하게 모두를 도와요.\n\n오늘의 배움은 '침착'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 42,
+      "id": "EP042",
+      "slug": "ep042",
+      "season": 2,
+      "season_name": "신나는 모험",
+      "title": "고래별을 따라서",
+      "lesson": "자연",
+      "premise": "밤하늘을 헤엄치는 고래별의 이동을 방해하지 않고 관찰해요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "고래별을 따라서 | 달토끼 루니 EP.042 | 자연을 배워요",
+        "description": "밤하늘을 헤엄치는 고래별의 이동을 방해하지 않고 관찰해요.\n\n오늘의 배움은 '자연'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 43,
+      "id": "EP043",
+      "slug": "ep043",
+      "season": 2,
+      "season_name": "신나는 모험",
+      "title": "뒤바뀐 짐 가방",
+      "lesson": "정직",
+      "premise": "친구의 물건을 발견한 루니가 주인을 찾아 솔직하게 돌려줘요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "뒤바뀐 짐 가방 | 달토끼 루니 EP.043 | 정직을 배워요",
+        "description": "친구의 물건을 발견한 루니가 주인을 찾아 솔직하게 돌려줘요.\n\n오늘의 배움은 '정직'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 44,
+      "id": "EP044",
+      "slug": "ep044",
+      "season": 2,
+      "season_name": "신나는 모험",
+      "title": "얼음 궁전의 따뜻한 문",
+      "lesson": "배려",
+      "premise": "추위에 약한 친구를 위해 속도를 맞추고 함께 쉴 곳을 만들어요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "얼음 궁전의 따뜻한 문 | 달토끼 루니 EP.044 | 배려을 배워요",
+        "description": "추위에 약한 친구를 위해 속도를 맞추고 함께 쉴 곳을 만들어요.\n\n오늘의 배움은 '배려'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 45,
+      "id": "EP045",
+      "slug": "ep045",
+      "season": 2,
+      "season_name": "신나는 모험",
+      "title": "조개마을 음악대",
+      "lesson": "협력",
+      "premise": "서로 다른 소리를 맞춰 하나의 신나는 합주를 완성해요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "조개마을 음악대 | 달토끼 루니 EP.045 | 협력을 배워요",
+        "description": "서로 다른 소리를 맞춰 하나의 신나는 합주를 완성해요.\n\n오늘의 배움은 '협력'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 46,
+      "id": "EP046",
+      "slug": "ep046",
+      "season": 2,
+      "season_name": "신나는 모험",
+      "title": "구름 해적의 보물",
+      "lesson": "나눔",
+      "premise": "보물이 물건이 아니라 함께 나눈 시간이라는 사실을 발견해요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "구름 해적의 보물 | 달토끼 루니 EP.046 | 나눔을 배워요",
+        "description": "보물이 물건이 아니라 함께 나눈 시간이라는 사실을 발견해요.\n\n오늘의 배움은 '나눔'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 47,
+      "id": "EP047",
+      "slug": "ep047",
+      "season": 2,
+      "season_name": "신나는 모험",
+      "title": "별똥별 캠핑",
+      "lesson": "자립",
+      "premise": "가방을 직접 챙기고 작은 역할을 맡아 첫 캠핑을 마쳐요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "별똥별 캠핑 | 달토끼 루니 EP.047 | 자립을 배워요",
+        "description": "가방을 직접 챙기고 작은 역할을 맡아 첫 캠핑을 마쳐요.\n\n오늘의 배움은 '자립'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 48,
+      "id": "EP048",
+      "slug": "ep048",
+      "season": 2,
+      "season_name": "신나는 모험",
+      "title": "돌아오지 않는 나침반",
+      "lesson": "판단",
+      "premise": "도구가 고장 났을 때 주변 단서와 친구들의 생각을 함께 사용해요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "돌아오지 않는 나침반 | 달토끼 루니 EP.048 | 판단을 배워요",
+        "description": "도구가 고장 났을 때 주변 단서와 친구들의 생각을 함께 사용해요.\n\n오늘의 배움은 '판단'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 49,
+      "id": "EP049",
+      "slug": "ep049",
+      "season": 2,
+      "season_name": "신나는 모험",
+      "title": "달의 반대편",
+      "lesson": "다양성",
+      "premise": "낮이 긴 마을의 다른 생활 방식을 존중하고 새 놀이를 배워요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "달의 반대편 | 달토끼 루니 EP.049 | 다양성을 배워요",
+        "description": "낮이 긴 마을의 다른 생활 방식을 존중하고 새 놀이를 배워요.\n\n오늘의 배움은 '다양성'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 50,
+      "id": "EP050",
+      "slug": "ep050",
+      "season": 2,
+      "season_name": "신나는 모험",
+      "title": "우리들의 여행 앨범",
+      "lesson": "기억",
+      "premise": "모험에서 얻은 사진과 기억을 나누며 두 번째 시즌을 돌아봐요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "우리들의 여행 앨범 | 달토끼 루니 EP.050 | 기억을 배워요",
+        "description": "모험에서 얻은 사진과 기억을 나누며 두 번째 시즌을 돌아봐요.\n\n오늘의 배움은 '기억'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 51,
+      "id": "EP051",
+      "slug": "ep051",
+      "season": 3,
+      "season_name": "마법의 세계",
+      "title": "꿈의 정원 문이 열리다",
+      "lesson": "상상",
+      "premise": "각자 상상한 꽃을 피워 비밀 정원의 문을 열어요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "꿈의 정원 문이 열리다 | 달토끼 루니 EP.051 | 상상을 배워요",
+        "description": "각자 상상한 꽃을 피워 비밀 정원의 문을 열어요.\n\n오늘의 배움은 '상상'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 52,
+      "id": "EP052",
+      "slug": "ep052",
+      "season": 3,
+      "season_name": "마법의 세계",
+      "title": "말하는 별가루",
+      "lesson": "언어",
+      "premise": "마음과 다른 말을 하는 별가루 때문에 진짜 뜻을 또렷이 표현해요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "말하는 별가루 | 달토끼 루니 EP.052 | 언어을 배워요",
+        "description": "마음과 다른 말을 하는 별가루 때문에 진짜 뜻을 또렷이 표현해요.\n\n오늘의 배움은 '언어'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 53,
+      "id": "EP053",
+      "slug": "ep053",
+      "season": 3,
+      "season_name": "마법의 세계",
+      "title": "거꾸로 흐르는 강",
+      "lesson": "논리",
+      "premise": "결과부터 보이는 마법의 강에서 사건의 원인을 거슬러 찾아요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "거꾸로 흐르는 강 | 달토끼 루니 EP.053 | 논리을 배워요",
+        "description": "결과부터 보이는 마법의 강에서 사건의 원인을 거슬러 찾아요.\n\n오늘의 배움은 '논리'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 54,
+      "id": "EP054",
+      "slug": "ep054",
+      "season": 3,
+      "season_name": "마법의 세계",
+      "title": "그림 속으로 간 몽이",
+      "lesson": "예술",
+      "premise": "미완성 그림 세계에서 색과 선을 더해 몽이가 나올 길을 만들어요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "그림 속으로 간 몽이 | 달토끼 루니 EP.054 | 예술을 배워요",
+        "description": "미완성 그림 세계에서 색과 선을 더해 몽이가 나올 길을 만들어요.\n\n오늘의 배움은 '예술'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 55,
+      "id": "EP055",
+      "slug": "ep055",
+      "season": 3,
+      "season_name": "마법의 세계",
+      "title": "달토끼가 둘이 된 날",
+      "lesson": "정체성",
+      "premise": "똑같이 생긴 마법 복제와 만나 나만의 선택과 기억을 소중히 여겨요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "달토끼가 둘이 된 날 | 달토끼 루니 EP.055 | 정체성을 배워요",
+        "description": "똑같이 생긴 마법 복제와 만나 나만의 선택과 기억을 소중히 여겨요.\n\n오늘의 배움은 '정체성'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 56,
+      "id": "EP056",
+      "slug": "ep056",
+      "season": 3,
+      "season_name": "마법의 세계",
+      "title": "별이의 빛이 꺼졌어요",
+      "lesson": "자존감",
+      "premise": "빛이 약해진 별이가 밝기와 상관없이 소중한 친구임을 느껴요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "별이의 빛이 꺼졌어요 | 달토끼 루니 EP.056 | 자존감을 배워요",
+        "description": "빛이 약해진 별이가 밝기와 상관없이 소중한 친구임을 느껴요.\n\n오늘의 배움은 '자존감'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 57,
+      "id": "EP057",
+      "slug": "ep057",
+      "season": 3,
+      "season_name": "마법의 세계",
+      "title": "시간을 멈춘 모래시계",
+      "lesson": "시간",
+      "premise": "즐거운 순간을 붙잡기보다 흐르는 시간을 잘 쓰는 법을 배워요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "시간을 멈춘 모래시계 | 달토끼 루니 EP.057 | 시간을 배워요",
+        "description": "즐거운 순간을 붙잡기보다 흐르는 시간을 잘 쓰는 법을 배워요.\n\n오늘의 배움은 '시간'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 58,
+      "id": "EP058",
+      "slug": "ep058",
+      "season": 3,
+      "season_name": "마법의 세계",
+      "title": "소원을 먹는 구름",
+      "lesson": "욕구",
+      "premise": "갖고 싶은 것과 정말 필요한 것을 구별해 소원을 되찾아요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "소원을 먹는 구름 | 달토끼 루니 EP.058 | 욕구을 배워요",
+        "description": "갖고 싶은 것과 정말 필요한 것을 구별해 소원을 되찾아요.\n\n오늘의 배움은 '욕구'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 59,
+      "id": "EP059",
+      "slug": "ep059",
+      "season": 3,
+      "season_name": "마법의 세계",
+      "title": "마법 도서관의 빈 책",
+      "lesson": "이야기",
+      "premise": "루니와 친구들이 선택한 행동에 따라 빈 책의 이야기가 완성돼요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "마법 도서관의 빈 책 | 달토끼 루니 EP.059 | 이야기을 배워요",
+        "description": "루니와 친구들이 선택한 행동에 따라 빈 책의 이야기가 완성돼요.\n\n오늘의 배움은 '이야기'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 60,
+      "id": "EP060",
+      "slug": "ep060",
+      "season": 3,
+      "season_name": "마법의 세계",
+      "title": "잠들지 않는 꿈",
+      "lesson": "감정",
+      "premise": "걱정 때문에 잠들지 못한 밤밤이 마음을 말하며 꿈을 편안히 놓아요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "잠들지 않는 꿈 | 달토끼 루니 EP.060 | 감정을 배워요",
+        "description": "걱정 때문에 잠들지 못한 밤밤이 마음을 말하며 꿈을 편안히 놓아요.\n\n오늘의 배움은 '감정'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 61,
+      "id": "EP061",
+      "slug": "ep061",
+      "season": 3,
+      "season_name": "마법의 세계",
+      "title": "달빛 거울의 비밀",
+      "lesson": "자기 이해",
+      "premise": "거울에 비친 완벽한 모습보다 지금의 자신을 좋아하는 법을 배워요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "달빛 거울의 비밀 | 달토끼 루니 EP.061 | 자기 이해을 배워요",
+        "description": "거울에 비친 완벽한 모습보다 지금의 자신을 좋아하는 법을 배워요.\n\n오늘의 배움은 '자기 이해'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 62,
+      "id": "EP062",
+      "slug": "ep062",
+      "season": 3,
+      "season_name": "마법의 세계",
+      "title": "투명해진 콩콩",
+      "lesson": "관심",
+      "premise": "눈에 보이지 않아도 목소리를 듣고 존재를 알아주는 마음을 느껴요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "투명해진 콩콩 | 달토끼 루니 EP.062 | 관심을 배워요",
+        "description": "눈에 보이지 않아도 목소리를 듣고 존재를 알아주는 마음을 느껴요.\n\n오늘의 배움은 '관심'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 63,
+      "id": "EP063",
+      "slug": "ep063",
+      "season": 3,
+      "season_name": "마법의 세계",
+      "title": "노래하는 별꽃",
+      "lesson": "음악",
+      "premise": "각기 다른 음을 가진 꽃들과 조화로운 노래를 만들어요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "노래하는 별꽃 | 달토끼 루니 EP.063 | 음악을 배워요",
+        "description": "각기 다른 음을 가진 꽃들과 조화로운 노래를 만들어요.\n\n오늘의 배움은 '음악'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 64,
+      "id": "EP064",
+      "slug": "ep064",
+      "season": 3,
+      "season_name": "마법의 세계",
+      "title": "색을 바꾸는 감정 숲",
+      "lesson": "감정 조절",
+      "premise": "마음에 따라 바뀌는 숲의 색을 보며 감정의 이름을 찾아요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "색을 바꾸는 감정 숲 | 달토끼 루니 EP.064 | 감정 조절을 배워요",
+        "description": "마음에 따라 바뀌는 숲의 색을 보며 감정의 이름을 찾아요.\n\n오늘의 배움은 '감정 조절'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 65,
+      "id": "EP065",
+      "slug": "ep065",
+      "season": 3,
+      "season_name": "마법의 세계",
+      "title": "작은 마법사의 큰 실수",
+      "lesson": "실수",
+      "premise": "루니가 잘못 건 주문을 숨기지 않고 도움을 청해 바로잡아요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "작은 마법사의 큰 실수 | 달토끼 루니 EP.065 | 실수을 배워요",
+        "description": "루니가 잘못 건 주문을 숨기지 않고 도움을 청해 바로잡아요.\n\n오늘의 배움은 '실수'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 66,
+      "id": "EP066",
+      "slug": "ep066",
+      "season": 3,
+      "season_name": "마법의 세계",
+      "title": "달 그림자를 훔친 밤",
+      "lesson": "오해",
+      "premise": "사라진 그림자의 진실을 확인하며 성급한 의심을 풀어요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "달 그림자를 훔친 밤 | 달토끼 루니 EP.066 | 오해을 배워요",
+        "description": "사라진 그림자의 진실을 확인하며 성급한 의심을 풀어요.\n\n오늘의 배움은 '오해'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 67,
+      "id": "EP067",
+      "slug": "ep067",
+      "season": 3,
+      "season_name": "마법의 세계",
+      "title": "꿈 기차의 마지막 좌석",
+      "lesson": "양보",
+      "premise": "한 자리밖에 남지 않은 기차에서 모두가 즐길 새로운 방법을 찾아요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "꿈 기차의 마지막 좌석 | 달토끼 루니 EP.067 | 양보을 배워요",
+        "description": "한 자리밖에 남지 않은 기차에서 모두가 즐길 새로운 방법을 찾아요.\n\n오늘의 배움은 '양보'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 68,
+      "id": "EP068",
+      "slug": "ep068",
+      "season": 3,
+      "season_name": "마법의 세계",
+      "title": "별자리 동물원",
+      "lesson": "생명 존중",
+      "premise": "별자리 동물을 구경하며 만지기 전에 허락을 구하는 법을 익혀요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "별자리 동물원 | 달토끼 루니 EP.068 | 생명 존중을 배워요",
+        "description": "별자리 동물을 구경하며 만지기 전에 허락을 구하는 법을 익혀요.\n\n오늘의 배움은 '생명 존중'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 69,
+      "id": "EP069",
+      "slug": "ep069",
+      "season": 3,
+      "season_name": "마법의 세계",
+      "title": "토리와 무한 연필",
+      "lesson": "절제",
+      "premise": "끝없이 그려지는 연필을 멈추고 필요한 만큼 사용하는 법을 배워요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "토리와 무한 연필 | 달토끼 루니 EP.069 | 절제을 배워요",
+        "description": "끝없이 그려지는 연필을 멈추고 필요한 만큼 사용하는 법을 배워요.\n\n오늘의 배움은 '절제'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 70,
+      "id": "EP070",
+      "slug": "ep070",
+      "season": 3,
+      "season_name": "마법의 세계",
+      "title": "마음이 들리는 모자",
+      "lesson": "경계",
+      "premise": "친구의 생각을 몰래 듣는 대신 직접 물어보고 대답을 기다려요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "마음이 들리는 모자 | 달토끼 루니 EP.070 | 경계을 배워요",
+        "description": "친구의 생각을 몰래 듣는 대신 직접 물어보고 대답을 기다려요.\n\n오늘의 배움은 '경계'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 71,
+      "id": "EP071",
+      "slug": "ep071",
+      "season": 3,
+      "season_name": "마법의 세계",
+      "title": "달할머니의 어린 시절",
+      "lesson": "세대",
+      "premise": "달할머니의 오래된 추억 속으로 가서 세대가 달라도 통하는 마음을 봐요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "달할머니의 어린 시절 | 달토끼 루니 EP.071 | 세대을 배워요",
+        "description": "달할머니의 오래된 추억 속으로 가서 세대가 달라도 통하는 마음을 봐요.\n\n오늘의 배움은 '세대'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 72,
+      "id": "EP072",
+      "slug": "ep072",
+      "season": 3,
+      "season_name": "마법의 세계",
+      "title": "별빛을 잃은 성",
+      "lesson": "희망",
+      "premise": "작은 친절을 하나씩 모아 어두워진 달의 성을 다시 밝혀요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "별빛을 잃은 성 | 달토끼 루니 EP.072 | 희망을 배워요",
+        "description": "작은 친절을 하나씩 모아 어두워진 달의 성을 다시 밝혀요.\n\n오늘의 배움은 '희망'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 73,
+      "id": "EP073",
+      "slug": "ep073",
+      "season": 3,
+      "season_name": "마법의 세계",
+      "title": "사라지는 꿈의 섬",
+      "lesson": "환경",
+      "premise": "섬을 지키기 위해 쓰레기를 줄이고 망가진 곳을 함께 돌봐요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "사라지는 꿈의 섬 | 달토끼 루니 EP.073 | 환경을 배워요",
+        "description": "섬을 지키기 위해 쓰레기를 줄이고 망가진 곳을 함께 돌봐요.\n\n오늘의 배움은 '환경'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 74,
+      "id": "EP074",
+      "slug": "ep074",
+      "season": 3,
+      "season_name": "마법의 세계",
+      "title": "마법보다 좋은 것",
+      "lesson": "노력",
+      "premise": "쉬운 주문 대신 연습과 협동으로 공연을 완성해요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "마법보다 좋은 것 | 달토끼 루니 EP.074 | 노력을 배워요",
+        "description": "쉬운 주문 대신 연습과 협동으로 공연을 완성해요.\n\n오늘의 배움은 '노력'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 75,
+      "id": "EP075",
+      "slug": "ep075",
+      "season": 3,
+      "season_name": "마법의 세계",
+      "title": "천 개의 별이 뜨는 밤",
+      "lesson": "감사",
+      "premise": "마법 세계에서 받은 도움을 기억하며 감사의 별을 띄워요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "천 개의 별이 뜨는 밤 | 달토끼 루니 EP.075 | 감사을 배워요",
+        "description": "마법 세계에서 받은 도움을 기억하며 감사의 별을 띄워요.\n\n오늘의 배움은 '감사'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 76,
+      "id": "EP076",
+      "slug": "ep076",
+      "season": 4,
+      "season_name": "함께 성장",
+      "title": "밤밤의 큰 목소리",
+      "lesson": "자신감",
+      "premise": "밤밤이 친구들 앞에서 자신의 생각을 또박또박 말해요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "밤밤의 큰 목소리 | 달토끼 루니 EP.076 | 자신감을 배워요",
+        "description": "밤밤이 친구들 앞에서 자신의 생각을 또박또박 말해요.\n\n오늘의 배움은 '자신감'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 77,
+      "id": "EP077",
+      "slug": "ep077",
+      "season": 4,
+      "season_name": "함께 성장",
+      "title": "루니가 진 날",
+      "lesson": "스포츠맨십",
+      "premise": "게임에서 진 속상함을 받아들이고 상대를 축하해요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "루니가 진 날 | 달토끼 루니 EP.077 | 스포츠맨십을 배워요",
+        "description": "게임에서 진 속상함을 받아들이고 상대를 축하해요.\n\n오늘의 배움은 '스포츠맨십'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 78,
+      "id": "EP078",
+      "slug": "ep078",
+      "season": 4,
+      "season_name": "함께 성장",
+      "title": "별이의 완벽하지 않은 계획",
+      "lesson": "유연성",
+      "premise": "계획이 어긋나도 친구의 아이디어를 받아들여 축제를 완성해요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "별이의 완벽하지 않은 계획 | 달토끼 루니 EP.078 | 유연성을 배워요",
+        "description": "계획이 어긋나도 친구의 아이디어를 받아들여 축제를 완성해요.\n\n오늘의 배움은 '유연성'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 79,
+      "id": "EP079",
+      "slug": "ep079",
+      "season": 4,
+      "season_name": "함께 성장",
+      "title": "몽이의 진심 어린 사과",
+      "lesson": "사과",
+      "premise": "장난으로 상처 준 몽이가 변명하지 않고 마음을 전해요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "몽이의 진심 어린 사과 | 달토끼 루니 EP.079 | 사과을 배워요",
+        "description": "장난으로 상처 준 몽이가 변명하지 않고 마음을 전해요.\n\n오늘의 배움은 '사과'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 80,
+      "id": "EP080",
+      "slug": "ep080",
+      "season": 4,
+      "season_name": "함께 성장",
+      "title": "콩콩은 기다릴 수 있어",
+      "lesson": "인내",
+      "premise": "차례를 기다리며 다른 친구의 시간도 소중함을 배워요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "콩콩은 기다릴 수 있어 | 달토끼 루니 EP.080 | 인내을 배워요",
+        "description": "차례를 기다리며 다른 친구의 시간도 소중함을 배워요.\n\n오늘의 배움은 '인내'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 81,
+      "id": "EP081",
+      "slug": "ep081",
+      "season": 4,
+      "season_name": "함께 성장",
+      "title": "토리의 고장 난 발명품",
+      "lesson": "회복력",
+      "premise": "실패 기록을 살펴 다시 만들며 포기하지 않는 힘을 길러요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "토리의 고장 난 발명품 | 달토끼 루니 EP.081 | 회복력을 배워요",
+        "description": "실패 기록을 살펴 다시 만들며 포기하지 않는 힘을 길러요.\n\n오늘의 배움은 '회복력'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 82,
+      "id": "EP082",
+      "slug": "ep082",
+      "season": 4,
+      "season_name": "함께 성장",
+      "title": "루미도 모르는 것",
+      "lesson": "겸손",
+      "premise": "똑똑한 루미가 모른다고 말하고 함께 배우는 즐거움을 발견해요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "루미도 모르는 것 | 달토끼 루니 EP.082 | 겸손을 배워요",
+        "description": "똑똑한 루미가 모른다고 말하고 함께 배우는 즐거움을 발견해요.\n\n오늘의 배움은 '겸손'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 83,
+      "id": "EP083",
+      "slug": "ep083",
+      "season": 4,
+      "season_name": "함께 성장",
+      "title": "달할머니의 쉬는 날",
+      "lesson": "돌봄",
+      "premise": "늘 돌봐 주던 달할머니를 위해 친구들이 역할을 나눠 맡아요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "달할머니의 쉬는 날 | 달토끼 루니 EP.083 | 돌봄을 배워요",
+        "description": "늘 돌봐 주던 달할머니를 위해 친구들이 역할을 나눠 맡아요.\n\n오늘의 배움은 '돌봄'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 84,
+      "id": "EP084",
+      "slug": "ep084",
+      "season": 4,
+      "season_name": "함께 성장",
+      "title": "우리끼리 정한 규칙",
+      "lesson": "민주성",
+      "premise": "모두의 의견을 듣고 안전하고 공정한 놀이 규칙을 만들어요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "우리끼리 정한 규칙 | 달토끼 루니 EP.084 | 민주성을 배워요",
+        "description": "모두의 의견을 듣고 안전하고 공정한 놀이 규칙을 만들어요.\n\n오늘의 배움은 '민주성'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 85,
+      "id": "EP085",
+      "slug": "ep085",
+      "season": 4,
+      "season_name": "함께 성장",
+      "title": "새 친구 해별이",
+      "lesson": "포용",
+      "premise": "다른 말투를 쓰는 전학생이 편히 참여하도록 놀이를 설명해요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "새 친구 해별이 | 달토끼 루니 EP.085 | 포용을 배워요",
+        "description": "다른 말투를 쓰는 전학생이 편히 참여하도록 놀이를 설명해요.\n\n오늘의 배움은 '포용'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 86,
+      "id": "EP086",
+      "slug": "ep086",
+      "season": 4,
+      "season_name": "함께 성장",
+      "title": "싫다고 말해도 괜찮아",
+      "lesson": "경계",
+      "premise": "불편한 장난에 분명히 싫다고 말하고 상대의 거절을 존중해요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "싫다고 말해도 괜찮아 | 달토끼 루니 EP.086 | 경계을 배워요",
+        "description": "불편한 장난에 분명히 싫다고 말하고 상대의 거절을 존중해요.\n\n오늘의 배움은 '경계'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 87,
+      "id": "EP087",
+      "slug": "ep087",
+      "season": 4,
+      "season_name": "함께 성장",
+      "title": "비밀을 지켜야 할까",
+      "lesson": "안전",
+      "premise": "위험한 비밀은 믿을 수 있는 어른에게 알려야 함을 배워요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "비밀을 지켜야 할까 | 달토끼 루니 EP.087 | 안전을 배워요",
+        "description": "위험한 비밀은 믿을 수 있는 어른에게 알려야 함을 배워요.\n\n오늘의 배움은 '안전'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 88,
+      "id": "EP088",
+      "slug": "ep088",
+      "season": 4,
+      "season_name": "함께 성장",
+      "title": "반으로 나눈 달빵",
+      "lesson": "공평",
+      "premise": "똑같이 나누는 것과 필요한 만큼 나누는 것의 차이를 생각해요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "반으로 나눈 달빵 | 달토끼 루니 EP.088 | 공평을 배워요",
+        "description": "똑같이 나누는 것과 필요한 만큼 나누는 것의 차이를 생각해요.\n\n오늘의 배움은 '공평'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 89,
+      "id": "EP089",
+      "slug": "ep089",
+      "season": 4,
+      "season_name": "함께 성장",
+      "title": "칭찬 나무",
+      "lesson": "긍정",
+      "premise": "결과뿐 아니라 친구의 노력과 친절을 구체적으로 칭찬해요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "칭찬 나무 | 달토끼 루니 EP.089 | 긍정을 배워요",
+        "description": "결과뿐 아니라 친구의 노력과 친절을 구체적으로 칭찬해요.\n\n오늘의 배움은 '긍정'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 90,
+      "id": "EP090",
+      "slug": "ep090",
+      "season": 4,
+      "season_name": "함께 성장",
+      "title": "화가 난 루니",
+      "lesson": "분노 조절",
+      "premise": "멈추기, 숨 쉬기, 말하기로 큰 화를 안전하게 다뤄요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "화가 난 루니 | 달토끼 루니 EP.090 | 분노 조절을 배워요",
+        "description": "멈추기, 숨 쉬기, 말하기로 큰 화를 안전하게 다뤄요.\n\n오늘의 배움은 '분노 조절'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 91,
+      "id": "EP091",
+      "slug": "ep091",
+      "season": 4,
+      "season_name": "함께 성장",
+      "title": "오늘은 내가 도울게",
+      "lesson": "주도성",
+      "premise": "도움을 기다리지 않고 주변에서 할 수 있는 일을 스스로 찾아요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "오늘은 내가 도울게 | 달토끼 루니 EP.091 | 주도성을 배워요",
+        "description": "도움을 기다리지 않고 주변에서 할 수 있는 일을 스스로 찾아요.\n\n오늘의 배움은 '주도성'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 92,
+      "id": "EP092",
+      "slug": "ep092",
+      "season": 4,
+      "season_name": "함께 성장",
+      "title": "친구와 생각이 다를 때",
+      "lesson": "갈등 해결",
+      "premise": "서로의 말을 반복해 확인하고 함께 만족할 해결책을 찾아요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "친구와 생각이 다를 때 | 달토끼 루니 EP.092 | 갈등 해결을 배워요",
+        "description": "서로의 말을 반복해 확인하고 함께 만족할 해결책을 찾아요.\n\n오늘의 배움은 '갈등 해결'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 93,
+      "id": "EP093",
+      "slug": "ep093",
+      "season": 4,
+      "season_name": "함께 성장",
+      "title": "우리 가족의 밤하늘",
+      "lesson": "가족 다양성",
+      "premise": "모양이 다른 여러 가족이 모두 사랑으로 이어져 있음을 배워요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "우리 가족의 밤하늘 | 달토끼 루니 EP.093 | 가족 다양성을 배워요",
+        "description": "모양이 다른 여러 가족이 모두 사랑으로 이어져 있음을 배워요.\n\n오늘의 배움은 '가족 다양성'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 94,
+      "id": "EP094",
+      "slug": "ep094",
+      "season": 4,
+      "season_name": "함께 성장",
+      "title": "작은 약속 저금통",
+      "lesson": "신뢰",
+      "premise": "매일 지킬 수 있는 작은 약속을 쌓아 친구의 믿음을 되찾아요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "작은 약속 저금통 | 달토끼 루니 EP.094 | 신뢰을 배워요",
+        "description": "매일 지킬 수 있는 작은 약속을 쌓아 친구의 믿음을 되찾아요.\n\n오늘의 배움은 '신뢰'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 95,
+      "id": "EP095",
+      "slug": "ep095",
+      "season": 4,
+      "season_name": "함께 성장",
+      "title": "도와달라는 용기",
+      "lesson": "도움 요청",
+      "premise": "혼자 하기 어려운 일을 인정하고 알맞은 사람에게 도움을 청해요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "도와달라는 용기 | 달토끼 루니 EP.095 | 도움 요청을 배워요",
+        "description": "혼자 하기 어려운 일을 인정하고 알맞은 사람에게 도움을 청해요.\n\n오늘의 배움은 '도움 요청'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 96,
+      "id": "EP096",
+      "slug": "ep096",
+      "season": 4,
+      "season_name": "함께 성장",
+      "title": "추억 상자를 열면",
+      "lesson": "이별",
+      "premise": "멀리 떠나는 친구와 슬픔을 나누고 이어질 방법을 만들어요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "추억 상자를 열면 | 달토끼 루니 EP.096 | 이별을 배워요",
+        "description": "멀리 떠나는 친구와 슬픔을 나누고 이어질 방법을 만들어요.\n\n오늘의 배움은 '이별'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 97,
+      "id": "EP097",
+      "slug": "ep097",
+      "season": 4,
+      "season_name": "함께 성장",
+      "title": "달나라 작은 시장",
+      "lesson": "경제",
+      "premise": "필요와 욕심을 구별하고 정해진 별동전을 계획해 사용해요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "달나라 작은 시장 | 달토끼 루니 EP.097 | 경제을 배워요",
+        "description": "필요와 욕심을 구별하고 정해진 별동전을 계획해 사용해요.\n\n오늘의 배움은 '경제'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 98,
+      "id": "EP098",
+      "slug": "ep098",
+      "season": 4,
+      "season_name": "함께 성장",
+      "title": "우리의 첫 공연",
+      "lesson": "협업",
+      "premise": "무대 앞과 뒤의 모든 역할을 존중하며 함께 공연해요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "우리의 첫 공연 | 달토끼 루니 EP.098 | 협업을 배워요",
+        "description": "무대 앞과 뒤의 모든 역할을 존중하며 함께 공연해요.\n\n오늘의 배움은 '협업'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 99,
+      "id": "EP099",
+      "slug": "ep099",
+      "season": 4,
+      "season_name": "함께 성장",
+      "title": "백 번째 별을 찾아서",
+      "lesson": "성찰",
+      "premise": "지나온 모험 속에서 각자 가장 빛났던 배움을 찾아요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "백 번째 별을 찾아서 | 달토끼 루니 EP.099 | 성찰을 배워요",
+        "description": "지나온 모험 속에서 각자 가장 빛났던 배움을 찾아요.\n\n오늘의 배움은 '성찰'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    },
+    {
+      "number": 100,
+      "id": "EP100",
+      "slug": "ep100",
+      "season": 4,
+      "season_name": "함께 성장",
+      "title": "언제나 다시 만나요",
+      "lesson": "성장",
+      "premise": "달빛 축제에서 100개의 이야기를 돌아보고 다음 모험을 약속해요.",
+      "target_duration": "3 min",
+      "status": "planned",
+      "deliverables": {
+        "script": false,
+        "voices": false,
+        "animation": false,
+        "subtitles": false,
+        "thumbnail": false,
+        "youtube_pack": false
+      },
+      "youtube": {
+        "title": "언제나 다시 만나요 | 달토끼 루니 EP.100 | 성장을 배워요",
+        "description": "달빛 축제에서 100개의 이야기를 돌아보고 다음 모험을 약속해요.\n\n오늘의 배움은 '성장'이에요.\n달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
+      }
+    }
+  ]
+}
