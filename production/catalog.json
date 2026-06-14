@@ -64,14 +64,14 @@
       "lesson": "책임",
       "premise": "몽이가 만든 갑작스러운 비를 멈추고 젖은 마을을 함께 정리해요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "몽이의 비구름 | 달토끼 루니 EP.003 | 책임을 배워요",
@@ -88,14 +88,14 @@
       "lesson": "친구",
       "premise": "수줍은 밤밤이 놀이에 참여할 수 있도록 작은 인사부터 연습해요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "밤밤의 첫 인사 | 달토끼 루니 EP.004 | 친구을 배워요",
@@ -112,14 +112,14 @@
       "lesson": "협동",
       "premise": "거대한 마법 당근을 뽑기 위해 모두의 서로 다른 힘을 모아요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "하늘까지 자란 당근 | 달토끼 루니 EP.005 | 협동을 배워요",
@@ -136,14 +136,14 @@
       "lesson": "호기심",
       "premise": "호수 아래 반짝이는 빛의 정체를 안전하게 관찰해요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "별빛 호수의 반짝임 | 달토끼 루니 EP.006 | 호기심을 배워요",
@@ -160,14 +160,14 @@
       "lesson": "기쁨",
       "premise": "달나라의 웃음이 사라진 이유를 찾아 각자의 기쁨을 나눠요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "사라진 웃음소리 | 달토끼 루니 EP.007 | 기쁨을 배워요",
@@ -184,14 +184,14 @@
       "lesson": "용기",
       "premise": "어둠 속 그림자를 자세히 보며 두려움의 정체를 알아내요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "커다란 그림자 | 달토끼 루니 EP.008 | 용기을 배워요",
@@ -208,14 +208,14 @@
       "lesson": "길 찾기",
       "premise": "표지판과 자연의 소리를 살펴 친구들과 집으로 돌아와요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "구름 숲의 세 갈래 길 | 달토끼 루니 EP.009 | 길 찾기을 배워요",
@@ -232,14 +232,14 @@
       "lesson": "우정",
       "premise": "꺼진 축제 등불을 친구들의 좋은 기억으로 다시 밝혀요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "달빛 축제의 첫 등불 | 달토끼 루니 EP.010 | 우정을 배워요",
@@ -256,14 +256,14 @@
       "lesson": "모양",
       "premise": "마을 곳곳에서 원, 세모, 네모를 찾아 별빛 기차를 고쳐요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "동그라미를 찾아라 | 달토끼 루니 EP.011 | 모양을 배워요",
@@ -280,14 +280,14 @@
       "lesson": "소리",
       "premise": "눈을 감고 새, 바람, 물소리를 구별하며 몽이를 찾아요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "숲속의 아침 소리 | 달토끼 루니 EP.012 | 소리을 배워요",
@@ -304,14 +304,14 @@
       "lesson": "기다림",
       "premise": "매일 씨앗을 돌보며 자라는 일에는 시간이 필요함을 배워요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "작은 씨앗의 시간 | 달토끼 루니 EP.013 | 기다림을 배워요",
@@ -328,14 +328,14 @@
       "lesson": "슬픔",
       "premise": "좋아하던 풍선을 잃은 마음을 말하고 친구의 위로를 받아요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "파란 풍선이 날아간 날 | 달토끼 루니 EP.014 | 슬픔을 배워요",
@@ -352,14 +352,14 @@
       "lesson": "축하",
       "premise": "루니의 생일을 준비하며 친구가 좋아하는 것을 세심히 살펴요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "달빛 생일 케이크 | 달토끼 루니 EP.015 | 축하을 배워요",
@@ -376,14 +376,14 @@
       "lesson": "숫자",
       "premise": "하나부터 열까지 별을 세어 길 잃은 별똥별의 집을 찾아요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "별 세는 밤 | 달토끼 루니 EP.016 | 숫자을 배워요",
@@ -400,14 +400,14 @@
       "lesson": "감각",
       "premise": "따뜻한 차와 차가운 눈꽃을 안전하게 비교하며 감각을 표현해요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "따뜻한 것과 차가운 것 | 달토끼 루니 EP.017 | 감각을 배워요",
@@ -424,14 +424,14 @@
       "lesson": "속도",
       "premise": "빠르게 할 일과 천천히 해야 할 일을 구별해 실수를 줄여요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "콩콩의 빠른 하루 | 달토끼 루니 EP.018 | 속도을 배워요",
@@ -448,14 +448,14 @@
       "lesson": "계절",
       "premise": "마법 정원에서 봄, 여름, 가을, 겨울의 변화를 만나요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "달나라의 네 계절 | 달토끼 루니 EP.019 | 계절을 배워요",
@@ -472,14 +472,14 @@
       "lesson": "동물",
       "premise": "서로 다른 발자국 모양을 비교해 길 잃은 아기 동물을 찾아요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "누구의 발자국일까 | 달토끼 루니 EP.020 | 동물을 배워요",
@@ -496,14 +496,14 @@
       "lesson": "후각",
       "premise": "꽃과 과일의 향기를 따라 꿈의 정원에 숨은 열쇠를 발견해요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "향기 나는 바람 | 달토끼 루니 EP.021 | 후각을 배워요",
@@ -520,14 +520,14 @@
       "lesson": "언어",
       "premise": "크고 작음, 높고 낮음 같은 반대말로 움직이는 다리를 건너요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "반대말 다리 | 달토끼 루니 EP.022 | 언어을 배워요",
@@ -544,14 +544,14 @@
       "lesson": "생활 습관",
       "premise": "씻기, 먹기, 움직이기, 쉬기의 균형을 놀이처럼 익혀요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "루니의 건강한 하루 | 달토끼 루니 EP.023 | 생활 습관을 배워요",
@@ -568,14 +568,14 @@
       "lesson": "수면",
       "premise": "몽이와 함께 차분한 잠자리 순서를 만들고 편안히 잠들어요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "졸린 구름의 밤 | 달토끼 루니 EP.024 | 수면을 배워요",
@@ -592,14 +592,14 @@
       "lesson": "관찰",
       "premise": "25일 동안 만난 장소와 배움을 한 장의 지도로 완성해요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "우리 마을 보물 지도 | 달토끼 루니 EP.025 | 관찰을 배워요",
@@ -616,14 +616,14 @@
       "lesson": "여행",
       "premise": "친구들이 표를 챙기고 순서를 지키며 처음으로 먼 여행을 떠나요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "별빛 기차의 첫 여행 | 달토끼 루니 EP.026 | 여행을 배워요",
@@ -640,14 +640,14 @@
       "lesson": "문제 해결",
       "premise": "하늘 시간을 되돌리기 위해 시계 부품의 규칙을 찾아요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "멈춰 버린 구름 시계 | 달토끼 루니 EP.027 | 문제 해결을 배워요",
@@ -664,14 +664,14 @@
       "lesson": "경청",
       "premise": "작은 바람의 목소리를 잘 들어야만 보이지 않는 길을 찾을 수 있어요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "속삭이는 바람 계곡 | 달토끼 루니 EP.028 | 경청을 배워요",
@@ -688,14 +688,14 @@
       "lesson": "안전",
       "premise": "서두르던 콩콩이 안전 약속을 지키며 흔들다리를 건너요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "콩콩과 흔들다리 | 달토끼 루니 EP.029 | 안전을 배워요",
@@ -712,14 +712,14 @@
       "lesson": "도전",
       "premise": "첫 발명품이 실패해도 원인을 살피고 더 나은 우산을 만들어요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "토리의 날개 우산 | 달토끼 루니 EP.030 | 도전을 배워요",
@@ -736,14 +736,14 @@
       "lesson": "소통",
       "premise": "주소가 지워진 편지를 단서와 질문으로 주인에게 전해요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "눈꽃 우체국의 편지 | 달토끼 루니 EP.031 | 소통을 배워요",
@@ -760,14 +760,14 @@
       "lesson": "정리",
       "premise": "물건을 둔 순서를 되짚으며 잃어버린 표를 찾아요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "사라진 기차표 | 달토끼 루니 EP.032 | 정리을 배워요",
@@ -784,14 +784,14 @@
       "lesson": "예절",
       "premise": "낯선 섬의 인사법과 식사 예절을 존중하며 새 친구를 만나요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "달치즈 섬의 손님 | 달토끼 루니 EP.033 | 예절을 배워요",
@@ -808,14 +808,14 @@
       "lesson": "약속",
       "premise": "놀이에 빠진 친구들이 해 지기 전 돌아오겠다는 약속을 지켜요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "무지개 폭포의 약속 | 달토끼 루니 EP.034 | 약속을 배워요",
@@ -832,14 +832,14 @@
       "lesson": "관점",
       "premise": "마법 가루로 작아진 루니가 작은 존재의 시선으로 마을을 바라봐요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "작아진 루니 | 달토끼 루니 EP.035 | 관점을 배워요",
@@ -856,14 +856,14 @@
       "lesson": "편견",
       "premise": "무서워 보이는 발자국만으로 상대를 판단하지 않는 법을 배워요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "큰 발자국의 주인 | 달토끼 루니 EP.036 | 편견을 배워요",
@@ -880,14 +880,14 @@
       "lesson": "공정",
       "premise": "이기는 것보다 규칙을 지키고 서로를 응원하는 경주를 만들어요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "바람개비 평원의 경주 | 달토끼 루니 EP.037 | 공정을 배워요",
@@ -904,14 +904,14 @@
       "lesson": "말하기",
       "premise": "말이 되돌아오는 동굴에서 다정한 말의 힘을 경험해요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "별사탕 동굴의 메아리 | 달토끼 루니 EP.038 | 말하기을 배워요",
@@ -928,14 +928,14 @@
       "lesson": "신뢰",
       "premise": "서로의 목소리와 약속을 믿으며 짙은 안개를 빠져나와요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "안개 속 등대 | 달토끼 루니 EP.039 | 신뢰을 배워요",
@@ -952,14 +952,14 @@
       "lesson": "유연함",
       "premise": "계속 바뀌는 길에서 계획을 고치고 새로운 방법을 시도해요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "춤추는 모래언덕 | 달토끼 루니 EP.040 | 유연함을 배워요",

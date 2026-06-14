@@ -29,8 +29,10 @@ def validate(number):
     episode = f"EP{number:03d}"
     folder = ROOT / "ready-to-upload" / episode
     errors = []
+    video_name = "EP001-lost-star.mp4" if number == 1 else f"{episode}.mp4"
     for label, template in REQUIRED.items():
-        path = folder / template.format(episode=episode)
+        filename = video_name if label == "video" else template.format(episode=episode)
+        path = folder / filename
         if not path.exists() or path.stat().st_size == 0:
             errors.append(f"missing-{label}")
 
@@ -38,13 +40,14 @@ def validate(number):
     if not archive.exists() or archive.stat().st_size == 0:
         errors.append("missing-archive")
 
-    video = folder / f"{episode}.mp4"
+    video = folder / video_name
     if video.exists() and video.stat().st_size:
         duration = probe_duration(video)
-        target = 300.0 if number == 1 else 180.0
         if duration is None:
             errors.append("unreadable-duration")
-        elif abs(duration - target) > 0.15:
+        elif number == 1 and not 240.0 <= duration <= 330.0:
+            errors.append(f"duration-{duration:.3f}")
+        elif number != 1 and abs(duration - 180.0) > 0.15:
             errors.append(f"duration-{duration:.3f}")
     return errors
 

@@ -10,3 +10,4 @@ assets/characters/character-preview.jpg
 tools/__pycache__/
 *TEMP_MPY*
 *.tmp
+node_modules/
