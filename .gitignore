@@ -8,4 +8,5 @@ assets/characters/source/
 assets/characters/poses/*-key*.png
 assets/characters/character-preview.jpg
 tools/__pycache__/
+*TEMP_MPY*
 *.tmp
