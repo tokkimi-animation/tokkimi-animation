@@ -22,7 +22,8 @@ POSES = CHARACTERS / "poses"
 WORK = ROOT / "production" / "model-preview"
 OUTPUT = ROOT / "ready-to-upload" / "MODEL-PREVIEW"
 PREVIEW_SIZE = (1280, 720)
-FPS = 24
+FPS = 30
+POSE_BLEND = 0.18
 
 FONT = ImageFont.truetype(r"C:\Windows\Fonts\malgunbd.ttf", 39)
 FONT_SMALL = ImageFont.truetype(r"C:\Windows\Fonts\malgun.ttf", 25)
@@ -144,13 +145,15 @@ def character_layer(item, duration):
 
     def smoothstep(value):
         value = max(0.0, min(1.0, value))
-        return value * value * (3.0 - 2.0 * value)
+        return value * value * value * (value * (value * 6.0 - 15.0) + 10.0)
 
     def entrance(t, length=0.42):
         return smoothstep(t / min(length, duration))
 
-    def breathe(t, amount=0.012):
-        return 1.0 + amount * math.sin(t * 2.8)
+    def breathe(t, amount=0.009):
+        primary = math.sin(t * 2.35)
+        secondary = 0.35 * math.sin(t * 4.7 + 0.8)
+        return 1.0 + amount * (primary + secondary)
 
     if action == "run":
         clip = ImageClip(str(image), duration=duration).resized(
@@ -160,9 +163,10 @@ def character_layer(item, duration):
         def run_position(t):
             progress = smoothstep(t / max(duration - 0.28, 0.1))
             x = -360 + (PREVIEW_SIZE[0] + 310) * progress
-            stride = abs(math.sin(t * 10.5))
-            landing = math.sin(t * 21.0) * 3
-            return int(x), int(105 + 16 * stride + landing)
+            stride = abs(math.sin(t * 9.4))
+            landing = math.sin(t * 18.8 + 0.3) * 1.8
+            launch = 7.0 * math.sin(math.pi * min(t / 0.36, 1.0))
+            return int(x), int(112 + 11 * stride + landing - launch)
 
         return clip.with_position(
             run_position
@@ -176,20 +180,20 @@ def character_layer(item, duration):
         return clip.with_position(
             lambda t: (
                 int(120 - 34 * (1.0 - entrance(t)) + 5 * math.sin(t * 1.9)),
-                int(94 + 5 * math.sin(t * 3.8)),
+                int(94 + 3 * math.sin(t * 3.1) + 1.5 * math.sin(t * 5.2)),
             )
         )
     if action == "warning":
         return clip.with_position(
             lambda t: (
-                int(760 + 42 * (1.0 - entrance(t, 0.32)) + 9 * math.sin(t * 4.2)),
-                int(152 + 8 * math.sin(t * 5.4)),
+                int(760 + 42 * (1.0 - entrance(t, 0.32)) + 6 * math.sin(t * 3.7)),
+                int(152 + 5 * math.sin(t * 4.8)),
             )
         )
     return clip.with_position(
         lambda t: (
-            int(190 + 5 * math.sin(t * 2.0)),
-            int(94 + 4 * math.sin(t * 4.0)),
+            int(190 + 3 * math.sin(t * 1.8)),
+            int(94 + 2.5 * math.sin(t * 3.6)),
         )
     )
 
@@ -252,12 +256,18 @@ def main():
         )
         layers.append(subtitle)
         scene = CompositeVideoClip(layers, size=PREVIEW_SIZE).with_duration(duration).with_audio(audio)
-        scene = scene.with_effects([vfx.FadeIn(0.12), vfx.FadeOut(0.1)])
+        scene = scene.with_effects(
+            [vfx.CrossFadeIn(POSE_BLEND), vfx.CrossFadeOut(POSE_BLEND)]
+        )
         scenes.append(scene)
 
-    video = concatenate_videoclips(scenes, method="compose")
+    video = concatenate_videoclips(
+        scenes,
+        method="compose",
+        padding=-POSE_BLEND,
+    )
     video.write_videofile(
-        str(OUTPUT / "luni-model-preview-v2.mp4"),
+        str(OUTPUT / "luni-model-preview-v3.mp4"),
         fps=FPS,
         codec="libx264",
         audio_codec="aac",
