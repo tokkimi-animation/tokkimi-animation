@@ -65,15 +65,12 @@ img { display: block; max-width: 100%; }
   font-size: 1.25rem;
   text-decoration: none;
 }
-.brand-mark {
-  display: inline-grid;
-  place-items: center;
-  width: 36px;
-  height: 36px;
+.brand-logo {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
   border-radius: 50%;
-  color: var(--lavender-dark);
-  background: var(--yellow);
-  box-shadow: inset -6px -2px 0 rgba(255, 255, 255, .55);
+  filter: drop-shadow(0 4px 8px rgba(101, 73, 46, .16));
 }
 nav { display: flex; gap: 28px; }
 nav a {
@@ -90,13 +87,18 @@ nav a:hover { color: var(--lavender-dark); }
   display: grid;
   grid-template-columns: minmax(0, .85fr) minmax(520px, 1.15fr);
   gap: clamp(36px, 6vw, 96px);
-  min-height: 760px;
-  padding: clamp(70px, 8vw, 120px) clamp(20px, 5vw, 72px);
+  min-height: 680px;
+  padding: clamp(58px, 7vw, 94px) clamp(20px, 5vw, 72px);
   overflow: hidden;
   background:
     radial-gradient(circle at 9% 14%, rgba(255, 216, 115, .35), transparent 22%),
     radial-gradient(circle at 83% 25%, rgba(191, 228, 219, .35), transparent 28%),
     linear-gradient(145deg, #fffaf1 42%, #eee9fb);
+}
+.stars {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
 }
 .stars::before, .stars::after {
   content: "✦  ·  ✧  ·  ✦";
@@ -148,7 +150,7 @@ h1 span { color: var(--lavender); }
   position: relative;
   align-self: center;
   margin: 0;
-  min-height: 590px;
+  min-height: 520px;
 }
 .hero-art::before {
   content: "";
@@ -165,9 +167,9 @@ h1 span { color: var(--lavender); }
 .stage-kongkong { width: 27%; right: 0; bottom: 2%; }
 .stage-moon { position: absolute; left: 37%; top: -8%; color: var(--yellow); font-size: 12rem; opacity: .55; transform: rotate(-18deg); }
 
-.section { padding: clamp(80px, 10vw, 150px) clamp(20px, 7vw, 110px); }
+.section { padding: clamp(58px, 7vw, 104px) clamp(20px, 7vw, 110px); }
 .section-heading h2 { margin-bottom: 18px; font-size: clamp(2.4rem, 4vw, 4.4rem); }
-.section-heading.compact { max-width: 720px; margin-bottom: 48px; }
+.section-heading.compact { max-width: 720px; margin-bottom: 34px; }
 .section-heading.compact h2 { margin-bottom: 12px; }
 .section-heading.compact > p:last-child { color: var(--muted); }
 .intro {
@@ -308,6 +310,7 @@ footer {
   background: #282442;
 }
 footer div { display: flex; align-items: center; gap: 10px; }
+footer .brand-logo { width: 46px; height: 46px; }
 footer p { color: rgba(255, 255, 255, .62); font-size: .82rem; }
 
 @media (max-width: 1100px) {

@@ -1,0 +1,167 @@
+{
+  "number": 18,
+  "title": "콩콩의 빠른 하루",
+  "lesson": "속도",
+  "duration_target": 180,
+  "location": "구름 숲",
+  "repeat_phrase": "속도, 우리 함께 천천히 해 보자!",
+  "characters": [
+    "루니",
+    "토리"
+  ],
+  "scenes": [
+    {
+      "duration": 10,
+      "speaker": "루니",
+      "voice": "ko-KR-SunHiNeural",
+      "text": "안녕, 친구들! 오늘은 콩콩의 빠른 하루 이야기를 만나 볼 거야.",
+      "fr": "Bonjour les amis ! Aujourd’hui, découvrons l’histoire « 콩콩의 빠른 하루 ».",
+      "pose": "welcome",
+      "action": "arrive-and-look"
+    },
+    {
+      "duration": 9,
+      "speaker": "토리",
+      "voice": "ko-KR-SunHiNeural",
+      "text": "루니야, 여기 도움이 필요한 일이 생겼어. 빠르게 할 일과 천천히 해야 할 일을 구별해 실수를 줄여요.",
+      "fr": "Un problème est arrivé : 빠르게 할 일과 천천히 해야 할 일을 구별해 실수를 줄여요.",
+      "pose": "worried",
+      "action": "worried"
+    },
+    {
+      "duration": 8,
+      "speaker": "루니",
+      "voice": "ko-KR-SunHiNeural",
+      "text": "걱정하지 마. 오늘은 속도을 생각하며 함께 답을 찾아보자!",
+      "fr": "Ne t’inquiète pas. Cherchons une réponse en pensant à : 속도.",
+      "pose": "encourage",
+      "action": "hand-to-heart"
+    },
+    {
+      "duration": 10,
+      "speaker": "토리",
+      "voice": "ko-KR-SunHiNeural",
+      "text": "새로운 방법을 만들어 보자!",
+      "fr": "Inventons une nouvelle méthode.",
+      "pose": "thinking",
+      "action": "point-clues"
+    },
+    {
+      "duration": 10,
+      "speaker": "루니",
+      "voice": "ko-KR-SunHiNeural",
+      "text": "첫 번째 방법을 해 볼까? 친구들도 우리와 함께 잘 살펴봐 줘.",
+      "fr": "Essayons une première méthode. Regardez bien avec nous.",
+      "pose": "happy",
+      "action": "collect-colors"
+    },
+    {
+      "duration": 9,
+      "speaker": "모두",
+      "voice": "ko-KR-SunHiNeural",
+      "text": "하나, 둘, 셋! 천천히 시작해 보자.",
+      "fr": "Un, deux, trois ! Commençons doucement.",
+      "pose": "surprised",
+      "action": "small-sneeze"
+    },
+    {
+      "duration": 10,
+      "speaker": "루니",
+      "voice": "ko-KR-SunHiNeural",
+      "text": "음, 이 방법만으로는 조금 부족한 것 같아. 무엇을 바꾸면 좋을까?",
+      "fr": "Cette méthode ne suffit pas. Que pourrions-nous changer ?",
+      "pose": "point",
+      "action": "kneel-and-point"
+    },
+    {
+      "duration": 8,
+      "speaker": "토리",
+      "voice": "ko-KR-SunHiNeural",
+      "text": "속도, 우리 함께 천천히 해 보자!",
+      "fr": "속도 : avançons doucement ensemble.",
+      "pose": "group-happy",
+      "action": "group-happy"
+    },
+    {
+      "duration": 10,
+      "speaker": "루니",
+      "voice": "ko-KR-SunHiNeural",
+      "text": "친구들, 화면 속 단서를 찾아 줄래? 작은 것도 놓치지 말자.",
+      "fr": "Les amis, trouvez l’indice à l’écran. N’oublions aucun petit détail.",
+      "pose": "thinking",
+      "action": "show-three"
+    },
+    {
+      "duration": 10,
+      "speaker": "루니",
+      "voice": "ko-KR-SunHiNeural",
+      "text": "찾았다! 이제 두 번째 방법을 해 볼 수 있어.",
+      "fr": "Trouvé ! Nous pouvons essayer une deuxième méthode.",
+      "pose": "running",
+      "action": "follow-stream"
+    },
+    {
+      "duration": 11,
+      "speaker": "토리",
+      "voice": "ko-KR-SunHiNeural",
+      "text": "이번에는 서로의 생각을 잘 듣고 힘을 모아 보자.",
+      "fr": "Cette fois, écoutons les idées de chacun et unissons nos forces.",
+      "pose": "worried",
+      "action": "inspect-stone"
+    },
+    {
+      "duration": 10,
+      "speaker": "모두",
+      "voice": "ko-KR-SunHiNeural",
+      "text": "좋아! 우리 함께하면 할 수 있어!",
+      "fr": "Oui ! Ensemble, nous pouvons réussir !",
+      "pose": "listening",
+      "action": "audience-search"
+    },
+    {
+      "duration": 10,
+      "speaker": "루니",
+      "voice": "ko-KR-SunHiNeural",
+      "text": "조금씩 답이 보이기 시작해. 속도이 왜 중요한지 알 것 같아.",
+      "fr": "La réponse apparaît. Nous comprenons pourquoi 속도 est important.",
+      "pose": "happy",
+      "action": "raise-colors"
+    },
+    {
+      "duration": 13,
+      "speaker": "모두",
+      "voice": "ko-KR-SunHiNeural",
+      "text": "마지막으로 한 번 더! 하나, 둘, 셋!",
+      "fr": "Une dernière fois ! Un, deux, trois !",
+      "pose": "group-cheer",
+      "action": "rainbow-appears"
+    },
+    {
+      "duration": 10,
+      "speaker": "토리",
+      "voice": "ko-KR-SunHiNeural",
+      "text": "해냈어! 아까 걱정하던 마음이 이제 편안하고 기뻐졌어.",
+      "fr": "Nous avons réussi ! L’inquiétude a laissé place à la joie.",
+      "pose": "relieved",
+      "action": "happy-tears"
+    },
+    {
+      "duration": 10,
+      "speaker": "루니",
+      "voice": "ko-KR-SunHiNeural",
+      "text": "오늘은 속도을 배웠어. 우리 함께 천천히 하면 다시 해낼 수 있어!",
+      "fr": "Aujourd’hui, nous avons appris : 속도. Ensemble, nous pouvons recommencer.",
+      "pose": "welcome",
+      "action": "rainbow-pose"
+    },
+    {
+      "duration": 22,
+      "speaker": "노래",
+      "voice": "ko-KR-SunHiNeural",
+      "text": "속도, 함께 배워요. 마음을 모아 웃어요. 루니 루니 달토끼, 오늘도 함께해요.",
+      "fr": "Apprenons 속도 ensemble. Luni et ses amis sourient ensemble.",
+      "pose": "dance",
+      "action": "ending-dance"
+    }
+  ]
+}

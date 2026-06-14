@@ -1,8 +1,11 @@
 production/**/build/
 production/model-preview/
+production/catalog.lock
+production/queue-worker-*.log
+production/queue-worker-*-summary.json
 ready-to-upload/
 assets/characters/source/
-assets/characters/poses/*-key.png
+assets/characters/poses/*-key*.png
 assets/characters/character-preview.jpg
 tools/__pycache__/
 *.tmp
