@@ -1,19 +1,19 @@
 const characters = [
-  { icon: "🐰", name: "루니 · Luni", latin: "HÉROS", trait: "Curieux · gentil · courageux", copy: "Un petit lapin blanc né sur la Lune. Il écoute ses amis et cherche les réponses avec eux." },
-  { icon: "⭐", name: "별이 · Byeori", latin: "ESPRIT LOGIQUE", trait: "Intelligente · observatrice · organisée", copy: "Une petite étoile qui éclaire le chemin, rassemble les indices et résout les énigmes." },
-  { icon: "☁️", name: "몽이 · Mongi", latin: "COMIQUE", trait: "Drôle · sincère · optimiste", copy: "Un nuage tout doux qui transforme ses maladresses en rires et aide le groupe à recommencer." },
-  { icon: "🐿️", name: "콩콩 · Kongkong", latin: "EXPLORATEUR", trait: "Énergique · aventureux · spontané", copy: "Le premier à partir à l’aventure. Il va parfois trop vite, mais n’abandonne jamais un ami." },
-  { icon: "🦊", name: "토리 · Tori", latin: "INVENTEUR", trait: "Créatif · concentré · persévérant", copy: "Un renard inventeur qui donne une nouvelle utilité aux objets cassés." },
-  { icon: "🦔", name: "밤밤 · Bambam", latin: "LE CŒUR DU GROUPE", trait: "Attentionné · sensible · courageux", copy: "Un hérisson discret qui comprend bien les émotions et apprend à exprimer ses idées." },
-  { icon: "🦉", name: "루미 · Lumi", latin: "GUIDE", trait: "Sage · équilibrée · curieuse", copy: "La chouette de la Bibliothèque Magique. Elle ouvre les chemins grâce aux bonnes questions." },
-  { icon: "🌕", name: "달할머니 · Grand-mère Lune", latin: "MENTOR", trait: "Protectrice · sage · chaleureuse", copy: "Elle veille sur le monde lunaire et confie aux enfants de petites missions utiles." }
+  { image: "luni.png", name: "루니", latin: "LUNI · 주인공", trait: "호기심 · 친절 · 용기", copy: "달에서 태어난 하얀 토끼예요. 친구의 이야기를 먼저 듣고 함께 답을 찾아요." },
+  { image: "byeori.png", name: "별이", latin: "BYEORI · 생각 친구", trait: "지혜 · 관찰 · 질서", copy: "길을 비추는 작은 별이에요. 단서를 모으고 어려운 문제를 차근차근 풀어요." },
+  { image: "mongi.png", name: "몽이", latin: "MONGI · 웃음 친구", trait: "유머 · 솔직함 · 회복", copy: "말랑말랑한 구름 친구예요. 실수도 웃음으로 바꾸고 다시 해 볼 힘을 줘요." },
+  { image: "kongkong.png", name: "콩콩", latin: "KONGKONG · 탐험 친구", trait: "활력 · 모험 · 행동", copy: "가장 먼저 길을 나서는 다람쥐예요. 신나면 조금 빠르지만 누구도 두고 가지 않아요." },
+  { image: "tori.png", name: "토리", latin: "TORI · 발명 친구", trait: "창의 · 집중 · 끈기", copy: "고장 난 물건을 새롭게 바꾸는 여우 발명가예요. 실패해도 다시 만들어 봐요." },
+  { image: "bambam.png", name: "밤밤", latin: "BAMBAM · 마음 친구", trait: "배려 · 섬세함 · 성장", copy: "조용하지만 친구의 마음을 잘 알아보는 고슴도치예요. 천천히 큰 용기를 내요." },
+  { image: "lumi.png", name: "루미", latin: "LUMI · 길잡이", trait: "지식 · 균형 · 질문", copy: "마법 도서관의 부엉이예요. 답을 바로 말하기보다 좋은 질문으로 길을 열어요." },
+  { image: "moon-grandma.png", name: "달할머니", latin: "MOON GRANDMA · 지킴이", trait: "보호 · 지혜 · 온기", copy: "달나라를 지키며 루니와 친구들에게 꼭 필요한 작은 임무를 건네요." }
 ];
 
 const seasonInfo = {
-  1: "Découverte du monde · 세상 발견",
-  2: "Les aventures · 신나는 모험",
-  3: "Le monde magique · 마법의 세계",
-  4: "Grandir ensemble · 함께 성장"
+  1: "세상 발견",
+  2: "신나는 모험",
+  3: "마법의 세계",
+  4: "함께 성장"
 };
 
 const episodeRows = [
@@ -133,7 +133,7 @@ const episodes = episodeRows.map((row, index) => ({
 const characterGrid = document.querySelector("#character-grid");
 characterGrid.innerHTML = characters.map(character => `
   <article class="character-card">
-    <span class="character-icon" aria-hidden="true">${character.icon}</span>
+    <div class="character-portrait"><img src="assets/characters/${character.image}" alt="${character.name} 캐릭터"></div>
     <span class="latin">${character.latin}</span>
     <h3>${character.name}</h3>
     <b>${character.trait}</b>
@@ -168,7 +168,7 @@ function renderEpisodes() {
       <span class="season-label">SEASON ${episode.season} · ${seasonInfo[episode.season]}</span>
     </article>
   `).join("");
-  count.textContent = `${visible.length} épisode${visible.length > 1 ? "s" : ""} affiché${visible.length > 1 ? "s" : ""} sur ${filtered.length}`;
+  count.textContent = `${filtered.length}편 중 ${visible.length}편을 보고 있어요`;
   showMore.hidden = visible.length >= filtered.length;
 }
 

@@ -1,0 +1,5 @@
+production/**/build/
+ready-to-upload/
+assets/characters/source/
+assets/characters/character-preview.jpg
+*.tmp
