@@ -256,22 +256,58 @@ def character_clip(name, action, duration, side, seed):
             )
         )
 
-    emphasis = action in {"sneeze-reaction", "small-sneeze", "happy-tears"}
+    direction = -1 if side == "left" else 1
+
+    def position(t):
+        x = base_x + 4 * math.sin(t * 1.7 + phase)
+        y = base_y + 3 * math.sin(t * 2.9 + phase)
+
+        if action == "arrive-and-look":
+            entrance = 1 - smooth(min(t / 1.35, 1))
+            x += direction * 260 * entrance
+            y += 8 * abs(math.sin(t * 5.2))
+        elif action in {"worried", "hand-to-heart"}:
+            x += 8 * math.sin(t * 1.15 + phase)
+            y += 5 * math.sin(t * 2.15 + phase)
+        elif action in {"point-clues", "show-three", "raise-colors"}:
+            x += direction * (7 + 7 * abs(math.sin(t * 2.4 + phase)))
+            y -= 8 * smooth(min(t / 0.8, 1))
+        elif action in {"collect-colors", "rainbow-appears", "happy-tears"}:
+            y -= 14 * abs(math.sin(t * 3.4 + phase))
+            x += 9 * math.sin(t * 2.2 + phase)
+        elif action in {"sneeze-reaction", "small-sneeze"}:
+            recoil = abs(math.sin(t * 4.8 + phase))
+            x -= direction * 20 * recoil
+            y += 10 * recoil
+        elif action in {"kneel-and-point", "inspect-stone"}:
+            y += 14 * smooth(min(t / 0.9, 1))
+            x += direction * 9 * math.sin(t * 1.8 + phase)
+        elif action in {"audience-search", "listening"}:
+            x += 12 * math.sin(t * 0.95 + phase)
+            y += 4 * math.sin(t * 1.9 + phase)
+        elif action in {
+            "group-happy",
+            "group-cheer",
+            "rainbow-pose",
+            "ending-dance",
+        }:
+            x += 17 * math.sin(t * 3.8 + phase)
+            y -= 13 * abs(math.sin(t * 3.8 + phase))
+
+        return int(x), int(y)
+
     return clip.with_position(
-        lambda t: (
-            int(base_x + 5 * math.sin(t * 1.7 + phase)),
-            int(base_y + (7 if emphasis else 3) * math.sin(t * (4.6 if emphasis else 2.9) + phase)),
-        )
+        position
     )
 
 
-def cast_for(scene):
+def cast_for(scene, featured_friend="byeori"):
     speaker = scene["speaker"]
     if speaker == "루니":
-        return [("luni", "left"), ("byeori", "right")]
+        return [("luni", "left"), (featured_friend, "right")]
     if speaker in FRIEND_ASSET:
         return [("luni", "left"), (FRIEND_ASSET[speaker], "right")]
-    return [("luni", "left"), ("byeori", "center"), ("mongi", "right")]
+    return [("luni", "left"), (featured_friend, "center"), ("mongi", "right")]
 
 
 async def create_voice(scene, path):
@@ -443,6 +479,11 @@ def build(number):
     episode_dir, work, output = episode_paths(number)
     data = json.loads((episode_dir / "episode.json").read_text(encoding="utf-8"))
     scenes = data["scenes"]
+    featured_name = next(
+        (name for name in data.get("characters", []) if name != "루니"),
+        "별이",
+    )
+    featured_friend = FRIEND_ASSET.get(featured_name, "byeori")
     work.mkdir(parents=True, exist_ok=True)
     output.mkdir(parents=True, exist_ok=True)
 
@@ -469,7 +510,10 @@ def build(number):
 
         background = ImageClip(str(background_path), duration=duration)
         layers = [background]
-        for seed, (name, side) in enumerate(cast_for(scene), start=index * 4):
+        for seed, (name, side) in enumerate(
+            cast_for(scene, featured_friend),
+            start=index * 4,
+        ):
             layers.append(character_clip(name, scene["action"], duration, side, seed))
         layers.append(ImageClip(str(subtitle_path), duration=duration))
 
