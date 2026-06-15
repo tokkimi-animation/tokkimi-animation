@@ -7,8 +7,6 @@ import imageio_ffmpeg
 import numpy as np
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 from moviepy import (
-    AudioFileClip,
-    CompositeAudioClip,
     CompositeVideoClip,
     ImageClip,
     concatenate_videoclips,
@@ -94,47 +92,33 @@ def name_plate(name, latin, color, duration, right=False):
     return ImageClip(np.array(image), duration=duration)
 
 
-def character_motion(path, action, duration, index):
-    source = POSES / path
-    clip = ImageClip(str(source), duration=duration).resized(height=530)
-    target_x = 690 if index % 2 else 95
+def character_motion(slug, duration, index):
+    starts = [0.0, 0.30, 0.66, 1.06]
+    ends = [0.42, 0.80, 1.20, duration]
+    target_center = 950 if index % 2 else 350
+    ground = 590
+    clips = []
+    for frame in range(1, 5):
+        start, end = starts[frame-1], ends[frame-1]
+        clip = ImageClip(
+            str(POSES / f"{slug}-motion-{frame}.png"), duration=end-start
+        ).resized(height=500)
+        x = target_center - clip.w / 2
+        y = ground - clip.h
 
-    def pos(t):
-        phase = t / max(duration, 0.01)
-        x = target_x
-        y = 105 + int(4 * math.sin(t * 4.6))
-        if action == "jump":
-            y -= int(78 * math.sin(min(1, phase * 1.35) * math.pi) ** 2)
-        elif action == "sneeze":
-            y += int(12 * math.sin(t * 15) * math.exp(-2.8 * t))
-        elif action == "spin":
-            y -= int(10 * math.sin(t * 4.5))
-        elif action == "invent":
-            x += int(5 * math.sin(t * 5))
-            y -= int(8 * math.sin(t * 4.2))
-        elif action == "brave":
-            y -= int(16 * math.sin(phase * math.pi) ** 2)
-        elif action == "glide":
-            x += int(5 * math.sin(t * 2.8))
-            y += int(9 * math.sin(t * 4.2))
-        elif action == "magic":
-            y += int(7 * math.sin(t * 3))
-        return x, y
+        def position(t, x=x, y=y, frame=frame):
+            # Tiny breathing follow-through only; the action is in the drawings.
+            settle = 2.5 * math.sin(t * 5.2) if frame in {1, 4} else 0
+            return x, y + settle
 
-    clip = clip.with_position(pos)
-    if action == "spin":
-        clip = clip.rotated(lambda t: 5 * math.sin(t * 4.5))
-    elif action == "sneeze":
-        clip = clip.resized(
-            lambda t: 1.0 + 0.045 * math.sin(t * 13) * math.exp(-2.5 * t)
-        )
-    elif action == "brave":
-        clip = clip.resized(
-            lambda t: 0.97 + 0.03 * math.sin(min(1, t / 0.8) * math.pi)
-        )
-    elif action in {"invent", "magic"}:
-        clip = clip.rotated(lambda t: 2.2 * math.sin(t * 3.2))
-    return clip
+        clip = clip.with_start(start).with_position(position)
+        effects = []
+        if frame > 1:
+            effects.append(vfx.CrossFadeIn(0.10))
+        if frame < 4:
+            effects.append(vfx.CrossFadeOut(0.10))
+        clips.append(clip.with_effects(effects))
+    return clips
 
 
 def title_scene(duration):
@@ -158,9 +142,10 @@ def title_scene(duration):
 def cast_scene(item, index, duration=1.65):
     name, latin, base_path, pose_path, color, action = item
     right = index % 2 == 0
+    slug = base_path.removesuffix(".png")
     return CompositeVideoClip([
         backdrop(index + 1, duration),
-        character_motion(pose_path, action, duration, index),
+        *character_motion(slug, duration, index),
         name_plate(name, latin, color, duration, right=not right),
     ], size=SIZE).with_duration(duration).with_effects(
         [vfx.CrossFadeIn(0.10), vfx.CrossFadeOut(0.10)]
@@ -204,7 +189,7 @@ def luni_final(duration):
     ]
     image = Image.new("RGBA", SIZE, (0, 0, 0, 0))
     draw = ImageDraw.Draw(image)
-    phrase = "안녕! 나는 루니야!"
+    phrase = "나, 루니야!"
     box = draw.textbbox((0, 0), phrase, font=FONT_NAME)
     phrase_x = (1280-(box[2]-box[0]))/2
     draw.text((phrase_x+4, 584), phrase, font=FONT_NAME,
@@ -238,7 +223,13 @@ def musical_score(duration, sample_rate=44100):
         attack = np.minimum(t / 0.018, 1)
         release = np.exp(-2.7 * t / max(length, 0.01))
         env = attack * release
-        if kind == "musicbox":
+        if kind == "pad":
+            attack = np.minimum(t / 0.16, 1)
+            release = np.minimum((length - t) / 0.16, 1)
+            env = attack * np.maximum(0, release)
+            wave = np.sin(2*np.pi*frequency*t)
+            wave += .10*np.sin(2*np.pi*frequency*2*t)
+        elif kind == "musicbox":
             wave = np.sin(2*np.pi*frequency*t)
             wave += .16*np.sin(2*np.pi*frequency*2*t)
             wave += .04*np.sin(2*np.pi*frequency*3*t)
@@ -274,6 +265,8 @@ def musical_score(duration, sample_rate=44100):
         chord = progression[bar % len(progression)]
         melody = melody_sections[bar % len(melody_sections)]
         for frequency in chord:
+            note(start, beat*4.08, frequency/2, .012, "pad")
+        for frequency in chord:
             note(start, beat*3.9, frequency, .012, "piano")
         # Two gentle down-strums per bar, with tiny offsets for a human feel.
         for offset, frequency in enumerate(chord):
@@ -288,21 +281,54 @@ def musical_score(duration, sample_rate=44100):
     bridge_start = max(0, duration - 4.2)
     bridge_end = min(total, int((bridge_start + 1.2)*sample_rate))
     signal[int(bridge_start*sample_rate):bridge_end] *= np.linspace(1, .35, bridge_end-int(bridge_start*sample_rate))
-    voice_start = duration - 2.8
-    signal[int(voice_start*sample_rate):] *= .48
-
     fade = min(int(sample_rate*.45), total//2)
     signal[:fade] *= np.linspace(0, 1, fade)
     signal[-fade:] *= np.linspace(1, 0, fade)
     peak = max(np.max(np.abs(signal)), 1e-6)
-    signal *= .16 / peak
+    signal *= .22 / peak
     return np.column_stack([signal, signal]).astype(np.float32), sample_rate
 
 
-async def final_voice(raw_path, soft_path):
-    import edge_tts
+def read_voice(path, sample_rate=44100):
+    completed = subprocess.run(
+        [
+            imageio_ffmpeg.get_ffmpeg_exe(), "-i", str(path),
+            "-f", "f32le", "-acodec", "pcm_f32le",
+            "-ac", "2", "-ar", str(sample_rate), "pipe:1",
+        ],
+        check=True,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.DEVNULL,
+    )
+    return np.frombuffer(completed.stdout, dtype=np.float32).reshape(-1, 2)
 
+
+def mix_soundtrack(music, voice, voice_start, sample_rate=44100):
+    mixed = music.astype(np.float64).copy()
+    start = int(voice_start * sample_rate)
+    end = min(len(mixed), start + len(voice))
+    voice = voice[:end-start].astype(np.float64)
+
+    # Smooth ducking removes the click caused by the old instantaneous cut.
+    envelope = np.ones(len(mixed), dtype=np.float64)
+    ramp = int(.24 * sample_rate)
+    down_start = max(0, start-ramp)
+    up_end = min(len(mixed), end+ramp)
+    envelope[down_start:start] = np.linspace(1.0, .50, start-down_start)
+    envelope[start:end] = .50
+    envelope[end:up_end] = np.linspace(.50, 1.0, up_end-end)
+    mixed *= envelope[:, None]
+    mixed[start:end] += voice * .95
+
+    peak = max(np.max(np.abs(mixed)), 1e-6)
+    mixed *= min(1.0, .92 / peak)
+    return mixed.astype(np.float32)
+
+
+async def final_voice(raw_path, soft_path):
     if not raw_path.exists() or raw_path.stat().st_size < 1_000:
+        import edge_tts
+
         await edge_tts.Communicate(
             "나, 루니야!",
             "ko-KR-SunHiNeural",
@@ -349,13 +375,13 @@ def main():
     video = concatenate_videoclips(clips, method="compose", padding=-0.08)
 
     music, rate = musical_score(video.duration)
-    music_clip = AudioArrayClip(music, fps=rate).with_duration(video.duration)
-    voice = AudioFileClip(str(voice_path)).with_volume_scaled(0.92)
     voice_start = video.duration - 2.02
-    voice = voice.with_start(voice_start)
-    video = video.with_audio(CompositeAudioClip([music_clip, voice]))
+    voice_samples = read_voice(voice_path, rate)
+    soundtrack = mix_soundtrack(music, voice_samples, voice_start, rate)
+    music_clip = AudioArrayClip(soundtrack, fps=rate).with_duration(video.duration)
+    video = video.with_audio(music_clip)
 
-    output = OUTPUT / "LUNI-GENERIQUE-V5-ILLUSTRE.mp4"
+    output = OUTPUT / "LUNI-GENERIQUE-V6-VRAIMENT-ANIME.mp4"
     video.write_videofile(
         str(output),
         fps=FPS,
@@ -369,9 +395,10 @@ def main():
     shutil.copy2(output, OUTPUT / "LUNI-GENERIQUE-V2-CHAQUE-EPISODE.mp4")
     shutil.copy2(output, OUTPUT / "LUNI-GENERIQUE-V3-FLUIDE-CHAQUE-EPISODE.mp4")
     shutil.copy2(output, OUTPUT / "LUNI-GENERIQUE-V4-ANIME-SANS-GLISSEMENT.mp4")
+    shutil.copy2(output, OUTPUT / "LUNI-GENERIQUE-V5-ILLUSTRE.mp4")
     (OUTPUT / "LISEZ-MOI.txt").write_text(
-        "Version recommandée : LUNI-GENERIQUE-V5-ILLUSTRE.mp4\n"
-        "Prénoms illustrés sans cadres, musique enfantine chaleureuse, "
+        "Version recommandée : LUNI-GENERIQUE-V6-VRAIMENT-ANIME.mp4\n"
+        "Quatre poses d’animation dédiées pour chaque personnage, audio continu, "
         "puis Luni : « 나, 루니야! » avec un clin d’œil.\n",
         encoding="utf-8",
     )
@@ -398,12 +425,12 @@ def main():
 <body>
   <main>
     <h1>달토끼 루니 · Nouveau générique</h1>
-    <p>Prénoms illustrés, musique enfantine chaleureuse et voix plus naturelle.</p>
+    <p>Chaque personnage possède quatre vraies poses et la piste audio est continue.</p>
     <video controls autoplay preload="auto" poster="tokkimi-logo.png">
-      <source src="LUNI-GENERIQUE-V5-ILLUSTRE.mp4" type="video/mp4">
+      <source src="LUNI-GENERIQUE-V6-VRAIMENT-ANIME.mp4" type="video/mp4">
     </video>
     <nav>
-      <a href="LUNI-GENERIQUE-V5-ILLUSTRE.mp4" download>
+      <a href="LUNI-GENERIQUE-V6-VRAIMENT-ANIME.mp4" download>
         Télécharger le générique final
       </a>
     </nav>
@@ -415,7 +442,6 @@ def main():
     )
     video.close()
     music_clip.close()
-    voice.close()
     for clip in clips:
         clip.close()
     print(output)
