@@ -46,11 +46,17 @@ def main():
             log(args.worker, f"EP{number:03d} already-complete")
             continue
         log(args.worker, f"EP{number:03d} render-start")
-        result = subprocess.run(
-            [sys.executable, str(ROOT / "tools" / "build_episode.py"), str(number)],
-            cwd=ROOT,
-        )
-        if result.returncode == 0 and is_complete(number):
+        result = None
+        for attempt in range(1, 3):
+            result = subprocess.run(
+                [sys.executable, str(ROOT / "tools" / "build_episode.py"), str(number)],
+                cwd=ROOT,
+            )
+            if result.returncode == 0 and is_complete(number):
+                break
+            log(args.worker, f"EP{number:03d} retry={attempt}")
+            time.sleep(attempt * 5)
+        if result is not None and result.returncode == 0 and is_complete(number):
             log(args.worker, f"EP{number:03d} render-complete")
         else:
             failures.append(number)

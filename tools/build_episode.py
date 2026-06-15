@@ -360,20 +360,32 @@ async def create_voice(scene, path):
     elif speaker in {"모두", "노래"}:
         rate, pitch, volume = "+6%", "+2Hz", "-6%"
 
-    await edge_tts.Communicate(
-        scene["text"],
-        scene["voice"],
-        rate=rate,
-        pitch=pitch,
-        volume=volume,
-    ).save(str(path))
+    last_error = None
+    for attempt in range(1, 4):
+        try:
+            if path.exists():
+                path.unlink()
+            await edge_tts.Communicate(
+                scene["text"],
+                scene["voice"],
+                rate=rate,
+                pitch=pitch,
+                volume=volume,
+            ).save(str(path))
+            if path.exists() and path.stat().st_size > 1_000:
+                return
+            last_error = RuntimeError(f"empty voice file: {path.name}")
+        except Exception as error:
+            last_error = error
+        await asyncio.sleep(attempt * 1.5)
+    raise RuntimeError(f"voice generation failed for {path.name}") from last_error
 
 
 async def build_voices(scenes, work):
     tasks = []
     for index, scene in enumerate(scenes, start=1):
         path = work / f"voice-{index:02d}.mp3"
-        if not path.exists():
+        if not path.exists() or path.stat().st_size <= 1_000:
             tasks.append(create_voice(scene, path))
     if tasks:
         await asyncio.gather(*tasks)

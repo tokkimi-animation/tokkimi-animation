@@ -1360,14 +1360,14 @@
       "lesson": "시간",
       "premise": "즐거운 순간을 붙잡기보다 흐르는 시간을 잘 쓰는 법을 배워요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "시간을 멈춘 모래시계 | 달토끼 루니 EP.057 | 시간을 배워요",
@@ -1384,14 +1384,14 @@
       "lesson": "욕구",
       "premise": "갖고 싶은 것과 정말 필요한 것을 구별해 소원을 되찾아요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "소원을 먹는 구름 | 달토끼 루니 EP.058 | 욕구을 배워요",
@@ -1408,14 +1408,14 @@
       "lesson": "이야기",
       "premise": "루니와 친구들이 선택한 행동에 따라 빈 책의 이야기가 완성돼요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "마법 도서관의 빈 책 | 달토끼 루니 EP.059 | 이야기을 배워요",
@@ -1432,14 +1432,14 @@
       "lesson": "감정",
       "premise": "걱정 때문에 잠들지 못한 밤밤이 마음을 말하며 꿈을 편안히 놓아요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "잠들지 않는 꿈 | 달토끼 루니 EP.060 | 감정을 배워요",
