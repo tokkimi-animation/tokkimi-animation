@@ -39,3 +39,18 @@ Cette commande traite `EP001` à `EP100` et écrit chaque résultat dans
 - particules, lumière et éléments magiques animés ;
 - export 1920 × 1080 à 30 FPS ;
 - intro et outro YouTube.
+
+## Animation articulée
+
+Le test `tools/build_rig_motion_test.py` utilise une marionnette composée de
+calques indépendants :
+
+- tête et oreilles ;
+- corps, bras et transfert de poids ;
+- yeux ouverts et fermés ;
+- formes de bouche pilotées par l’amplitude de la voix ;
+- respiration, regard et gestes secondaires.
+
+Cette approche doit remplacer le montage de poses fixes pour les personnages
+principaux. Adobe Character Animator est la cible recommandée pour finaliser
+les rigs, le lip-sync et les gestes réutilisables sur les 100 épisodes.
