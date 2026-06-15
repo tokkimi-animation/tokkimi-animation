@@ -346,7 +346,7 @@ def cast_for(scene, featured_friend="byeori"):
 
 VOICE_PROFILES = {
     "루니": ("ko-KR-SunHiNeural", "+11%", "+1Hz", "-5%"),
-    "별이": ("ko-KR-SunHiNeural", "+14%", "+7Hz", "-7%"),
+    "별이": ("ko-KR-HyunsuMultilingualNeural", "+16%", "+10Hz", "-7%"),
     "몽이": ("ko-KR-InJoonNeural", "+7%", "+1Hz", "-6%"),
     "콩콩": ("ko-KR-InJoonNeural", "+17%", "+6Hz", "-5%"),
     "토리": ("ko-KR-HyunsuMultilingualNeural", "+9%", "-2Hz", "-6%"),

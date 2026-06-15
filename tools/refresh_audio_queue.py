@@ -10,11 +10,13 @@ def main():
     parser.add_argument("--workers", type=int, required=True)
     parser.add_argument("--start", type=int, default=2)
     parser.add_argument("--end", type=int, default=97)
+    parser.add_argument("--numbers", type=int, nargs="*")
     args = parser.parse_args()
 
     failures = []
-    for number in range(args.start, args.end + 1):
-        if (number - args.start) % args.workers != args.worker:
+    numbers = args.numbers or list(range(args.start, args.end + 1))
+    for index, number in enumerate(numbers):
+        if index % args.workers != args.worker:
             continue
         for attempt in range(1, 4):
             try:
