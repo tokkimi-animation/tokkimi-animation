@@ -1,0 +1,8 @@
+{
+  "name": "tokkimi-animation",
+  "private": true,
+  "scripts": {
+    "remaster:episode": "node tools/remaster.mjs episode",
+    "remaster:all": "node tools/remaster.mjs all"
+  }
+}
