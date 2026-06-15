@@ -8,6 +8,9 @@ from PIL import Image
 
 
 ROOT = Path(__file__).resolve().parents[1]
+CATALOG = json.loads(
+    (ROOT / "production" / "catalog.json").read_text(encoding="utf-8")
+)
 REQUIRED = {
     "video": "{episode}.mp4",
     "thumbnail": "thumbnail.png",
@@ -15,6 +18,10 @@ REQUIRED = {
     "metadata": "youtube.txt",
     "script": "script-ko-fr.md",
 }
+
+
+def normalize_text(text):
+    return text.replace("\r\n", "\n").replace("\r", "\n").strip()
 
 
 def validate(number):
@@ -74,6 +81,15 @@ def validate(number):
         text = metadata.read_text(encoding="utf-8")
         if number != 1 and ("TITRE" not in text or "DESCRIPTION" not in text):
             errors.append("invalid-metadata")
+        episode_data = CATALOG["episodes"][number - 1]
+        normalized = normalize_text(text)
+        if number != 1 and normalize_text(episode_data["youtube"]["title"]) not in normalized:
+            errors.append("outdated-youtube-title")
+        if (
+            number != 1
+            and normalize_text(episode_data["youtube"]["description"]) not in normalized
+        ):
+            errors.append("outdated-youtube-description")
 
     if archive.exists() and archive.stat().st_size:
         try:
@@ -89,6 +105,19 @@ def validate(number):
             missing = sorted(expected - names)
             if missing:
                 errors.append(f"archive-missing-{'+'.join(missing)}")
+            elif number != 1:
+                with zipfile.ZipFile(archive) as package:
+                    archived_metadata = normalize_text(
+                        package.read("youtube.txt").decode("utf-8")
+                    )
+                episode_data = CATALOG["episodes"][number - 1]
+                if normalize_text(episode_data["youtube"]["title"]) not in archived_metadata:
+                    errors.append("archive-outdated-youtube-title")
+                if (
+                    normalize_text(episode_data["youtube"]["description"])
+                    not in archived_metadata
+                ):
+                    errors.append("archive-outdated-youtube-description")
         except zipfile.BadZipFile:
             errors.append("invalid-archive")
     return errors
