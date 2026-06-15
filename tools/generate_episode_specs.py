@@ -81,6 +81,17 @@ def scene(duration, speaker, text, fr, pose, action):
     }
 
 
+def has_batchim(text):
+    for character in reversed(text.strip()):
+        if "\uac00" <= character <= "\ud7a3":
+            return (ord(character) - 0xAC00) % 28 != 0
+    return False
+
+
+def particle(text, with_batchim, without_batchim):
+    return with_batchim if has_batchim(text) else without_batchim
+
+
 def make_scenes(episode):
     number = episode["number"]
     title = episode["title"]
@@ -92,7 +103,7 @@ def make_scenes(episode):
     lines = [
         ("루니", f"안녕, 친구들! 오늘은 {title} 이야기를 만나 볼 거야.", f"Bonjour les amis ! Aujourd’hui, découvrons l’histoire « {title} »."),
         (friend, f"루니야, 여기 도움이 필요한 일이 생겼어. {premise}", f"Un problème est arrivé : {premise}"),
-        ("루니", f"걱정하지 마. 오늘은 {lesson}을 생각하며 함께 답을 찾아보자!", f"Ne t’inquiète pas. Cherchons une réponse en pensant à : {lesson}."),
+        ("루니", f"걱정하지 마. 오늘은 {lesson}{particle(lesson, '을', '를')} 생각하며 함께 답을 찾아보자!", f"Ne t’inquiète pas. Cherchons une réponse en pensant à : {lesson}."),
         (friend, friend_line, friend_fr),
         ("루니", "첫 번째 방법을 해 볼까? 친구들도 우리와 함께 잘 살펴봐 줘.", "Essayons une première méthode. Regardez bien avec nous."),
         ("모두", "하나, 둘, 셋! 천천히 시작해 보자.", "Un, deux, trois ! Commençons doucement."),
@@ -102,10 +113,10 @@ def make_scenes(episode):
         ("루니", "찾았다! 이제 두 번째 방법을 해 볼 수 있어.", "Trouvé ! Nous pouvons essayer une deuxième méthode."),
         (friend, "이번에는 서로의 생각을 잘 듣고 힘을 모아 보자.", "Cette fois, écoutons les idées de chacun et unissons nos forces."),
         ("모두", "좋아! 우리 함께하면 할 수 있어!", "Oui ! Ensemble, nous pouvons réussir !"),
-        ("루니", f"조금씩 답이 보이기 시작해. {lesson}이 왜 중요한지 알 것 같아.", f"La réponse apparaît. Nous comprenons pourquoi {lesson} est important."),
+        ("루니", f"조금씩 답이 보이기 시작해. {lesson}{particle(lesson, '이', '가')} 왜 중요한지 알 것 같아.", f"La réponse apparaît. Nous comprenons pourquoi {lesson} est important."),
         ("모두", "마지막으로 한 번 더! 하나, 둘, 셋!", "Une dernière fois ! Un, deux, trois !"),
         (friend, "해냈어! 아까 걱정하던 마음이 이제 편안하고 기뻐졌어.", "Nous avons réussi ! L’inquiétude a laissé place à la joie."),
-        ("루니", f"오늘은 {lesson}을 배웠어. 우리 함께 천천히 하면 다시 해낼 수 있어!", f"Aujourd’hui, nous avons appris : {lesson}. Ensemble, nous pouvons recommencer."),
+        ("루니", f"오늘은 {lesson}{particle(lesson, '을', '를')} 배웠어. 우리 함께 천천히 하면 다시 해낼 수 있어!", f"Aujourd’hui, nous avons appris : {lesson}. Ensemble, nous pouvons recommencer."),
         ("노래", f"{lesson}, 함께 배워요. 마음을 모아 웃어요. 루니 루니 달토끼, 오늘도 함께해요.", f"Apprenons {lesson} ensemble. Luni et ses amis sourient ensemble."),
     ]
 

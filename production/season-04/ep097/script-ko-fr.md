@@ -25,7 +25,7 @@
 ### Plan 03 · 8 s
 
 **루니**  
-걱정하지 마. 오늘은 경제을 생각하며 함께 답을 찾아보자!
+걱정하지 마. 오늘은 경제를 생각하며 함께 답을 찾아보자!
 
 *Contrôle français : Ne t’inquiète pas. Cherchons une réponse en pensant à : 경제.*
 
@@ -95,7 +95,7 @@
 ### Plan 13 · 10 s
 
 **루니**  
-조금씩 답이 보이기 시작해. 경제이 왜 중요한지 알 것 같아.
+조금씩 답이 보이기 시작해. 경제가 왜 중요한지 알 것 같아.
 
 *Contrôle français : La réponse apparaît. Nous comprenons pourquoi 경제 est important.*
 
@@ -116,7 +116,7 @@
 ### Plan 16 · 10 s
 
 **루니**  
-오늘은 경제을 배웠어. 우리 함께 천천히 하면 다시 해낼 수 있어!
+오늘은 경제를 배웠어. 우리 함께 천천히 하면 다시 해낼 수 있어!
 
 *Contrôle français : Aujourd’hui, nous avons appris : 경제. Ensemble, nous pouvons recommencer.*
 

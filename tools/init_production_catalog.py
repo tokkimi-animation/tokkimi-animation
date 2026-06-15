@@ -25,14 +25,28 @@ def slug_for(number):
     return f"ep{number:03d}"
 
 
+def has_batchim(text):
+    for character in reversed(text.strip()):
+        if "\uac00" <= character <= "\ud7a3":
+            return (ord(character) - 0xAC00) % 28 != 0
+    return False
+
+
+def particle(text, with_batchim, without_batchim):
+    return with_batchim if has_batchim(text) else without_batchim
+
+
 def youtube_title(number, title, lesson):
-    return f"{title} | 달토끼 루니 EP.{number:03d} | {lesson}을 배워요"
+    return (
+        f"{title} | 달토끼 루니 EP.{number:03d} | "
+        f"{lesson}{particle(lesson, '을', '를')} 배워요"
+    )
 
 
 def youtube_description(title, premise, lesson):
     return (
         f"{premise}\n\n"
-        f"오늘의 배움은 '{lesson}'이에요.\n"
+        f"오늘의 배움은 '{lesson}'{particle(lesson, '이에요', '예요')}.\n"
         "달토끼 루니와 친구들이 함께 생각하고 노래하며 답을 찾아가요.\n\n"
         "#달토끼루니 #어린이애니메이션 #유아교육 #키즈콘텐츠"
     )

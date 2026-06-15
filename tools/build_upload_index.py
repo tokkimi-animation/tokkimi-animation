@@ -12,6 +12,21 @@ def file_exists(path):
     return path.exists() and path.stat().st_size > 0
 
 
+def episode_ready(episode):
+    number = episode["number"]
+    episode_id = episode["id"]
+    video_name = "EP001-lost-star.mp4" if number == 1 else f"{episode_id}.mp4"
+    required = [
+        READY / episode_id / video_name,
+        READY / episode_id / "thumbnail.png",
+        READY / episode_id / "subtitles-ko.srt",
+        READY / episode_id / "youtube.txt",
+        READY / episode_id / "script-ko-fr.md",
+        READY / f"{episode_id}-upload-pack.zip",
+    ]
+    return all(file_exists(path) for path in required)
+
+
 def card(episode):
     number = episode["number"]
     episode_id = episode["id"]
@@ -24,7 +39,7 @@ def card(episode):
         "Texte YouTube": f"{episode_id}/youtube.txt",
         "Pack ZIP": f"{episode_id}-upload-pack.zip",
     }
-    ready = all(file_exists(READY / value) for value in links.values())
+    ready = episode_ready(episode)
     link_html = "".join(
         f'<a href="{html.escape(value)}">{label}</a>'
         if file_exists(READY / value)
@@ -55,14 +70,7 @@ def card(episode):
 def main():
     catalog = json.loads(CATALOG.read_text(encoding="utf-8"))
     cards = "\n".join(card(episode) for episode in catalog["episodes"])
-    ready_count = sum(
-        1
-        for episode in catalog["episodes"]
-        if file_exists(
-            READY
-            / f"{episode['id']}-upload-pack.zip"
-        )
-    )
+    ready_count = sum(episode_ready(episode) for episode in catalog["episodes"])
     document = f"""<!doctype html>
 <html lang="fr">
 <head>

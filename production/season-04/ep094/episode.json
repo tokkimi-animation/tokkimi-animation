@@ -32,7 +32,7 @@
       "duration": 8,
       "speaker": "루니",
       "voice": "ko-KR-SunHiNeural",
-      "text": "걱정하지 마. 오늘은 신뢰을 생각하며 함께 답을 찾아보자!",
+      "text": "걱정하지 마. 오늘은 신뢰를 생각하며 함께 답을 찾아보자!",
       "fr": "Ne t’inquiète pas. Cherchons une réponse en pensant à : 신뢰.",
       "pose": "encourage",
       "action": "hand-to-heart"
@@ -122,7 +122,7 @@
       "duration": 10,
       "speaker": "루니",
       "voice": "ko-KR-SunHiNeural",
-      "text": "조금씩 답이 보이기 시작해. 신뢰이 왜 중요한지 알 것 같아.",
+      "text": "조금씩 답이 보이기 시작해. 신뢰가 왜 중요한지 알 것 같아.",
       "fr": "La réponse apparaît. Nous comprenons pourquoi 신뢰 est important.",
       "pose": "happy",
       "action": "raise-colors"
@@ -149,7 +149,7 @@
       "duration": 10,
       "speaker": "루니",
       "voice": "ko-KR-SunHiNeural",
-      "text": "오늘은 신뢰을 배웠어. 우리 함께 천천히 하면 다시 해낼 수 있어!",
+      "text": "오늘은 신뢰를 배웠어. 우리 함께 천천히 하면 다시 해낼 수 있어!",
       "fr": "Aujourd’hui, nous avons appris : 신뢰. Ensemble, nous pouvons recommencer.",
       "pose": "welcome",
       "action": "rainbow-pose"
