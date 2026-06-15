@@ -157,17 +157,32 @@ function renderEpisodes() {
     return inSeason && haystack.includes(query);
   });
   const visible = filtered.slice(0, visibleLimit);
-  episodeGrid.innerHTML = visible.map(episode => `
+  episodeGrid.innerHTML = visible.map(episode => {
+    const id = `EP${String(episode.number).padStart(3, "0")}`;
+    const video = episode.number === 1
+      ? "assets/videos/ep001-lost-star.mp4"
+      : episode.number === 2
+        ? "assets/videos/ep002-rainbow-colors.mp4"
+        : "";
+    const action = video
+      ? `<a class="episode-watch" href="${video}" target="_blank" rel="noopener">▶ 영상 보기</a>`
+      : `<span class="episode-coming">YouTube 공개 준비 중</span>`;
+    return `
     <article class="episode-card">
+      <img class="episode-thumbnail" src="assets/thumbnails/${id}.png"
+        alt="${episode.title} 영상 미리보기" loading="lazy">
+      <div class="episode-body">
       <div class="episode-meta">
         <span class="episode-number">EP. ${String(episode.number).padStart(3, "0")}</span>
         <span class="lesson">${episode.lesson}</span>
       </div>
       <h3>${episode.title}</h3>
       <p>${episode.premise}</p>
+      ${action}
       <span class="season-label">SEASON ${episode.season} · ${seasonInfo[episode.season]}</span>
+      </div>
     </article>
-  `).join("");
+  `}).join("");
   count.textContent = `${filtered.length}편 중 ${visible.length}편을 보고 있어요`;
   showMore.hidden = visible.length >= filtered.length;
 }

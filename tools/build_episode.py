@@ -344,21 +344,31 @@ def cast_for(scene, featured_friend="byeori"):
     return [("luni", "left"), (featured_friend, "center"), ("mongi", "right")]
 
 
+VOICE_PROFILES = {
+    "루니": ("ko-KR-SunHiNeural", "+11%", "+1Hz", "-5%"),
+    "별이": ("ko-KR-SunHiNeural", "+14%", "+7Hz", "-7%"),
+    "몽이": ("ko-KR-InJoonNeural", "+7%", "+1Hz", "-6%"),
+    "콩콩": ("ko-KR-InJoonNeural", "+17%", "+6Hz", "-5%"),
+    "토리": ("ko-KR-HyunsuMultilingualNeural", "+9%", "-2Hz", "-6%"),
+    "밤밤": ("ko-KR-SunHiNeural", "-1%", "-4Hz", "-8%"),
+    "루미": ("ko-KR-HyunsuMultilingualNeural", "-3%", "-7Hz", "-8%"),
+    "달할머니": ("ko-KR-SunHiNeural", "-6%", "-8Hz", "-9%"),
+    "모두": ("ko-KR-SunHiNeural", "+6%", "+2Hz", "-6%"),
+    "노래": ("ko-KR-SunHiNeural", "+6%", "+2Hz", "-6%"),
+}
+
+
+def voice_profile(scene):
+    return VOICE_PROFILES.get(
+        scene["speaker"],
+        (scene.get("voice", "ko-KR-SunHiNeural"), "+8%", "+0Hz", "-6%"),
+    )
+
+
 async def create_voice(scene, path):
     import edge_tts
 
-    speaker = scene["speaker"]
-    rate = "+11%"
-    pitch = "+1Hz"
-    volume = "-5%"
-    if speaker == "별이":
-        rate, pitch, volume = "+8%", "+3Hz", "-6%"
-    elif speaker == "몽이":
-        rate, pitch, volume = "+9%", "-1Hz", "-5%"
-    elif speaker == "달할머니":
-        rate, pitch, volume = "+3%", "-2Hz", "-7%"
-    elif speaker in {"모두", "노래"}:
-        rate, pitch, volume = "+6%", "+2Hz", "-6%"
+    voice, rate, pitch, volume = voice_profile(scene)
 
     last_error = None
     for attempt in range(1, 4):
@@ -367,7 +377,7 @@ async def create_voice(scene, path):
                 path.unlink()
             await edge_tts.Communicate(
                 scene["text"],
-                scene["voice"],
+                voice,
                 rate=rate,
                 pitch=pitch,
                 volume=volume,

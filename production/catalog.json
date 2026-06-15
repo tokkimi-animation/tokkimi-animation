@@ -2176,14 +2176,14 @@
       "lesson": "주도성",
       "premise": "도움을 기다리지 않고 주변에서 할 수 있는 일을 스스로 찾아요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "오늘은 내가 도울게 | 달토끼 루니 EP.091 | 주도성을 배워요",
@@ -2248,14 +2248,14 @@
       "lesson": "신뢰",
       "premise": "매일 지킬 수 있는 작은 약속을 쌓아 친구의 믿음을 되찾아요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "작은 약속 저금통 | 달토끼 루니 EP.094 | 신뢰를 배워요",
@@ -2272,14 +2272,14 @@
       "lesson": "도움 요청",
       "premise": "혼자 하기 어려운 일을 인정하고 알맞은 사람에게 도움을 청해요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "도와달라는 용기 | 달토끼 루니 EP.095 | 도움 요청을 배워요",
@@ -2296,14 +2296,14 @@
       "lesson": "이별",
       "premise": "멀리 떠나는 친구와 슬픔을 나누고 이어질 방법을 만들어요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "추억 상자를 열면 | 달토끼 루니 EP.096 | 이별을 배워요",
@@ -2320,14 +2320,14 @@
       "lesson": "경제",
       "premise": "필요와 욕심을 구별하고 정해진 별동전을 계획해 사용해요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "달나라 작은 시장 | 달토끼 루니 EP.097 | 경제를 배워요",
@@ -2344,14 +2344,14 @@
       "lesson": "협업",
       "premise": "무대 앞과 뒤의 모든 역할을 존중하며 함께 공연해요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "우리의 첫 공연 | 달토끼 루니 EP.098 | 협업을 배워요",
@@ -2368,14 +2368,14 @@
       "lesson": "성찰",
       "premise": "지나온 모험 속에서 각자 가장 빛났던 배움을 찾아요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "백 번째 별을 찾아서 | 달토끼 루니 EP.099 | 성찰을 배워요",
@@ -2392,14 +2392,14 @@
       "lesson": "성장",
       "premise": "달빛 축제에서 100개의 이야기를 돌아보고 다음 모험을 약속해요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "언제나 다시 만나요 | 달토끼 루니 EP.100 | 성장을 배워요",

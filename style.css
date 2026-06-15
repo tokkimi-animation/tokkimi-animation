@@ -260,11 +260,23 @@ h1 span { color: var(--lavender); }
 .episode-card {
   display: flex;
   flex-direction: column;
-  min-height: 215px;
-  padding: 22px;
+  overflow: hidden;
+  min-height: 390px;
   border: 1px solid var(--line);
   border-radius: 18px;
   background: white;
+}
+.episode-thumbnail {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: #eeeaf7;
+}
+.episode-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 18px 20px 20px;
 }
 .episode-meta { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
 .episode-number { color: var(--lavender); font-family: "Jua", sans-serif; font-size: 1.15rem; }
@@ -276,8 +288,19 @@ h1 span { color: var(--lavender); }
   font-size: .68rem;
   font-weight: 700;
 }
-.episode-card h3 { margin: 18px 0 8px; font-size: 1.3rem; }
+.episode-card h3 { margin: 14px 0 8px; font-size: 1.3rem; }
 .episode-card p { margin: 0; color: var(--muted); font-size: .86rem; }
+.episode-watch, .episode-coming {
+  display: block;
+  margin-top: 16px;
+  padding: 9px 12px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: .78rem;
+  font-weight: 700;
+}
+.episode-watch { color: white; background: var(--lavender-dark); text-decoration: none; }
+.episode-coming { color: #777087; background: #f2eff8; }
 .season-label { margin-top: auto; padding-top: 18px; color: #9a94a8; font-size: .7rem; }
 .show-more { display: block; margin: 30px auto 0; padding-inline: 28px; color: var(--lavender-dark); font-weight: 700; }
 .show-more[hidden] { display: none; }
