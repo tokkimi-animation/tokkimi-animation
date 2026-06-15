@@ -79,43 +79,47 @@ def name_plate(name, latin, color, duration, right=False):
     return ImageClip(np.array(image), duration=duration)
 
 
-def character_motion(path, action, duration, index, start=0, base=False):
-    source = (CHARACTERS if base else POSES) / path
+def character_motion(path, action, duration, index):
+    source = POSES / path
     clip = ImageClip(str(source), duration=duration).resized(height=530)
-    side = -1 if index % 2 else 1
-    target_x = 690 if side == -1 else 95
+    target_x = 690 if index % 2 else 95
 
     def pos(t):
-        p = min(1.0, t / 0.52)
-        ease = p * p * (3 - 2 * p)
-        x = target_x + side * int(480 * (1-ease))
-        y = 105 + int(5 * math.sin(t * 5.2))
+        phase = t / max(duration, 0.01)
+        x = target_x
+        y = 105 + int(4 * math.sin(t * 4.6))
         if action == "jump":
-            y -= int(95 * math.sin(min(1, t / 0.9) * math.pi))
+            y -= int(78 * math.sin(min(1, phase * 1.35) * math.pi) ** 2)
         elif action == "sneeze":
-            y += int(13 * math.sin(t * 12) * math.exp(-2.2*t))
+            y += int(12 * math.sin(t * 15) * math.exp(-2.8 * t))
         elif action == "spin":
-            y -= int(20 * math.sin(t * 4))
+            y -= int(10 * math.sin(t * 4.5))
         elif action == "invent":
-            x += int(18 * math.sin(t * 6))
-            y -= int(12 * math.sin(t * 5))
+            x += int(5 * math.sin(t * 5))
+            y -= int(8 * math.sin(t * 4.2))
         elif action == "brave":
-            y -= int(22 * math.sin(min(1, t / 0.7) * math.pi))
+            y -= int(16 * math.sin(phase * math.pi) ** 2)
         elif action == "glide":
-            x += int(22 * math.sin(t * 2.6))
-            y += int(12 * math.sin(t * 4.2))
+            x += int(5 * math.sin(t * 2.8))
+            y += int(9 * math.sin(t * 4.2))
         elif action == "magic":
-            y += int(9 * math.sin(t * 3))
+            y += int(7 * math.sin(t * 3))
         return x, y
 
     clip = clip.with_position(pos)
     if action == "spin":
-        clip = clip.rotated(lambda t: 8 * math.sin(t * 5))
+        clip = clip.rotated(lambda t: 5 * math.sin(t * 4.5))
     elif action == "sneeze":
-        clip = clip.resized(lambda t: 1.0 + 0.035 * math.sin(t * 11) * math.exp(-2*t))
+        clip = clip.resized(
+            lambda t: 1.0 + 0.045 * math.sin(t * 13) * math.exp(-2.5 * t)
+        )
     elif action == "brave":
-        clip = clip.resized(lambda t: 0.94 + 0.06 * min(1, t / 0.8))
-    return clip.with_start(start)
+        clip = clip.resized(
+            lambda t: 0.97 + 0.03 * math.sin(min(1, t / 0.8) * math.pi)
+        )
+    elif action in {"invent", "magic"}:
+        clip = clip.rotated(lambda t: 2.2 * math.sin(t * 3.2))
+    return clip
 
 
 def title_scene(duration):
@@ -139,13 +143,9 @@ def title_scene(duration):
 def cast_scene(item, index, duration=1.65):
     name, latin, base_path, pose_path, color, action = item
     right = index % 2 == 0
-    pose_start = 0.38
     return CompositeVideoClip([
         backdrop(index + 1, duration),
-        character_motion(base_path, action, pose_start, index, base=True),
-        character_motion(
-            pose_path, action, duration - pose_start, index, start=pose_start
-        ),
+        character_motion(pose_path, action, duration, index),
         name_plate(name, latin, color, duration, right=not right),
     ], size=SIZE).with_duration(duration).with_effects(
         [vfx.CrossFadeIn(0.10), vfx.CrossFadeOut(0.10)]
@@ -154,31 +154,39 @@ def cast_scene(item, index, duration=1.65):
 
 def luni_final(duration):
     bg = backdrop(3, duration)
-    position = lambda t: (
-        355 + int(8 * math.sin(t * 3.2)),
-        92 - int(18 * math.sin(min(1, t / .65) * math.pi))
-        + int(4 * math.sin(t * 5.1)),
-    )
-    normal1 = (
-        ImageClip(str(CHARACTERS / "luni.png"), duration=0.72)
-        .resized(height=570).with_position(position)
-        .with_effects([vfx.FadeIn(0.16), vfx.FadeOut(0.14)])
-    )
-    surprised = (
-        ImageClip(str(POSES / "luni-surprised-v2.png"), duration=0.68)
-        .resized(height=570).with_start(0.60).with_position(position)
-        .with_effects([vfx.FadeIn(0.14), vfx.FadeOut(0.14)])
-    )
-    listening = (
-        ImageClip(str(POSES / "luni-listening.png"), duration=0.72)
-        .resized(height=570).with_start(1.14).with_position(position)
-        .with_effects([vfx.FadeIn(0.14), vfx.FadeOut(0.14)])
-    )
-    wink = (
-        ImageClip(str(POSES / "luni-wink.png"), duration=duration-1.70)
-        .resized(height=570).with_start(1.70).with_position(position)
-        .with_effects([vfx.FadeIn(0.16)])
-    )
+    def keyframe(number, start, end, motion):
+        clip = ImageClip(
+            str(POSES / f"luni-motion-{number}.png"), duration=end - start
+        ).resized(height=520)
+        center_x = (SIZE[0] - clip.w) / 2
+        base_y = 525 - clip.h
+
+        def position(t):
+            if motion == "crouch":
+                amount = math.sin(min(1, t / max(end - start, .01)) * math.pi)
+                return center_x, base_y + 28 * amount
+            if motion == "rise":
+                amount = math.sin(min(1, t / max(end - start, .01)) * math.pi)
+                return center_x, base_y - 18 * amount
+            return center_x, base_y + 3 * math.sin(t * 5)
+
+        clip = clip.with_start(start).with_position(position)
+        if motion == "crouch":
+            clip = clip.resized(
+                lambda t: 1.0 - 0.035 * math.sin(
+                    min(1, t / max(end - start, .01)) * math.pi
+                )
+            )
+        elif motion == "rise":
+            clip = clip.rotated(lambda t: -2.5 * math.sin(t * 6))
+        return clip
+
+    luni_frames = [
+        keyframe(1, 0.0, 0.58, "breathe"),
+        keyframe(2, 0.58, 1.04, "crouch"),
+        keyframe(3, 1.04, 1.76, "rise"),
+        keyframe(4, 1.76, duration, "breathe"),
+    ]
     image = Image.new("RGBA", SIZE, (0, 0, 0, 0))
     draw = ImageDraw.Draw(image)
     draw.rounded_rectangle((390, 565, 890, 665), radius=32, fill=(255, 252, 242, 235))
@@ -192,7 +200,7 @@ def luni_final(duration):
         .with_effects([vfx.FadeIn(0.18)])
     )
     return CompositeVideoClip(
-        [bg, normal1, surprised, listening, wink, phrase_clip],
+        [bg, *luni_frames, phrase_clip],
         size=SIZE,
     ).with_duration(duration)
 
@@ -337,7 +345,7 @@ def main():
     voice = voice.with_start(voice_start)
     video = video.with_audio(CompositeAudioClip([music_clip, voice]))
 
-    output = OUTPUT / "LUNI-GENERIQUE-V3-FLUIDE-CHAQUE-EPISODE.mp4"
+    output = OUTPUT / "LUNI-GENERIQUE-V4-ANIME-SANS-GLISSEMENT.mp4"
     video.write_videofile(
         str(output),
         fps=FPS,
@@ -349,9 +357,10 @@ def main():
     )
     shutil.copy2(output, OUTPUT / "LUNI-GENERIQUE-COURT-CHAQUE-EPISODE.mp4")
     shutil.copy2(output, OUTPUT / "LUNI-GENERIQUE-V2-CHAQUE-EPISODE.mp4")
+    shutil.copy2(output, OUTPUT / "LUNI-GENERIQUE-V3-FLUIDE-CHAQUE-EPISODE.mp4")
     (OUTPUT / "LISEZ-MOI.txt").write_text(
-        "Version recommandée : LUNI-GENERIQUE-V3-FLUIDE-CHAQUE-EPISODE.mp4\n"
-        "Animation 60 images/seconde, changements de poses et expressions, "
+        "Version recommandée : LUNI-GENERIQUE-V4-ANIME-SANS-GLISSEMENT.mp4\n"
+        "Animation sur place sans entrée latérale, gestes et expressions, "
         "puis Luni : « 안녕! 나는 루니야! » avec un clin d’œil.\n",
         encoding="utf-8",
     )
@@ -378,12 +387,12 @@ def main():
 <body>
   <main>
     <h1>달토끼 루니 · Nouveau générique</h1>
-    <p>Animation fluide à 60 images/seconde, expressions vivantes et voix adoucie.</p>
+    <p>Gestes animés sur place, sans glissement latéral, avec une voix adoucie.</p>
     <video controls autoplay preload="auto" poster="tokkimi-logo.png">
-      <source src="LUNI-GENERIQUE-V3-FLUIDE-CHAQUE-EPISODE.mp4" type="video/mp4">
+      <source src="LUNI-GENERIQUE-V4-ANIME-SANS-GLISSEMENT.mp4" type="video/mp4">
     </video>
     <nav>
-      <a href="LUNI-GENERIQUE-V3-FLUIDE-CHAQUE-EPISODE.mp4" download>
+      <a href="LUNI-GENERIQUE-V4-ANIME-SANS-GLISSEMENT.mp4" download>
         Télécharger le générique final
       </a>
     </nav>
