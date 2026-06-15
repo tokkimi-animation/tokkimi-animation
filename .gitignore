@@ -1,5 +1,6 @@
 production/**/build/
 production/model-preview/
+production/quality-control/
 production/catalog.lock
 production/queue-worker-*.log
 production/queue-worker-*-summary.json

@@ -218,6 +218,24 @@ def character_source(name, action):
         return POSES / "byeori-pointing.png"
     if name == "mongi" and action in {"sneeze-reaction", "small-sneeze"}:
         return POSES / "mongi-sneeze.png"
+    if name == "kongkong" and action in {
+        "follow-stream",
+        "group-cheer",
+        "ending-dance",
+    }:
+        return POSES / "kongkong-jump.png"
+    if name == "tori" and action in {
+        "point-clues",
+        "kneel-and-point",
+        "inspect-stone",
+    }:
+        return POSES / "tori-inventing.png"
+    if name == "bambam" and action in {
+        "hand-to-heart",
+        "happy-tears",
+        "rainbow-pose",
+    }:
+        return POSES / "bambam-brave.png"
     return CHARACTERS / f"{name}.png"
 
 

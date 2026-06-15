@@ -1072,14 +1072,14 @@
       "lesson": "협력",
       "premise": "서로 다른 소리를 맞춰 하나의 신나는 합주를 완성해요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "조개마을 음악대 | 달토끼 루니 EP.045 | 협력을 배워요",
@@ -1096,14 +1096,14 @@
       "lesson": "나눔",
       "premise": "보물이 물건이 아니라 함께 나눈 시간이라는 사실을 발견해요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "구름 해적의 보물 | 달토끼 루니 EP.046 | 나눔을 배워요",
@@ -1120,14 +1120,14 @@
       "lesson": "자립",
       "premise": "가방을 직접 챙기고 작은 역할을 맡아 첫 캠핑을 마쳐요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "별똥별 캠핑 | 달토끼 루니 EP.047 | 자립을 배워요",
@@ -1144,14 +1144,14 @@
       "lesson": "판단",
       "premise": "도구가 고장 났을 때 주변 단서와 친구들의 생각을 함께 사용해요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "돌아오지 않는 나침반 | 달토끼 루니 EP.048 | 판단을 배워요",
