@@ -236,6 +236,18 @@ def character_source(name, action):
         "rainbow-pose",
     }:
         return POSES / "bambam-brave.png"
+    if name == "lumi" and action in {
+        "point-clues",
+        "show-three",
+        "rainbow-appears",
+    }:
+        return POSES / "lumi-discovery.png"
+    if name == "moon-grandma" and action in {
+        "worried",
+        "hand-to-heart",
+        "happy-tears",
+    }:
+        return POSES / "moon-grandma-comfort.png"
     return CHARACTERS / f"{name}.png"
 
 
@@ -265,6 +277,8 @@ def character_clip(name, action, duration, side, seed):
     phase = seed * 0.61
 
     clip = ImageClip(str(source), duration=duration).resized(height=target_height)
+    left_limit = 24
+    right_limit = SIZE[0] - clip.w - 24
 
     if action == "follow-stream" and name == "luni":
         return clip.with_position(
@@ -312,6 +326,8 @@ def character_clip(name, action, duration, side, seed):
             x += 17 * math.sin(t * 3.8 + phase)
             y -= 13 * abs(math.sin(t * 3.8 + phase))
 
+        if action != "arrive-and-look" or t >= 0.9:
+            x = min(max(x, left_limit), right_limit)
         return int(x), int(y)
 
     return clip.with_position(

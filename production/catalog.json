@@ -1168,14 +1168,14 @@
       "lesson": "다양성",
       "premise": "낮이 긴 마을의 다른 생활 방식을 존중하고 새 놀이를 배워요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "달의 반대편 | 달토끼 루니 EP.049 | 다양성을 배워요",
@@ -1192,14 +1192,14 @@
       "lesson": "기억",
       "premise": "모험에서 얻은 사진과 기억을 나누며 두 번째 시즌을 돌아봐요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "우리들의 여행 앨범 | 달토끼 루니 EP.050 | 기억을 배워요",
@@ -1216,14 +1216,14 @@
       "lesson": "상상",
       "premise": "각자 상상한 꽃을 피워 비밀 정원의 문을 열어요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "꿈의 정원 문이 열리다 | 달토끼 루니 EP.051 | 상상을 배워요",
@@ -1240,14 +1240,14 @@
       "lesson": "언어",
       "premise": "마음과 다른 말을 하는 별가루 때문에 진짜 뜻을 또렷이 표현해요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "말하는 별가루 | 달토끼 루니 EP.052 | 언어을 배워요",
@@ -1264,14 +1264,14 @@
       "lesson": "논리",
       "premise": "결과부터 보이는 마법의 강에서 사건의 원인을 거슬러 찾아요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "거꾸로 흐르는 강 | 달토끼 루니 EP.053 | 논리을 배워요",
@@ -1288,14 +1288,14 @@
       "lesson": "예술",
       "premise": "미완성 그림 세계에서 색과 선을 더해 몽이가 나올 길을 만들어요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "그림 속으로 간 몽이 | 달토끼 루니 EP.054 | 예술을 배워요",
@@ -1312,14 +1312,14 @@
       "lesson": "정체성",
       "premise": "똑같이 생긴 마법 복제와 만나 나만의 선택과 기억을 소중히 여겨요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "달토끼가 둘이 된 날 | 달토끼 루니 EP.055 | 정체성을 배워요",
@@ -1336,14 +1336,14 @@
       "lesson": "자존감",
       "premise": "빛이 약해진 별이가 밝기와 상관없이 소중한 친구임을 느껴요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "별이의 빛이 꺼졌어요 | 달토끼 루니 EP.056 | 자존감을 배워요",
