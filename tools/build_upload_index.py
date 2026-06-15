@@ -97,6 +97,9 @@ def main():
     header p {{ margin:5px 0; }}
     .progress {{ display:inline-block; margin-top:14px; padding:9px 16px; border-radius:999px;
       background:var(--gold); font-weight:800; }}
+    .pack-links {{ display:flex; flex-wrap:wrap; justify-content:center; gap:9px; margin-top:14px; }}
+    .pack-links a {{ padding:10px 14px; border-radius:11px; color:#fff;
+      background:var(--purple); text-decoration:none; font-weight:800; }}
     .controls {{ position:sticky; top:0; z-index:5; display:flex; flex-wrap:wrap; gap:10px;
       justify-content:center; padding:14px; background:rgba(255,255,255,.94);
       border-block:1px solid var(--line); backdrop-filter:blur(8px); }}
@@ -150,6 +153,12 @@ def main():
     <h1>달토끼 루니 · Pack YouTube</h1>
     <p>Tout ce qu’il faut pour publier les 100 épisodes.</p>
     <div class="progress">{ready_count} / 100 packs prêts</div>
+    <div class="pack-links">
+      <a href="LUNI-YOUTUBE-PUBLICATION.xlsx">Tableau de publication</a>
+      <a href="PACK-YOUTUBE-COMPLET/LISEZ-MOI.txt">Pack YouTube complet</a>
+      <a href="CONTROLE-VOIX-PERSONNAGES/ECOUTER-LES-8-VOIX.mp3">
+        Écouter les 8 voix</a>
+    </div>
   </header>
   <section class="controls">
     <input id="search" type="search" placeholder="Chercher un épisode, un titre ou un apprentissage">

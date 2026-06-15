@@ -295,15 +295,18 @@ def make_frame(scene, index, include_characters=True):
 
 async def create_voice(scene, path):
     import edge_tts
+    from build_episode import transform_voice_file, voice_profile
 
+    voice, rate, pitch, volume = voice_profile(scene)
     communicate = edge_tts.Communicate(
         scene["text"],
-        scene["voice"],
-        rate=scene.get("rate", "-6%"),
-        pitch=scene.get("pitch", "+0Hz"),
-        volume="+0%",
+        voice,
+        rate=rate,
+        pitch=pitch,
+        volume=volume,
     )
     await communicate.save(str(path))
+    transform_voice_file(scene["speaker"], path)
 
 
 async def build_audio():

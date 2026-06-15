@@ -4,9 +4,11 @@ import json
 import math
 import msvcrt
 import shutil
+import subprocess
 import time
 from pathlib import Path
 
+import imageio_ffmpeg
 import numpy as np
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 from moviepy import (
@@ -345,16 +347,33 @@ def cast_for(scene, featured_friend="byeori"):
 
 
 VOICE_PROFILES = {
-    "루니": ("ko-KR-SunHiNeural", "+11%", "+1Hz", "-5%"),
-    "별이": ("ko-KR-HyunsuMultilingualNeural", "+16%", "+10Hz", "-7%"),
-    "몽이": ("ko-KR-InJoonNeural", "+7%", "+1Hz", "-6%"),
-    "콩콩": ("ko-KR-InJoonNeural", "+17%", "+6Hz", "-5%"),
-    "토리": ("ko-KR-HyunsuMultilingualNeural", "+9%", "-2Hz", "-6%"),
-    "밤밤": ("ko-KR-SunHiNeural", "-1%", "-4Hz", "-8%"),
-    "루미": ("ko-KR-HyunsuMultilingualNeural", "-3%", "-7Hz", "-8%"),
-    "달할머니": ("ko-KR-SunHiNeural", "-6%", "-8Hz", "-9%"),
-    "모두": ("ko-KR-SunHiNeural", "+6%", "+2Hz", "-6%"),
-    "노래": ("ko-KR-SunHiNeural", "+6%", "+2Hz", "-6%"),
+    "루니": ("ko-KR-SunHiNeural", "+9%", "+0Hz", "-5%"),
+    "별이": ("ko-KR-HyunsuMultilingualNeural", "+15%", "+4Hz", "-7%"),
+    "작은 별": ("ko-KR-SunHiNeural", "+8%", "+5Hz", "-8%"),
+    "몽이": ("ko-KR-InJoonNeural", "+5%", "-1Hz", "-6%"),
+    "콩콩": ("ko-KR-InJoonNeural", "+18%", "+3Hz", "-5%"),
+    "토리": ("ko-KR-HyunsuMultilingualNeural", "+7%", "-2Hz", "-6%"),
+    "밤밤": ("ko-KR-SunHiNeural", "-4%", "-3Hz", "-8%"),
+    "루미": ("ko-KR-HyunsuMultilingualNeural", "-6%", "-4Hz", "-8%"),
+    "달할머니": ("ko-KR-SunHiNeural", "-10%", "-5Hz", "-9%"),
+    "모두": ("ko-KR-InJoonNeural", "+8%", "+0Hz", "-7%"),
+    "루니와 친구들": ("ko-KR-InJoonNeural", "+7%", "+0Hz", "-7%"),
+    "노래": ("ko-KR-HyunsuMultilingualNeural", "+10%", "+2Hz", "-7%"),
+}
+
+VOICE_FILTERS = {
+    "루니": "aresample=48000,treble=g=1.5",
+    "별이": "aresample=48000,asetrate=54720,aresample=48000,atempo=0.94,treble=g=5",
+    "작은 별": "aresample=48000,asetrate=57600,aresample=48000,atempo=0.90,treble=g=6",
+    "몽이": "aresample=48000,asetrate=46080,aresample=48000,atempo=1.05,bass=g=2",
+    "콩콩": "aresample=48000,asetrate=52320,aresample=48000,atempo=1.04,treble=g=3",
+    "토리": "aresample=48000,asetrate=46560,aresample=48000,atempo=1.03,equalizer=f=1200:t=q:w=1:g=3",
+    "밤밤": "aresample=48000,asetrate=44160,aresample=48000,atempo=1.08,bass=g=2",
+    "루미": "aresample=48000,asetrate=42240,aresample=48000,atempo=1.10,bass=g=4",
+    "달할머니": "aresample=48000,asetrate=39360,aresample=48000,atempo=1.12,bass=g=5",
+    "모두": "aresample=48000,asetrate=48960,aresample=48000,atempo=1.02",
+    "루니와 친구들": "aresample=48000,asetrate=48960,aresample=48000,atempo=1.02",
+    "노래": "aresample=48000,asetrate=50880,aresample=48000,atempo=0.98,treble=g=2",
 }
 
 
@@ -363,6 +382,32 @@ def voice_profile(scene):
         scene["speaker"],
         (scene.get("voice", "ko-KR-SunHiNeural"), "+8%", "+0Hz", "-6%"),
     )
+
+
+def transform_voice_file(speaker, path):
+    audio_filter = VOICE_FILTERS.get(speaker)
+    if not audio_filter:
+        return
+    transformed = path.with_name(f"{path.stem}-transformed.mp3")
+    subprocess.run(
+        [
+            imageio_ffmpeg.get_ffmpeg_exe(),
+            "-y",
+            "-i",
+            str(path),
+            "-af",
+            audio_filter,
+            "-codec:a",
+            "libmp3lame",
+            "-b:a",
+            "128k",
+            str(transformed),
+        ],
+        check=True,
+        stdout=subprocess.DEVNULL,
+        stderr=subprocess.DEVNULL,
+    )
+    transformed.replace(path)
 
 
 async def create_voice(scene, path):
@@ -383,6 +428,7 @@ async def create_voice(scene, path):
                 volume=volume,
             ).save(str(path))
             if path.exists() and path.stat().st_size > 1_000:
+                transform_voice_file(scene["speaker"], path)
                 return
             last_error = RuntimeError(f"empty voice file: {path.name}")
         except Exception as error:
