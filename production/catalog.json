@@ -1864,14 +1864,14 @@
       "lesson": "유연성",
       "premise": "계획이 어긋나도 친구의 아이디어를 받아들여 축제를 완성해요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "별이의 완벽하지 않은 계획 | 달토끼 루니 EP.078 | 유연성을 배워요",
@@ -1888,14 +1888,14 @@
       "lesson": "사과",
       "premise": "장난으로 상처 준 몽이가 변명하지 않고 마음을 전해요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "몽이의 진심 어린 사과 | 달토끼 루니 EP.079 | 사과를 배워요",
@@ -1912,14 +1912,14 @@
       "lesson": "인내",
       "premise": "차례를 기다리며 다른 친구의 시간도 소중함을 배워요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "콩콩은 기다릴 수 있어 | 달토끼 루니 EP.080 | 인내를 배워요",
@@ -1936,14 +1936,14 @@
       "lesson": "회복력",
       "premise": "실패 기록을 살펴 다시 만들며 포기하지 않는 힘을 길러요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "토리의 고장 난 발명품 | 달토끼 루니 EP.081 | 회복력을 배워요",
@@ -1960,14 +1960,14 @@
       "lesson": "겸손",
       "premise": "똑똑한 루미가 모른다고 말하고 함께 배우는 즐거움을 발견해요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "루미도 모르는 것 | 달토끼 루니 EP.082 | 겸손을 배워요",
@@ -1984,14 +1984,14 @@
       "lesson": "돌봄",
       "premise": "늘 돌봐 주던 달할머니를 위해 친구들이 역할을 나눠 맡아요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "달할머니의 쉬는 날 | 달토끼 루니 EP.083 | 돌봄을 배워요",
@@ -2008,14 +2008,14 @@
       "lesson": "민주성",
       "premise": "모두의 의견을 듣고 안전하고 공정한 놀이 규칙을 만들어요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "우리끼리 정한 규칙 | 달토끼 루니 EP.084 | 민주성을 배워요",
@@ -2032,14 +2032,14 @@
       "lesson": "포용",
       "premise": "다른 말투를 쓰는 전학생이 편히 참여하도록 놀이를 설명해요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "새 친구 해별이 | 달토끼 루니 EP.085 | 포용을 배워요",
@@ -2056,14 +2056,14 @@
       "lesson": "경계",
       "premise": "불편한 장난에 분명히 싫다고 말하고 상대의 거절을 존중해요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "싫다고 말해도 괜찮아 | 달토끼 루니 EP.086 | 경계를 배워요",
@@ -2080,14 +2080,14 @@
       "lesson": "안전",
       "premise": "위험한 비밀은 믿을 수 있는 어른에게 알려야 함을 배워요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "비밀을 지켜야 할까 | 달토끼 루니 EP.087 | 안전을 배워요",
@@ -2104,14 +2104,14 @@
       "lesson": "공평",
       "premise": "똑같이 나누는 것과 필요한 만큼 나누는 것의 차이를 생각해요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "반으로 나눈 달빵 | 달토끼 루니 EP.088 | 공평을 배워요",
@@ -2128,14 +2128,14 @@
       "lesson": "긍정",
       "premise": "결과뿐 아니라 친구의 노력과 친절을 구체적으로 칭찬해요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "칭찬 나무 | 달토끼 루니 EP.089 | 긍정을 배워요",
@@ -2152,14 +2152,14 @@
       "lesson": "분노 조절",
       "premise": "멈추기, 숨 쉬기, 말하기로 큰 화를 안전하게 다뤄요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "화가 난 루니 | 달토끼 루니 EP.090 | 분노 조절을 배워요",
@@ -2200,14 +2200,14 @@
       "lesson": "갈등 해결",
       "premise": "서로의 말을 반복해 확인하고 함께 만족할 해결책을 찾아요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "친구와 생각이 다를 때 | 달토끼 루니 EP.092 | 갈등 해결을 배워요",
@@ -2224,14 +2224,14 @@
       "lesson": "가족 다양성",
       "premise": "모양이 다른 여러 가족이 모두 사랑으로 이어져 있음을 배워요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "우리 가족의 밤하늘 | 달토끼 루니 EP.093 | 가족 다양성을 배워요",
