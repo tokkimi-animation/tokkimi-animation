@@ -70,12 +70,27 @@ def backdrop(index, duration):
 def name_plate(name, latin, color, duration, right=False):
     image = Image.new("RGBA", SIZE, (0, 0, 0, 0))
     draw = ImageDraw.Draw(image, "RGBA")
-    x = 700 if right else 75
-    draw.rounded_rectangle((x, 470, x+470, 625), radius=32,
-                           fill=(255, 253, 247, 238))
-    draw.rectangle((x+30, 505, x+42, 590), fill=(*color, 255))
-    draw.text((x+70, 492), name, font=FONT_NAME, fill=(52, 43, 88, 255))
-    draw.text((x+73, 557), latin, font=FONT_LATIN, fill=(112, 98, 151, 255))
+    x = 755 if right else 105
+    y = 470
+    # An illustrated caption: shadow, sparkle and hand-drawn underline, no box.
+    draw.text((x+4, y+5), name, font=FONT_NAME, fill=(37, 28, 70, 90))
+    draw.text((x, y), name, font=FONT_NAME, fill=(255, 252, 238, 255),
+              stroke_width=2, stroke_fill=(72, 57, 120, 220))
+    name_box = draw.textbbox((x, y), name, font=FONT_NAME, stroke_width=2)
+    line_y = name_box[3] + 8
+    draw.line(
+        [(x+2, line_y), (x+92, line_y+4), (x+185, line_y-1)],
+        fill=(*color, 245), width=7, joint="curve",
+    )
+    star_x = x - 32
+    star_y = y + 23
+    draw.regular_polygon(
+        (star_x, star_y, 13), n_sides=4, rotation=45,
+        fill=(255, 236, 132, 255),
+    )
+    draw.text((x+4, line_y+12), latin, font=FONT_LATIN,
+              fill=(255, 250, 235, 235),
+              stroke_width=1, stroke_fill=(72, 57, 120, 180))
     return ImageClip(np.array(image), duration=duration)
 
 
@@ -189,11 +204,16 @@ def luni_final(duration):
     ]
     image = Image.new("RGBA", SIZE, (0, 0, 0, 0))
     draw = ImageDraw.Draw(image)
-    draw.rounded_rectangle((390, 565, 890, 665), radius=32, fill=(255, 252, 242, 235))
     phrase = "안녕! 나는 루니야!"
     box = draw.textbbox((0, 0), phrase, font=FONT_NAME)
-    draw.text(((1280-(box[2]-box[0]))/2, 580), phrase, font=FONT_NAME,
-              fill=(79, 63, 137, 255))
+    phrase_x = (1280-(box[2]-box[0]))/2
+    draw.text((phrase_x+4, 584), phrase, font=FONT_NAME,
+              fill=(44, 30, 78, 100))
+    draw.text((phrase_x, 580), phrase, font=FONT_NAME,
+              fill=(255, 249, 215, 255),
+              stroke_width=2, stroke_fill=(79, 63, 137, 230))
+    draw.line((phrase_x+15, 650, phrase_x+box[2]-box[0]-15, 650),
+              fill=(255, 207, 91, 235), width=6)
     phrase_clip = (
         ImageClip(np.array(image), duration=duration - 1.48)
         .with_start(1.48)
@@ -209,71 +229,60 @@ def musical_score(duration, sample_rate=44100):
     total = int(duration * sample_rate)
     signal = np.zeros(total, dtype=np.float64)
 
-    def note(start, length, frequency, amplitude, kind="bell"):
+    def note(start, length, frequency, amplitude, kind="piano"):
         a = int(start * sample_rate)
         b = min(total, int((start + length) * sample_rate))
         if b <= a:
             return
         t = np.arange(b-a) / sample_rate
-        attack = np.minimum(t / 0.025, 1)
-        release = np.exp(-3.3 * t / max(length, 0.01))
+        attack = np.minimum(t / 0.018, 1)
+        release = np.exp(-2.7 * t / max(length, 0.01))
         env = attack * release
-        if kind == "bell":
+        if kind == "musicbox":
             wave = np.sin(2*np.pi*frequency*t)
-            wave += .32*np.sin(2*np.pi*frequency*2.01*t)
-            wave += .12*np.sin(2*np.pi*frequency*3.97*t)
-        elif kind == "pluck":
-            wave = np.sin(2*np.pi*frequency*t) + .18*np.sin(2*np.pi*frequency*2*t)
+            wave += .16*np.sin(2*np.pi*frequency*2*t)
+            wave += .04*np.sin(2*np.pi*frequency*3*t)
+        elif kind == "ukulele":
+            wave = np.sin(2*np.pi*frequency*t)
+            wave += .24*np.sin(2*np.pi*frequency*2*t)
+            wave += .08*np.sin(2*np.pi*frequency*3*t)
+            env *= np.exp(-4.5*t/max(length, .01))
         else:
-            wave = np.sin(2*np.pi*frequency*t)
+            wave = (
+                np.sin(2*np.pi*frequency*t)
+                + .12*np.sin(2*np.pi*frequency*2*t)
+            )
         signal[a:b] += amplitude * env * wave
 
-    def drum(start, amplitude, noise=False):
-        length = .10 if noise else .16
-        a = int(start*sample_rate)
-        b = min(total, int((start+length)*sample_rate))
-        if b <= a:
-            return
-        t = np.arange(b-a)/sample_rate
-        if noise:
-            rng = np.random.default_rng(int(start*1000)+55)
-            wave = rng.normal(0, 1, b-a) * np.exp(-30*t)
-        else:
-            freq = 115*np.exp(-18*t)+48
-            wave = np.sin(2*np.pi*freq*t) * np.exp(-22*t)
-        signal[a:b] += amplitude*wave
-
+    # Warm C-major children's theme: soft ukulele, piano and music-box melody.
     progression = [
         (261.63, 329.63, 392.00),
-        (220.00, 277.18, 329.63),
-        (174.61, 220.00, 261.63),
         (196.00, 246.94, 293.66),
-        (233.08, 293.66, 349.23),
+        (220.00, 261.63, 329.63),
+        (174.61, 220.00, 261.63),
         (261.63, 329.63, 392.00),
     ]
     melody_sections = [
         [523.25, 659.25, 783.99, 659.25],
-        [587.33, 698.46, 880.00, 783.99],
-        [659.25, 587.33, 523.25, 493.88],
-        [523.25, 622.25, 698.46, 783.99],
-        [880.00, 783.99, 698.46, 659.25],
-        [659.25, 783.99, 1046.50, 783.99],
+        [587.33, 659.25, 587.33, 493.88],
+        [523.25, 659.25, 880.00, 783.99],
+        [698.46, 659.25, 587.33, 523.25],
     ]
-    beat = .42
+    beat = .48
     for bar in range(math.ceil(duration / (beat*4))):
         start = bar*beat*4
         chord = progression[bar % len(progression)]
-        melody = melody_sections[(bar//2) % len(melody_sections)]
+        melody = melody_sections[bar % len(melody_sections)]
         for frequency in chord:
-            note(start, beat*3.8, frequency, .014, "sine")
-        note(start, beat*.8, chord[0]/2, .027, "pluck")
-        note(start+beat*2, beat*.8, chord[1]/2, .024, "pluck")
+            note(start, beat*3.9, frequency, .012, "piano")
+        # Two gentle down-strums per bar, with tiny offsets for a human feel.
+        for offset, frequency in enumerate(chord):
+            note(start+offset*.018, beat*.9, frequency, .020, "ukulele")
+            note(start+beat*2+offset*.016, beat*.8, frequency, .015, "ukulele")
         for step in range(4):
-            note(start+step*beat, beat*.65, melody[step], .028, "bell")
-        drum(start, .028)
-        drum(start+beat*2, .025)
-        drum(start+beat, .009, noise=True)
-        drum(start+beat*3, .012, noise=True)
+            note(start+step*beat, beat*.72, melody[step], .022, "musicbox")
+        note(start, beat*1.6, chord[0]/2, .016, "piano")
+        note(start+beat*2, beat*1.6, chord[2]/2, .013, "piano")
 
     # A short airy bridge before Luni's final line.
     bridge_start = max(0, duration - 4.2)
@@ -286,7 +295,7 @@ def musical_score(duration, sample_rate=44100):
     signal[:fade] *= np.linspace(0, 1, fade)
     signal[-fade:] *= np.linspace(1, 0, fade)
     peak = max(np.max(np.abs(signal)), 1e-6)
-    signal *= .19 / peak
+    signal *= .16 / peak
     return np.column_stack([signal, signal]).astype(np.float32), sample_rate
 
 
@@ -295,11 +304,11 @@ async def final_voice(raw_path, soft_path):
 
     if not raw_path.exists() or raw_path.stat().st_size < 1_000:
         await edge_tts.Communicate(
-            "안녕! 나는 루니야!",
+            "나, 루니야!",
             "ko-KR-SunHiNeural",
-            rate="-2%",
-            pitch="+2Hz",
-            volume="-12%",
+            rate="+5%",
+            pitch="+0Hz",
+            volume="-8%",
         ).save(str(raw_path))
     subprocess.run(
         [
@@ -311,7 +320,8 @@ async def final_voice(raw_path, soft_path):
             (
                 "silenceremove=start_periods=1:start_duration=0.03:"
                 "start_threshold=-48dB:stop_periods=-1:stop_duration=0.20:"
-                "stop_threshold=-48dB,atempo=1.12,lowpass=f=9500,treble=g=-2"
+                "stop_threshold=-48dB,highpass=f=90,lowpass=f=11000,"
+                "acompressor=threshold=-18dB:ratio=2:attack=20:release=120"
             ),
             "-codec:a",
             "libmp3lame",
@@ -328,8 +338,8 @@ async def final_voice(raw_path, soft_path):
 def main():
     OUTPUT.mkdir(parents=True, exist_ok=True)
     WORK.mkdir(parents=True, exist_ok=True)
-    raw_voice_path = WORK / "luni-final-raw.mp3"
-    voice_path = WORK / "luni-final-soft.mp3"
+    raw_voice_path = WORK / "luni-final-v5-raw.mp3"
+    voice_path = WORK / "luni-final-v5-soft.mp3"
     asyncio.run(final_voice(raw_voice_path, voice_path))
 
     clips = [title_scene(2.0)]
@@ -345,7 +355,7 @@ def main():
     voice = voice.with_start(voice_start)
     video = video.with_audio(CompositeAudioClip([music_clip, voice]))
 
-    output = OUTPUT / "LUNI-GENERIQUE-V4-ANIME-SANS-GLISSEMENT.mp4"
+    output = OUTPUT / "LUNI-GENERIQUE-V5-ILLUSTRE.mp4"
     video.write_videofile(
         str(output),
         fps=FPS,
@@ -358,10 +368,11 @@ def main():
     shutil.copy2(output, OUTPUT / "LUNI-GENERIQUE-COURT-CHAQUE-EPISODE.mp4")
     shutil.copy2(output, OUTPUT / "LUNI-GENERIQUE-V2-CHAQUE-EPISODE.mp4")
     shutil.copy2(output, OUTPUT / "LUNI-GENERIQUE-V3-FLUIDE-CHAQUE-EPISODE.mp4")
+    shutil.copy2(output, OUTPUT / "LUNI-GENERIQUE-V4-ANIME-SANS-GLISSEMENT.mp4")
     (OUTPUT / "LISEZ-MOI.txt").write_text(
-        "Version recommandée : LUNI-GENERIQUE-V4-ANIME-SANS-GLISSEMENT.mp4\n"
-        "Animation sur place sans entrée latérale, gestes et expressions, "
-        "puis Luni : « 안녕! 나는 루니야! » avec un clin d’œil.\n",
+        "Version recommandée : LUNI-GENERIQUE-V5-ILLUSTRE.mp4\n"
+        "Prénoms illustrés sans cadres, musique enfantine chaleureuse, "
+        "puis Luni : « 나, 루니야! » avec un clin d’œil.\n",
         encoding="utf-8",
     )
     (OUTPUT / "REGARDER-LE-GENERIQUE.html").write_text(
@@ -387,12 +398,12 @@ def main():
 <body>
   <main>
     <h1>달토끼 루니 · Nouveau générique</h1>
-    <p>Gestes animés sur place, sans glissement latéral, avec une voix adoucie.</p>
+    <p>Prénoms illustrés, musique enfantine chaleureuse et voix plus naturelle.</p>
     <video controls autoplay preload="auto" poster="tokkimi-logo.png">
-      <source src="LUNI-GENERIQUE-V4-ANIME-SANS-GLISSEMENT.mp4" type="video/mp4">
+      <source src="LUNI-GENERIQUE-V5-ILLUSTRE.mp4" type="video/mp4">
     </video>
     <nav>
-      <a href="LUNI-GENERIQUE-V4-ANIME-SANS-GLISSEMENT.mp4" download>
+      <a href="LUNI-GENERIQUE-V5-ILLUSTRE.mp4" download>
         Télécharger le générique final
       </a>
     </nav>
