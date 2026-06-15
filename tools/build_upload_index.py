@@ -158,7 +158,7 @@ def main():
       <a href="PACK-YOUTUBE-COMPLET/LISEZ-MOI.txt">Pack YouTube complet</a>
       <a href="CONTROLE-VOIX-PERSONNAGES/ECOUTER-LES-8-VOIX.mp3">
         Écouter les 8 voix</a>
-      <a href="GENERIQUE-INTRO/LUNI-GENERIQUE-COURT-CHAQUE-EPISODE.mp4">
+      <a href="GENERIQUE-INTRO/REGARDER-LE-GENERIQUE.html">
         Voir le générique</a>
     </div>
   </header>
