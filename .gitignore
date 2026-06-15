@@ -7,6 +7,7 @@ production/queue-worker-*-summary.json
 production/voice-refresh-worker-*.log
 production/byeori-refresh-*.log
 production/final-voice-*.log
+production/opening-intro/
 ready-to-upload/
 assets/characters/source/
 assets/characters/poses/*-key*.png

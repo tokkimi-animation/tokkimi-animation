@@ -23,6 +23,8 @@ Copy-Item -LiteralPath (Join-Path $ready "OUVRIR-ICI.html") `
     -Destination (Join-Path $pack "OUVRIR-ICI.html")
 Copy-Item -LiteralPath (Join-Path $ready "CONTROLE-VOIX-PERSONNAGES") `
     -Destination (Join-Path $pack "CONTROLE-VOIX-PERSONNAGES") -Recurse
+Copy-Item -LiteralPath (Join-Path $ready "GENERIQUE-INTRO") `
+    -Destination (Join-Path $pack "GENERIQUE-INTRO") -Recurse
 
 @"
 PACK YOUTUBE COMPLET - 달토끼 루니
@@ -39,6 +41,10 @@ Chaque ZIP contient :
 Ouvrez LUNI-YOUTUBE-PUBLICATION.xlsx pour suivre l'ordre et le calendrier.
 Ouvrez CONTROLE-VOIX-PERSONNAGES\ECOUTER-LES-8-VOIX.mp3 pour écouter
 les huit voix définitives.
+
+Le dossier GENERIQUE-INTRO contient :
+- la version courte de 15 secondes à placer devant chaque épisode ;
+- la version complète de présentation des huit personnages.
 "@ | Set-Content -LiteralPath (Join-Path $pack "LISEZ-MOI.txt") -Encoding UTF8
 
 Write-Output $pack
