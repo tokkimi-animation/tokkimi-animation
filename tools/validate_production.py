@@ -1,8 +1,10 @@
 import argparse
 import json
+import zipfile
 from pathlib import Path
 
 from moviepy import VideoFileClip
+from PIL import Image
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -13,16 +15,6 @@ REQUIRED = {
     "metadata": "youtube.txt",
     "script": "script-ko-fr.md",
 }
-
-
-def probe_duration(path):
-    try:
-        clip = VideoFileClip(str(path))
-        duration = clip.duration
-        clip.close()
-        return duration
-    except Exception:
-        return None
 
 
 def validate(number):
@@ -42,13 +34,63 @@ def validate(number):
 
     video = folder / video_name
     if video.exists() and video.stat().st_size:
-        duration = probe_duration(video)
-        if duration is None:
-            errors.append("unreadable-duration")
-        elif number == 1 and not 240.0 <= duration <= 330.0:
-            errors.append(f"duration-{duration:.3f}")
-        elif number != 1 and abs(duration - 180.0) > 0.15:
-            errors.append(f"duration-{duration:.3f}")
+        try:
+            clip = VideoFileClip(str(video))
+            duration = clip.duration
+            expected_size = [1920, 1080] if number == 1 else [1280, 720]
+            if list(clip.size) != expected_size:
+                errors.append(f"resolution-{clip.size[0]}x{clip.size[1]}")
+            if clip.audio is None:
+                errors.append("missing-audio-track")
+            if number == 1 and not 240.0 <= duration <= 330.0:
+                errors.append(f"duration-{duration:.3f}")
+            elif number != 1 and abs(duration - 180.0) > 0.15:
+                errors.append(f"duration-{duration:.3f}")
+            clip.close()
+        except Exception:
+            errors.append("unreadable-video")
+
+    thumbnail = folder / "thumbnail.png"
+    if thumbnail.exists() and thumbnail.stat().st_size:
+        try:
+            with Image.open(thumbnail) as image:
+                if image.size != (1280, 720):
+                    errors.append(
+                        f"thumbnail-size-{image.size[0]}x{image.size[1]}"
+                    )
+        except Exception:
+            errors.append("unreadable-thumbnail")
+
+    subtitles = folder / "subtitles-ko.srt"
+    if subtitles.exists() and subtitles.stat().st_size:
+        text = subtitles.read_text(encoding="utf-8")
+        if "-->" not in text or not any(
+            "\uac00" <= character <= "\ud7a3" for character in text
+        ):
+            errors.append("invalid-subtitles")
+
+    metadata = folder / "youtube.txt"
+    if metadata.exists() and metadata.stat().st_size:
+        text = metadata.read_text(encoding="utf-8")
+        if number != 1 and ("TITRE" not in text or "DESCRIPTION" not in text):
+            errors.append("invalid-metadata")
+
+    if archive.exists() and archive.stat().st_size:
+        try:
+            with zipfile.ZipFile(archive) as package:
+                names = {Path(name).name for name in package.namelist()}
+            expected = {
+                video_name,
+                "thumbnail.png",
+                "subtitles-ko.srt",
+                "youtube.txt",
+                "script-ko-fr.md",
+            }
+            missing = sorted(expected - names)
+            if missing:
+                errors.append(f"archive-missing-{'+'.join(missing)}")
+        except zipfile.BadZipFile:
+            errors.append("invalid-archive")
     return errors
 
 

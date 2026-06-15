@@ -976,14 +976,14 @@
       "lesson": "침착",
       "premise": "작은 소동 앞에서 멈추고 생각한 뒤 차분하게 모두를 도와요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "잠든 용암산 | 달토끼 루니 EP.041 | 침착을 배워요",
@@ -1000,14 +1000,14 @@
       "lesson": "자연",
       "premise": "밤하늘을 헤엄치는 고래별의 이동을 방해하지 않고 관찰해요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "고래별을 따라서 | 달토끼 루니 EP.042 | 자연을 배워요",
@@ -1024,14 +1024,14 @@
       "lesson": "정직",
       "premise": "친구의 물건을 발견한 루니가 주인을 찾아 솔직하게 돌려줘요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "뒤바뀐 짐 가방 | 달토끼 루니 EP.043 | 정직을 배워요",
@@ -1048,14 +1048,14 @@
       "lesson": "배려",
       "premise": "추위에 약한 친구를 위해 속도를 맞추고 함께 쉴 곳을 만들어요.",
       "target_duration": "3 min",
-      "status": "scripted",
+      "status": "complete",
       "deliverables": {
         "script": true,
-        "voices": false,
-        "animation": false,
-        "subtitles": false,
-        "thumbnail": false,
-        "youtube_pack": false
+        "voices": true,
+        "animation": true,
+        "subtitles": true,
+        "thumbnail": true,
+        "youtube_pack": true
       },
       "youtube": {
         "title": "얼음 궁전의 따뜻한 문 | 달토끼 루니 EP.044 | 배려을 배워요",
