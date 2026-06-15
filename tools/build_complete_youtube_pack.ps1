@@ -4,17 +4,27 @@ $root = Split-Path -Parent $PSScriptRoot
 $ready = Join-Path $root "ready-to-upload"
 $pack = Join-Path $ready "PACK-YOUTUBE-COMPLET"
 $episodes = Join-Path $pack "100-PACKS-EPISODES"
+$finalMp4Source = Join-Path $ready "PACK-YOUTUBE-100-MP4-AVEC-INTRO"
+$finalMp4Pack = Join-Path $pack "100-VIDEOS-MP4-AVEC-INTRO"
 
 if (Test-Path -LiteralPath $pack) {
     Remove-Item -LiteralPath $pack -Recurse -Force
 }
 New-Item -ItemType Directory -Path $episodes -Force | Out-Null
+New-Item -ItemType Directory -Path $finalMp4Pack -Force | Out-Null
 
 1..100 | ForEach-Object {
     $id = "EP{0:D3}-upload-pack.zip" -f $_
     New-Item -ItemType HardLink `
         -Path (Join-Path $episodes $id) `
         -Target (Join-Path $ready $id) | Out-Null
+}
+
+1..100 | ForEach-Object {
+    $id = "EP{0:D3}-YOUTUBE-AVEC-INTRO.mp4" -f $_
+    New-Item -ItemType HardLink `
+        -Path (Join-Path $finalMp4Pack $id) `
+        -Target (Join-Path $finalMp4Source $id) | Out-Null
 }
 
 Copy-Item -LiteralPath (Join-Path $ready "LUNI-YOUTUBE-PUBLICATION.xlsx") `
@@ -30,6 +40,8 @@ Copy-Item -LiteralPath (Join-Path $ready "GENERIQUE-INTRO") `
 PACK YOUTUBE COMPLET - 달토끼 루니
 
 Le dossier 100-PACKS-EPISODES contient les 100 packs prêts à publier.
+Le dossier 100-VIDEOS-MP4-AVEC-INTRO contient les 100 vidéos finales en MP4.
+Chaque vidéo commence par le dernier générique validé.
 
 Chaque ZIP contient :
 - la vidéo MP4 ;

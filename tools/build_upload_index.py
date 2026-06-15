@@ -6,6 +6,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 READY = ROOT / "ready-to-upload"
 CATALOG = ROOT / "production" / "catalog.json"
+FINAL_MP4_PACK = READY / "PACK-YOUTUBE-100-MP4-AVEC-INTRO"
 
 
 def file_exists(path):
@@ -32,7 +33,13 @@ def card(episode):
     episode_id = episode["id"]
     video_name = "EP001-lost-star.mp4" if number == 1 else f"{episode_id}.mp4"
     folder = READY / episode_id
-    video_url = f"{episode_id}/{video_name}"
+    final_name = f"{episode_id}-YOUTUBE-AVEC-INTRO.mp4"
+    final_video = FINAL_MP4_PACK / final_name
+    video_url = (
+        f"PACK-YOUTUBE-100-MP4-AVEC-INTRO/{final_name}"
+        if file_exists(final_video)
+        else f"{episode_id}/{video_name}"
+    )
     links = {
         "Miniature": f"{episode_id}/thumbnail.png",
         "Sous-titres": f"{episode_id}/subtitles-ko.srt",
@@ -68,6 +75,8 @@ def card(episode):
           <p class="premise">{html.escape(episode['premise'])}</p>
           <a class="watch" href="{html.escape(video_url)}" target="_blank"
             rel="noopener">▶ Lire la vidéo</a>
+          <a class="watch" href="{html.escape(video_url)}" download>
+            Télécharger le MP4 avec générique</a>
           <button class="inline-play play-video" type="button"
             data-video="{html.escape(video_url)}">Ouvrir dans la page</button>
           <div class="links">{link_html}</div>
@@ -156,6 +165,8 @@ def main():
     <div class="pack-links">
       <a href="LUNI-YOUTUBE-PUBLICATION.xlsx">Tableau de publication</a>
       <a href="PACK-YOUTUBE-COMPLET/LISEZ-MOI.txt">Pack YouTube complet</a>
+      <a href="PACK-YOUTUBE-100-MP4-AVEC-INTRO/">
+        100 MP4 finaux avec générique</a>
       <a href="CONTROLE-VOIX-PERSONNAGES/ECOUTER-LES-8-VOIX.mp3">
         Écouter les 8 voix</a>
       <a href="GENERIQUE-INTRO/REGARDER-LE-GENERIQUE.html">
